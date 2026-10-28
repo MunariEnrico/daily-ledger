@@ -1,0 +1,73 @@
+# THE DAILY LEDGER — settings
+# Everything here has a working default; the first edition can be generated
+# without touching this file. Secrets (API keys, SMTP password, recipient
+# address) are NEVER stored here — they come from environment variables /
+# GitHub Actions secrets (see README).
+
+site:
+  title: "The Daily Ledger"
+  tagline: {en: "The World. The Markets. Your Cities.", it: "Il mondo. I mercati. Le tue città."}
+  base_url: ""            # e.g. "https://<user>.github.io/daily-ledger" — used for absolute links in email
+  default_language: it    # it | en — language the home page opens in (readers can switch)
+  full_render_editions: 90  # older editions are rendered as one compact page per language (GitHub Pages 1 GB limit)
+
+publication:
+  timezone: Europe/Luxembourg
+  publish_time: "08:00"
+  build_start: "05:20"    # scheduled build; the GitHub workflow uses the same times
+  late_grace_minutes: 20  # a build that finishes up to this long before 08:00 waits; later ones publish immediately as "late"
+
+editorial:
+  lookback_hours: 30            # items older than this are ignored (except official calendars)
+  min_score: 30                 # clusters below this score are not considered
+  article_words: [100, 180]     # target length for well-sourced stories
+  snippet_only_max_words: 80    # cap when only headlines/snippets were accessible
+  front_page_stories: 5
+  section_stories: 6
+  city_section_stories: 3
+  big_picture_max: 2
+  topic_weights:      {finance: 1.0, economics: 1.0, politics: 1.0, society: 0.95, tax: 0.9, law: 0.8, crime: 0.6, culture: 0.55, travel: 0.55}
+  country_weights:    {IT: 1.0, US: 0.9, UK: 0.9, EU: 0.88, FR: 0.7, DE: 0.7, LU: 0.65, CN: 0.6, IN: 0.55, JP: 0.55, ME: 0.6, INT: 0.6}
+  city_order: [venice, luxembourg, milan, rome, london, paris, nyc]
+  followed_topics: []           # boost (+10%) e.g. [tax, housing]
+  excluded_topics: []           # never selected, e.g. [crime]
+  source_preferences: {}        # per-source multiplier, e.g. {dailymail: 0.5, ecb_press: 1.2}
+  max_share_per_owner: 0.34     # diversity: no ownership group may supply more than this share of a page's lead sources
+
+verification:
+  min_independent_for_major: 2  # "major" = top-5 / Big Picture; single-source stories are allowed only lower and labelled
+  check_urls_live: true         # HEAD/GET every cited URL during the build (404/410/DNS failure ⇒ evidence dropped)
+  url_check_timeout_s: 8
+  strict_names: true            # IT/EN name parity is blocking
+
+llm:
+  enabled: true
+  provider: github_models       # github_models | openai_compatible (Groq, local Ollama/llama.cpp, …)
+  endpoint: "https://models.github.ai/inference/chat/completions"
+  # Each model has its own free daily quota on GitHub Models; the writer falls
+  # through the list when one is exhausted or failing.
+  models: ["openai/gpt-4.1-mini", "openai/gpt-4o-mini", "meta/Llama-3.3-70B-Instruct"]
+  token_env: GITHUB_TOKEN       # env var holding the key (GITHUB_TOKEN is injected by Actions)
+  max_calls_per_run: 110        # hard budget (free low tier ≈ 150 requests/day/model)
+  max_parallel: 3
+  timeout_s: 90
+  temperature: 0.1
+  max_input_chars: 22000        # free tier caps input at ~8k tokens per request
+
+market:
+  enabled: true
+  stale_days: {daily: 4, monthly: 75}
+  # Index levels (S&P 500, Nasdaq, Dow, Nikkei) are copyrighted by their index
+  # providers; FRED shows them with permission but redistribution is restricted.
+  # Off by default because GitHub Pages sites are public.
+  show_licensed_index_levels: false
+
+email:
+  enabled: false                # set true AND add SMTP_* secrets to activate
+  smtp_host: "smtp.gmail.com"
+  smtp_port: 587
+  max_headlines: 8
+  # env: SMTP_USER, SMTP_PASSWORD, EMAIL_TO (comma separated), EMAIL_FROM (optional)
+
+delivery:
+  channels: [web, email]        # web is canonical and always on; pdf = browser print (print stylesheet included)

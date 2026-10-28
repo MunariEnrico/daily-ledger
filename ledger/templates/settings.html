@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}{{ T.settings[lang] }} — {{ site.title }}{% endblock %}
+{% block otherlang %}{{ root }}{{ 'en' if lang == 'it' else 'it' }}/settings.html{% endblock %}
+{% block main %}
+<h1 class="page-h">{{ T.settings[lang] }}</h1>
+<section class="settings-local" aria-labelledby="st1">
+  <h2 id="st1" class="sec-h">{{ 'Su questo dispositivo' if lang == 'it' else 'On this device' }}</h2>
+  <p class="muted">{{ 'Salvate solo nel browser; non vengono inviate a nessuno.' if lang == 'it' else 'Stored only in this browser; never sent anywhere.' }}</p>
+  <form id="prefs" onsubmit="return false">
+    <label>{{ 'Lingua predefinita' if lang == 'it' else 'Default language' }}<select name="lang"><option value="it">Italiano</option><option value="en">English</option></select></label>
+    <label>{{ 'Tema' if lang == 'it' else 'Theme' }}<select name="theme"><option value="">{{ 'Come il sistema' if lang == 'it' else 'Follow system' }}</option><option value="light">{{ 'Chiaro' if lang == 'it' else 'Light' }}</option><option value="dark">{{ 'Scuro' if lang == 'it' else 'Dark' }}</option></select></label>
+    <label class="f-check"><input type="checkbox" name="compact"> {{ 'Lettura compatta' if lang == 'it' else 'Compact reading mode' }}</label>
+    <fieldset><legend>{{ 'Argomenti in evidenza' if lang == 'it' else 'Highlight topics' }}</legend>
+      {% for k, v in TOPIC_NAMES.items() %}<label class="f-check"><input type="checkbox" name="follow" value="{{ k }}"> {{ v[lang] }}</label>{% endfor %}</fieldset>
+    <fieldset><legend>{{ 'Argomenti da nascondere' if lang == 'it' else 'Hide topics' }}</legend>
+      {% for k, v in TOPIC_NAMES.items() %}<label class="f-check"><input type="checkbox" name="hide" value="{{ k }}"> {{ v[lang] }}</label>{% endfor %}</fieldset>
+    <p class="muted" id="prefs-saved" aria-live="polite"></p>
+  </form>
+</section>
+<section aria-labelledby="st2">
+  <h2 id="st2" class="sec-h">{{ 'Configurazione della redazione' if lang == 'it' else 'Newsroom configuration' }}</h2>
+  <p>{{ 'Questi valori decidono cosa viene raccolto, scritto e pubblicato. Si modificano nel file config/settings.yaml del repository; le credenziali stanno solo nei segreti di GitHub e non compaiono mai qui.' if lang == 'it' else 'These values decide what is collected, written and published. Change them in config/settings.yaml in the repository; credentials live only in GitHub secrets and never appear here.' }}</p>
+  <dl class="cfg">
+    <dt>{{ 'Pubblicazione' if lang == 'it' else 'Publication' }}</dt><dd>{{ settings.publication.publish_time }} {{ settings.publication.timezone }} ({{ 'elaborazione dalle' if lang == 'it' else 'build from' }} {{ settings.publication.build_start }})</dd>
+    <dt>{{ 'Canali' if lang == 'it' else 'Channels' }}</dt><dd>{{ settings.channels | join(', ') }} — email {{ ('attiva' if settings.email_enabled else 'non attiva') if lang == 'it' else ('on' if settings.email_enabled else 'off') }}</dd>
+    <dt>{{ 'Lingua predefinita' if lang == 'it' else 'Default language' }}</dt><dd>{{ settings.default_language }}</dd>
+    <dt>{{ 'Pesi per argomento' if lang == 'it' else 'Topic weights' }}</dt><dd>{% for k, v in settings.editorial.topic_weights.items() %}{{ TOPIC_NAMES[k][lang] }} {{ v }}{% if not loop.last %}, {% endif %}{% endfor %}</dd>
+    <dt>{{ 'Pesi per paese' if lang == 'it' else 'Country weights' }}</dt><dd>{% for k, v in settings.editorial.country_weights.items() %}{{ k }} {{ v }}{% if not loop.last %}, {% endif %}{% endfor %}</dd>
+    <dt>{{ 'Ordine delle città' if lang == 'it' else 'City order' }}</dt><dd>{{ settings.editorial.city_order | join(', ') }}</dd>
+    <dt>{{ 'Lunghezza articoli' if lang == 'it' else 'Article length' }}</dt><dd>{{ settings.editorial.article_words | join('–') }} {{ 'parole' if lang == 'it' else 'words' }}; max {{ settings.editorial.snippet_only_max_words }} {{ 'se solo titoli e sommari' if lang == 'it' else 'when only headlines and summaries are available' }}</dd>
+    <dt>{{ 'Argomenti seguiti / esclusi' if lang == 'it' else 'Followed / excluded topics' }}</dt><dd>{{ settings.editorial.followed_topics | join(', ') or '—' }} / {{ settings.editorial.excluded_topics | join(', ') or '—' }}</dd>
+    <dt>{{ 'Preferenze sulle fonti' if lang == 'it' else 'Source preferences' }}</dt><dd>{{ settings.editorial.source_preferences or '—' }}</dd>
+    <dt>{{ 'Indicatori di mercato con licenza' if lang == 'it' else 'Licensed index levels' }}</dt><dd>{{ settings.market.show_licensed_index_levels }}</dd>
+    <dt>{{ 'Modello di redazione' if lang == 'it' else 'Drafting model' }}</dt><dd>{{ settings.llm.provider }} — {{ settings.llm.models | join(', ') }} ({{ settings.llm.max_calls_per_run }} {{ 'chiamate max' if lang == 'it' else 'calls max' }})</dd>
+  </dl>
+</section>
+{% endblock %}

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ site.title }}{% endblock %}</title>
+<meta name="description" content="{{ site.tagline[lang] }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;500;600&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;0,7..72,750;1,7..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ root }}static/ledger.css">
+<script>try{var p=JSON.parse(localStorage.getItem('ledger-prefs')||'{}');if(p.theme)document.documentElement.dataset.theme=p.theme;if(p.compact)document.documentElement.dataset.compact='1';}catch(e){}</script>
+</head>
+<body data-root="{{ root }}" data-lang="{{ lang }}">
+<a class="skip" href="#main">{{ 'Vai al contenuto' if lang == 'it' else 'Skip to content' }}</a>
+<header class="masthead">
+  <div class="mast-top">
+    <p class="mast-date">{% if ed %}{{ T.edition_of[lang] }} {{ ed.date | when(lang, False) }}{% elif latest %}{{ latest }}{% endif %}</p>
+    <a class="mast-title" href="{{ root }}{% if latest %}{{ latest }}/{{ lang }}/{% else %}index.html{% endif %}">{{ site.title }}</a>
+    <p class="mast-tag">{{ site.tagline[lang] }}</p>
+    <div class="mast-tools">
+      {% block langswitch %}<a class="tool" href="{% block otherlang %}{{ root }}{{ 'en' if lang == 'it' else 'it' }}/archive.html{% endblock %}" hreflang="{{ 'en' if lang == 'it' else 'it' }}" data-setlang="{{ 'en' if lang == 'it' else 'it' }}">{{ T.language[lang] }}</a>{% endblock %}
+      <button class="tool" type="button" data-toggle="theme" aria-pressed="false">{{ 'Tema scuro' if lang == 'it' else 'Dark mode' }}</button>
+      <button class="tool" type="button" data-toggle="compact" aria-pressed="false">{{ 'Lettura compatta' if lang == 'it' else 'Compact' }}</button>
+    </div>
+  </div>
+  <nav class="nav" aria-label="{{ 'Sezioni' if lang == 'it' else 'Sections' }}">
+    {% set d = ed.date if ed else latest %}
+    {% if d %}
+    <a href="{{ root }}{{ d }}/{{ lang }}/index.html" {% if page == 'front' %}aria-current="page"{% endif %}>{{ T.front[lang] }}</a>
+    {% for sec in eds.international.sections %}<a href="{{ root }}{{ d }}/{{ lang }}/{{ sec.id }}.html" {% if page == sec.id %}aria-current="page"{% endif %}>{{ sec.label[lang] }}</a>{% endfor %}
+    <a href="{{ root }}{{ d }}/{{ lang }}/big-picture.html" {% if page == 'big_picture' %}aria-current="page"{% endif %}>{{ T.big_picture[lang] }}</a>
+    {% endif %}
+    <details class="nav-cities"><summary>{{ T.cities[lang] }}</summary>
+      <div>{% for cid, c in eds.cities.items() %}{% if d %}<a href="{{ root }}{{ d }}/{{ lang }}/city-{{ cid }}.html">{{ c.name[lang] }}</a>{% endif %}{% endfor %}</div>
+    </details>
+    <a href="{{ root }}{{ lang }}/archive.html" {% if page == 'archive' %}aria-current="page"{% endif %}>{{ T.archive[lang] }}</a>
+    <a href="{{ root }}{{ lang }}/settings.html" {% if page == 'settings' %}aria-current="page"{% endif %}>{{ T.settings[lang] }}</a>
+  </nav>
+</header>
+<main id="main">
+{% if ed and ed.late %}<p class="notice">{{ T.late[lang] }}</p>{% endif %}
+{% block main %}{% endblock %}
+</main>
+<footer class="foot">
+  <p>{{ site.title }} — {{ 'giornale personale automatizzato. Ogni affermazione è collegata alla sua fonte; ciò che non è verificabile non viene pubblicato.' if lang == 'it' else 'an automated personal newspaper. Every claim links to its source; what cannot be verified is not published.' }}</p>
+  <p><a href="{{ root }}{{ lang }}/about.html">{{ T.about[lang] }}</a> · <a href="{{ root }}{{ lang }}/trackers.html">{{ T.trackers[lang] }}</a> · <a href="{{ root }}status.html">{{ T.status[lang] }}</a></p>
+</footer>
+<script src="{{ root }}static/ledger.js" defer></script>
+</body>
+</html>

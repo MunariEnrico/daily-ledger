@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m with context %}
+{% set c = s.content[lang] %}
+{% block title %}{{ c.headline }} — {{ site.title }}{% endblock %}
+{% block otherlang %}{{ root }}{{ date }}/{{ 'en' if lang == 'it' else 'it' }}/s/{{ s.id }}.html{% endblock %}
+{% block main %}
+<article class="story">
+  {{ m.labels(s, lang) }}
+  <h1 class="story-h">{{ c.headline }}</h1>
+  {% if c.subheadline %}<p class="dek">{{ c.subheadline }}</p>{% endif %}
+  <p class="meta">{{ T.published[lang] }} {{ (s.published_at or s.created_at) | when(lang) }} · {{ m.byline(s, lang) | striptags }}</p>
+  {% if s.updates %}<p class="notice">{{ T.update_of[lang] }} {{ s.updates.date }}: <a href="{{ root }}{{ s.updates.date }}/{{ lang }}/s/{{ s.updates.story_id }}.html">{{ s.updates.headline[lang] }}</a></p>{% endif %}
+  {% for corr in s.corrections %}<p class="correction"><strong>{{ T.correction[lang] }} ({{ corr.at | when(lang) }}):</strong> {{ corr.note[lang] if corr.note is mapping else corr.note }}</p>{% endfor %}
+  {% if s.withdrawn %}<p class="correction">{{ s.withdrawn[lang] }}</p>{% endif %}
+  {% if s.conflicts %}<div class="conflict"><strong>{{ T.conflict[lang] }}:</strong>
+    {% for cf in s.conflicts %}{% for v in cf['values'] %}{{ v.value | num(lang, 0) }} ({{ v.sources | join(', ') }}){% if not loop.last %}; {% endif %}{% endfor %}{% endfor %}</div>{% endif %}
+
+  {% if s.kind == 'brief' %}
+    <p class="orig">{{ T.original_headline[lang] }} ({{ c.headline_lang | upper }})</p>
+    <p class="muted">{{ T.brief_note[lang] }}</p>
+  {% elif s.kind == 'analysis' %}
+    {% for key, en, it in [('current_situation','Where things stand','La situazione'),('evidence','What the evidence shows','Cosa dicono i dati'),('interpretations','Competing readings','Letture a confronto'),('implications','Implications','Implicazioni'),('uncertainties','What we do not know','Cosa non sappiamo'),('watch','What would confirm or challenge this','Cosa potrebbe confermarlo o smentirlo')] %}
+      {% if c[key] %}<h2 class="sub-h">{{ it if lang == 'it' else en }}</h2>{{ m.paras(c[key], lang) }}{% endif %}
+    {% endfor %}
+  {% else %}
+    <div class="story-body">{{ m.paras(c.body, lang) }}</div>
+    {% if c.why_it_matters %}<h2 class="sub-h">{{ T.why[lang] }} <span class="kind">({{ LABELS.analysis[lang] }})</span></h2>{{ m.paras(c.why_it_matters, lang) }}{% endif %}
+    {% if c.what_next %}<h2 class="sub-h">{{ T.next[lang] }}</h2>{{ m.paras(c.what_next, lang) }}{% endif %}
+    {% if c.key_facts %}<h2 class="sub-h">{{ T.key_facts[lang] }}</h2><ul class="facts">{% for p in c.key_facts %}<li>{{ p.text }}</li>{% endfor %}</ul>{% endif %}
+  {% endif %}
+
+  <h2 class="sub-h">{{ T.sources[lang] }}</h2>
+  <ol class="sources">
+  {% for e in s.evidence %}
+    <li><a href="{{ e.url }}" rel="noopener">{{ e.title }}</a> — {{ e.source_name }}{% if e.official %} ({{ 'fonte ufficiale' if lang == 'it' else 'official source' }}){% endif %}{% if e.published %}, {{ e.published | when(lang) }}{% endif %}.
+      <span class="muted">{{ ACCESS[e.access_level][lang] if ACCESS[e.access_level] else e.access_level }}{% if e.paywall %}, {{ 'a pagamento' if lang == 'it' else 'paywalled' }}{% endif %}; {{ T.retrieved[lang] }} {{ e.retrieved_at | when(lang) }}.</span></li>
+  {% endfor %}
+  </ol>
+
+  {% if s.claims %}
+  <details class="evidence"><summary>{{ T.evidence[lang] }}</summary>
+    <table><thead><tr><th>{{ 'Affermazione' if lang == 'it' else 'Claim' }}</th><th>{{ 'Stato' if lang == 'it' else 'Status' }}</th><th>{{ 'Passaggio a supporto (originale)' if lang == 'it' else 'Supporting passage (original)' }}</th><th>{{ T.sources[lang] }}</th></tr></thead><tbody>
+    {% for cl in s.claims %}<tr><td>{{ cl.text[lang] }}</td><td>{{ ({'verified': 'verificata', 'reported': 'riportata'} if lang == 'it' else {'verified': 'verified', 'reported': 'reported'})[cl.status] }}</td><td lang="{{ (s.evidence | selectattr('eid', 'in', cl.source_ids) | first or {}).lang }}">“{{ cl.support }}”</td><td>{{ (s.evidence | selectattr('eid', 'in', cl.source_ids) | map(attribute='source_name') | join(', ')) }}</td></tr>{% endfor %}
+    </tbody></table>
+    <p class="muted">{{ 'Controlli automatici superati' if lang == 'it' else 'Automated checks passed' }}: {{ 'numeri, date, citazioni, nomi, causalità, stato giuridico, attribuzione, coerenza italiano/inglese' if lang == 'it' else 'figures, dates, quotations, names, causation, legal status, attribution, Italian/English parity' }}. {{ 'Redatto da' if lang == 'it' else 'Drafted by' }}: {{ s.generated_by }}.</p>
+  </details>
+  {% endif %}
+
+  {% if s.all_reports and s.all_reports | length > s.evidence | length %}
+  <details class="evidence"><summary>{{ T.all_reports[lang] }} ({{ s.all_reports | length }})</summary>
+    <ul>{% for r in s.all_reports %}<li><a href="{{ r.url }}" rel="noopener">{{ r.title }}</a> — {{ r.source_name }}</li>{% endfor %}</ul>
+  </details>
+  {% endif %}
+
+  {% if s.versions %}
+  <details class="evidence"><summary>{{ 'Versioni precedenti' if lang == 'it' else 'Earlier versions' }} ({{ s.versions | length }})</summary>
+    {% for v in s.versions %}<div class="version"><p class="muted">{{ v.replaced_at | when(lang) }} — {{ v.reason }}</p><p><strong>{{ v.content[lang].headline }}</strong></p>{{ m.paras(v.content[lang].body or [], lang) }}</div>{% endfor %}
+  </details>
+  {% endif %}
+</article>
+{% endblock %}

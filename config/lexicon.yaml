@@ -1,0 +1,208 @@
+# Multilingual keyword lexicon used for deterministic classification.
+# Matching is case- and accent-insensitive on word boundaries; a trailing *
+# matches any word ending (inflaz* → inflazione, inflazionistico).
+
+topics:
+  finance:
+    - stock*, shares, equit*, bond*, yield*, treasur*, gilt*, bund, btp, spread, "central bank", ecb, bce, fed, "federal reserve", "bank of england", "interest rate*", "rate cut*", "rate hike*"
+    - bank, banks, banking, lender*, "asset manag*", fund*, etf*, ipo*, merger*, acquisition*, takeover*, buyout*, earnings, profit*, "quarterly results", revenue*, dividend*, investor*, nasdaq, "s&p", "dow jones", "ftse", "stoxx", nikkei, currenc*, euro, dollar, sterling, forex, commodit*, oil, brent, gold, gas, crypto*, bitcoin
+    - borsa, borse, azion*, obbligazion*, rendiment*, "piazza affari", "tassi", banca, banche, bancari*, fusion*, acquisizion*, opa, ops, utile, utili, ricavi, trimestral*, semestral*, dividend*, investitor*, consob, "titoli di stato", petrolio, oro
+    - bourse, action*, obligation*, banque*, taux, rachat*, bénéfice*, résultat*
+    - börse, aktie*, anleihe*, zins*, bank*, gewinn*
+  economics:
+    - gdp, economy, economic*, inflation*, unemployment, employment, jobs, payroll*, wages, wage, productivity, recession*, growth, "industrial production", trade, tariff*, export*, import*, deficit*, debt, "public finances", budget, "consumer confidence", "consumer prices", cpi, pmi, retail, manufactur*, forecast*, imf, oecd, eurostat
+    - pil, economi*, inflaz*, disoccupaz*, occupaz*, lavoro, salari*, stipend*, produttivit*, recession*, crescita, "produzione industriale", commercio, dazi, dazio, export, import, deficit, debito, bilancio, manovra, fiducia, prezzi, istat, previsioni, industria, imprese, pnrr
+    - économi*, croissance, chômage, emploi, salaire*, dette, déficit, budget, insee, statec, prix
+    - wirtschaft*, inflation, arbeitslos*, konjunktur, haushalt, schulden
+  politics:
+    - government, minister*, "prime minister", president*, parliament*, senate, congress, election*, vote, voting, campaign*, party, parties, coalition, opposition, white house, downing street, labour, conservative*, democrat*, republican*, mayor, governor, referendum, diplomac*, sanction*, summit, nato, "european commission", "european parliament", war, ceasefire, geopolit*, treaty, minister
+    - governo, ministr*, premier, presidente, parlamento, senato, camera, elezion*, voto, partito, partiti, coalizione, opposizione, maggioranza, sindaco, sindaci, regione, consiglio, referendum, diplomazi*, sanzion*, vertice, guerra, tregua, meloni, schlein, mattarella, quirinale, "palazzo chigi"
+    - gouvernement, ministre, président, assemblée, sénat, élection*, maire, député*
+    - regierung, minister*, wahl*, parlament, bürgermeister*, chamber, "chambre des députés"
+  society:
+    - health*, hospital*, nhs, school*, education, universit*, student*, housing, rent*, homeless*, migration, migrant*, refugee*, asylum, pension*, welfare, poverty, inequalit*, demograph*, birth*, population, ageing, aging, "public services", childcare, strike*, union*, protest*, cost of living, "social"
+    - sanit*, ospedal*, scuola, scuole, istruzione, universit*, student*, casa, case, affitt*, migrant*, migraz*, profugh*, asilo, pension*, welfare, povert*, disuguaglian*, demograf*, nascite, natalit*, popolazione, sciopero, scioperi, sindacat*, protest*, "caro vita", "servizi pubblici"
+    - santé, hôpita*, école*, logement*, loyer*, migrant*, retraite*, pauvreté, grève*
+    - gesundheit, schule*, wohnung*, miete*, rente*, streik*
+  tax:
+    - tax, taxes, taxation, taxpayer*, vat, "income tax", "capital gains", "inheritance tax", "wealth tax", "property tax", "corporation tax", hmrc, irs, "tax treaty", "tax credit*", "fiscal", levy, levies, duty, duties, "tax return*", "pillar two", "minimum tax", "council tax", "stamp duty"
+    - tasse, tassa, imposta, imposte, fisco, fiscal*, irpef, ires, iva, imu, tari, cedolare, "agenzia delle entrate", contribuent*, detrazion*, deduzion*, "flat tax", condono, rottamazione, "contributo di accesso", "imposta di soggiorno", accise
+    - impôt*, fiscal*, tva, taxe*, contribuable*
+    - steuer*, abgabe*
+  law:
+    - court*, judge*, ruling, judgment, verdict, lawsuit*, legal, law, laws, legislation, regulat*, regulator*, antitrust, competition, "consumer protection", privacy, gdpr, "data protection", "ai act", directive, compliance, fine, fined, supreme court, appeal*, "high court", "court of justice", cjeu, sec, fca, cssf, esma
+    - tribunal*, giudic*, sentenza, sentenze, ricorso, causa, legge, leggi, decreto, normativ*, regolament*, antitrust, concorrenza, privacy, garante, direttiva, "corte costituzionale", cassazione, tar, "consiglio di stato", multa, sanzione
+    - tribunal, juge, arrêt, loi, décret, règlement*
+    - gericht*, urteil*, gesetz*, verordnung*
+  crime:
+    - police, arrest*, murder*, killed, killing, shooting, stabbing, robbery, theft, fraud, investigat*, prosecutor*, charged, suspect*, trial, convicted, sentenced, prison, jail, crime*, criminal*, mafia, drug*, smuggl*, corruption, bribery, attack, terror*
+    - polizia, carabinieri, arrest*, omicid*, uccis*, accoltellat*, rapina, furto, truffa, frode, indagin*, indagat*, procura, pm, processo, condann*, carcere, reato, reati, criminal*, mafia, camorra, ndrangheta, droga, spaccio, corruzione, tangent*, attentato, femminicid*, sequestr*
+    - police, meurtre, arrestation*, enquête, procès, prison
+    - polizei, festnahme*, mord*, prozess*
+  culture:
+    - museum*, exhibition*, art, artist*, gallery, galleries, architect*, design, fashion, film, cinema, festival*, biennale, opera, theatre, theater, concert*, book*, literature, music, heritage, unesco, restaurant*, food, wine, chef
+    - museo, musei, mostra, mostre, arte, artist*, galleri*, architett*, design, moda, film, cinema, festival, biennale, opera, teatro, concert*, libro, libri, letteratura, musica, patrimonio, unesco, ristorant*, cucina, vino
+    - musée*, exposition*, mode, cinéma, théâtre, patrimoine
+    - museum*, ausstellung*, kunst, theater
+  travel:
+    - airline*, airport*, flight*, aviation, ryanair, easyjet, lufthansa, "ita airways", "british airways", rail, railway*, train*, eurostar, tourism, tourist*, travel*, visa*, passport*, schengen, etias, ees, hotel*, cruise*, booking, holiday*
+    - compagni* aere*, aeroport*, vol*, aviazione, treno, treni, ferrovi*, trenitalia, italo, turismo, turist*, viaggi*, visto, passaport*, albergh*, hotel, crociera, crociere, vacanz*
+    - aéroport*, vol, vols, train*, sncf, tourisme, touriste*
+    - flughafen, flug*, bahn, tourismus
+  # sub-topics used by city editions
+  housing:
+    - housing, rent*, rental*, landlord*, tenant*, mortgage*, "house price*", "property market", "real estate", homeless*, eviction*, "affordable hous*", apartment*, "short-term let*", airbnb, construction, developer*
+    - casa, case, abitativ*, affitt*, mutu*, immobil*, "edilizia", sfratt*, "case popolari", alloggi*, airbnb, "affitti brevi", cantier*
+    - logement*, loyer*, immobilier, hlm, wohnung*, wunnengsbau, mieten
+  transport:
+    - transport*, transit, subway, metro, bus, buses, tram*, train*, rail*, station*, traffic, road*, bridge*, airport*, port, ferry, ferries, vaporetto, mta, tfl, ratp, "tube", "underground", strike*, commut*, infrastructure, cycl*, "congestion charge"
+    - trasport*, metropolitana, metro, autobus, bus, tram, treno, treni, stazion*, traffico, strad*, ponte, ponti, aeroporto, porto, traghett*, vaporett*, actv, atm, atac, sciopero, pendolar*, infrastruttur*, cantier*, viabilit*
+    - transport*, métro, rer, tramway, gare*, grève, cfl, luxtram, mobilité
+  events:
+    - this weekend, festival*, concert*, exhibition*, opening*, premiere*, marathon, fair, "trade fair", show, tickets, "book now", event*
+    - questo weekend, festival, concert*, mostra, inaugurazion*, fiera, manifestazion*, evento, eventi, biglietti, prenotazion*, spettacol*, regata, carnevale
+    - ce week-end, festival, concert*, exposition*, salon
+
+low_value:   # items matching ONLY these (and no core topic) are dropped
+  - horoscope, oroscopo, celebrity, celebrit*, "reality show", gossip, vip, "love island", "strictly come dancing", "x factor", "grande fratello", "uomini e donne", recipe, ricetta, "lottery numbers", "lotto", superenalotto, "fantacalcio", "serie a", "premier league", champions league, "formula 1", "f1", nba, nfl, quiz, crossword, cruciverba, wordle, "best deals", "black friday deals", offerte, sconti, coupon
+
+practical:  # signals of practical relevance for households & taxpayers
+  - deadline*, scadenz*, "from today", "da oggi", "dal 1", strike*, sciopero, scioperi, closure*, chiusur*, closed, chiuso, chiusa, "road closure", deviazion*, bonus, rimborso, refund*, "price rise*", aument*, rincar*, bollett*, bill*, rent*, affitt*, mutuo, mortgage*, pension*, "new rules", "nuove regole", obbligo, obblighi, "how to apply", "domanda", requisiti, eligib*, allerta, alert, warning, "acqua alta", maltempo, weather warning, vaccin*
+
+countries:
+  IT: [italy, italian*, italia, italian*, rome, roma, milan, milano, venice, venezia, meloni, mattarella, "palazzo chigi", istat, "banca d'italia", "bank of italy", consob, lombardia, lombardy, veneto, lazio, sicilia, sicily, napoli, naples, torino, turin, firenze, florence, genova, bologna]
+  US: [united states, "u.s.", usa, america*, washington, "white house", congress, senate, trump, vance, "federal reserve", fed, "wall street", "new york", california, texas, pentagon, "supreme court", democrat*, republican*]
+  UK: [britain, british, "united kingdom", "u.k.", england, english, scotland, wales, london, starmer, westminster, downing street, "bank of england", hmrc, "house of commons", nhs, ofcom, fca, labour, tories, conservatives, reform uk]
+  EU: [european union, "eu ", "e.u.", brussels, bruxelles, "european commission", "commissione europea", "european parliament", "parlamento europeo", eurozone, eurozona, "euro area", ecb, bce, "von der leyen", lagarde, eurogroup, eurostat, "ue "]
+  FR: [france, french, francia, francese, paris, parigi, macron, élysée, elysee, "banque de france", insee, marseille, lyon]
+  DE: [germany, german, germania, tedesc*, berlin, berlino, merz, bundestag, bundesbank, frankfurt, munich]
+  LU: [luxembourg, lussemburgo, luxembourgish, luxemburg, letzebuerg, frieden, cssf, statec, "grand duchy", granducato]
+  CN: [china, chinese, cina, cinese, beijing, pechino, "xi jinping", shanghai, "hong kong", taiwan]
+  IN: [india, indian, indiano, modi, delhi, mumbai, rbi, rupee]
+  JP: [japan, japanese, giappone, giapponese, tokyo, "bank of japan", boj, yen, nikkei]
+  ME: [israel, gaza, iran, saudi, "middle east", "medio oriente", lebanon, libano, syria, siria, qatar, uae, emirates, yemen, iraq, palestin*, hamas, hezbollah, "west bank", cisgiordania, egypt, egitto, turkey, turchia]
+
+cities:
+  nyc: [new york, nyc, manhattan, brooklyn, queens, bronx, "staten island", mta, nypd, "city hall", mamdani, adams, hochul, albany, "new york city"]
+  milan: [milan, milano, milanese, lombardia, lombardy, "palazzo marino", sala, sindaco di milano, atm, malpensa, linate, brera, navigli, "san siro", "porta nuova", bicocca, sesto san giovanni, "olimpiadi milano cortina", "milano cortina"]
+  rome: [rome, roma, romano, romana, gualtieri, campidoglio, lazio, atac, fiumicino, ciampino, ostia, trastevere, "gra ", giubileo, jubilee, vaticano, vatican]
+  venice: [venice, venezia, venezian*, veneziani, mestre, marghera, lido, murano, burano, giudecca, lagoon, laguna, mose, brugnaro, "ca' farsetti", "ca farsetti", actv, "marco polo", "san marco", rialto, "contributo di accesso", "access fee", veneto, zaia, stefani, "citta metropolitana di venezia", "chioggia", "jesolo", treviso, padova, padua, verona, vicenza]
+  paris: [paris, parigi, parisien*, "ile-de-france", "île-de-france", "hidalgo", ratp, "hotel de ville", "hôtel de ville", "seine", "montmartre", "la defense", "la défense", "roissy", "charles de gaulle", orly, "grand paris"]
+  london: [london, londra, londoner*, "sadiq khan", tfl, "city of london", "canary wharf", westminster, camden, hackney, "tower hamlets", southwark, heathrow, gatwick, "the tube", "elizabeth line", "met police", "metropolitan police"]
+  luxembourg: [luxembourg, lussemburgo, luxemburg, letzebuerg, kirchberg, esch, "esch-sur-alzette", cloche d'or, findel, "luxtram", cfl, frieden, chamber, "chambre des deputes", "chambre des députés", statec, cssf, "grand duchy", granducato, frontalier*, cross-border, grenzgänger, "luxembourg city", "ville de luxembourg"]
+
+# Agencies whose wire copy is commonly reproduced. An item crediting one of
+# these is attributed to that agency for independence counting.
+agency_markers:
+  ansa: ["(ansa)", "ansa)", "- ansa", "fonte ansa"]
+  agi: ["(agi)", "- agi"]
+  adnkronos: ["(adnkronos)", "adnkronos"]
+  lapresse: ["(lapresse)", "lapresse"]
+  reuters: ["(reuters)", "reuters -", "reuters reported", "secondo reuters", "according to reuters", "reuters)"]
+  afp: ["(afp)", "afp -", "agence france-presse", "according to afp"]
+  ap: ["(ap)", "associated press"]
+  dpa: ["(dpa)", "dpa -"]
+  bloomberg: ["(bloomberg)", "according to bloomberg", "secondo bloomberg", "bloomberg reported", "bloomberg news"]
+
+# Equivalent names across languages; used by the IT/EN name-parity check and
+# by cross-language clustering.
+aliases:
+  - [italy, italia, italian, italiano, italiana, italiani, italiane]
+  - [rome, roma]
+  - [milan, milano]
+  - [venice, venezia, venetian, veneziano, veneziana]
+  - [turin, torino]
+  - [florence, firenze]
+  - [naples, napoli]
+  - [genoa, genova]
+  - [padua, padova]
+  - [london, londra]
+  - [paris, parigi]
+  - [brussels, bruxelles]
+  - [luxembourg, lussemburgo, luxemburg]
+  - [germany, germania, german, tedesco, tedesca, tedeschi]
+  - [france, francia, french, francese, francesi]
+  - [britain, british, "united kingdom", uk, "regno unito", britannico, britannica, britannici]
+  - [england, inghilterra, english, inglese]
+  - [scotland, scozia]
+  - [europe, europa, european, europeo, europea, europei, europee]
+  - ["european union", eu, "unione europea", ue]
+  - ["european commission", commission, "commissione europea", commissione]
+  - ["european parliament", "parlamento europeo"]
+  - ["european central bank", ecb, "banca centrale europea", bce]
+  - ["federal reserve", fed]
+  - ["bank of england", boe, "banca d'inghilterra"]
+  - ["bank of italy", "banca d'italia", bankitalia]
+  - ["bank of japan", boj, "banca del giappone"]
+  - ["united states", us, usa, america, american, "stati uniti", americano, americana, americani, statunitense, statunitensi]
+  - [china, cina, chinese, cinese, cinesi]
+  - [japan, giappone, japanese, giapponese]
+  - [india, indian, indiano, indiana]
+  - [israel, israele, israeli, israeliano, israeliana, israeliani]
+  - [iran, iranian, iraniano, iraniana]
+  - [russia, russian, russo, russa, russi]
+  - [ukraine, ucraina, ukrainian, ucraino, ucraina]
+  - [spain, spagna, spanish, spagnolo]
+  - [greece, grecia, greek, greco]
+  - [switzerland, svizzera, swiss, svizzero]
+  - [belgium, belgio]
+  - [netherlands, "paesi bassi", olanda, dutch, olandese]
+  - [poland, polonia, polish, polacco]
+  - [turkey, turchia, turkish, turco]
+  - [egypt, egitto]
+  - ["middle east", "medio oriente"]
+  - [gaza, "striscia di gaza"]
+  - ["west bank", cisgiordania]
+  - [lebanon, libano]
+  - [syria, siria]
+  - [lombardy, lombardia]
+  - [sicily, sicilia]
+  - [sardinia, sardegna]
+  - [senate, senato]
+  - [chamber, camera]
+  - [parliament, parlamento]
+  - [government, governo]
+  - [treasury, tesoro]
+  - [congress, congresso]
+  - ["white house", "casa bianca"]
+  - ["supreme court", "corte suprema"]
+  - ["constitutional court", "corte costituzionale"]
+  - ["court of cassation", cassazione]
+  - ["house of commons", commons, "camera dei comuni"]
+  - ["house of lords", lords, "camera dei lord"]
+  - [nato, "north atlantic treaty organization"]
+  - ["united nations", un, onu, "nazioni unite"]
+  - [imf, fmi, "international monetary fund", "fondo monetario internazionale"]
+  - [oecd, ocse]
+  - [mose]
+  - ["official gazette", gazette, "gazzetta ufficiale", gazzetta, "official journal", "journal officiel"]
+  - ["chamber of deputies", "camera dei deputati", "chambre des deputes", "chambre des députés"]
+  - [lagoon, laguna]
+  - [mayor, sindaco]
+  - ["city council", "consiglio comunale"]
+  - [region, regione]
+  - [pope, papa]
+  - [vatican, vaticano]
+  - [labour, laburisti, laburista]
+  - [conservatives, conservatori, tories]
+  - [democrats, democratici]
+  - [republicans, repubblicani]
+  - [monday, lunedi, lunedì]
+  - [tuesday, martedi, martedì]
+  - [wednesday, mercoledi, mercoledì]
+  - [thursday, giovedi, giovedì]
+  - [friday, venerdi, venerdì]
+  - [saturday, sabato]
+  - [sunday, domenica]
+  - [january, gennaio]
+  - [february, febbraio]
+  - [march, marzo]
+  - [april, aprile]
+  - [may, maggio]
+  - [june, giugno]
+  - [july, luglio]
+  - [august, agosto]
+  - [september, settembre]
+  - [october, ottobre]
+  - [november, novembre]
+  - [december, dicembre]

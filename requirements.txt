@@ -1,0 +1,7 @@
+feedparser>=6.0
+requests>=2.31
+Jinja2>=3.1
+PyYAML>=6.0
+python-dateutil>=2.9
+trafilatura>=1.9     # optional: better text extraction for official documents
+pytest>=8.0

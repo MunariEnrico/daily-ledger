@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}{{ T.archive[lang] }} — {{ site.title }}{% endblock %}
+{% block otherlang %}{{ root }}{{ 'en' if lang == 'it' else 'it' }}/archive.html{% endblock %}
+{% block main %}
+<h1 class="page-h">{{ T.archive[lang] }}</h1>
+<form class="filters" id="archive-filters" role="search" onsubmit="return false">
+  <label class="f-wide">{{ 'Parole chiave' if lang == 'it' else 'Keywords' }}<input type="search" name="q" placeholder="{{ T.search_ph[lang] }}"></label>
+  <label>{{ 'Argomento' if lang == 'it' else 'Topic' }}<select name="topic"><option value="">{{ 'Tutti' if lang == 'it' else 'All' }}</option>{% for k, v in TOPIC_NAMES.items() %}<option value="{{ k }}">{{ v[lang] }}</option>{% endfor %}</select></label>
+  <label>{{ 'Paese o città' if lang == 'it' else 'Country or city' }}<select name="place"><option value="">{{ 'Tutti' if lang == 'it' else 'All' }}</option>
+    {% for c in ['IT','US','UK','EU','FR','DE','LU','CN','IN','JP','ME'] %}<option value="c:{{ c }}">{{ c }}</option>{% endfor %}
+    {% for cid, c in eds.cities.items() %}<option value="city:{{ cid }}">{{ c.name[lang] }}</option>{% endfor %}</select></label>
+  <label>{{ 'Dal' if lang == 'it' else 'From' }}<input type="date" name="from"></label>
+  <label>{{ 'Al' if lang == 'it' else 'To' }}<input type="date" name="to"></label>
+  <label>{{ 'Fonte' if lang == 'it' else 'Source' }}<input type="text" name="source" list="srcs"></label>
+  <label class="f-check"><input type="checkbox" name="saved"> {{ 'Solo salvati' if lang == 'it' else 'Saved only' }}</label>
+</form>
+<p class="muted" id="archive-count" aria-live="polite"></p>
+<ol class="archive-list" id="archive-results"></ol>
+<h2 class="sec-h">{{ 'Edizioni' if lang == 'it' else 'Editions' }}</h2>
+{% if dates %}<ul class="edition-list">{% for d in dates %}<li><a href="{{ root }}{{ d }}/{{ lang }}/index.html">{{ d }}</a></li>{% endfor %}</ul>
+{% else %}<p class="empty">{{ 'Nessuna edizione pubblicata finora.' if lang == 'it' else 'No edition has been published yet.' }}</p>{% endif %}
+{% endblock %}

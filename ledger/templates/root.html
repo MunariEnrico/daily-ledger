@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="{{ lang }}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ site.title }}</title>
+<script>
+(function(){var lang='{{ lang }}';try{var p=JSON.parse(localStorage.getItem('ledger-prefs')||'{}');if(p.lang)lang=p.lang;}catch(e){}
+{% if latest %}location.replace('{{ latest }}/'+lang+'/index.html');{% endif %}})();
+</script>
+<style>body{font:18px/1.5 Georgia,serif;max-width:36em;margin:4em auto;padding:0 1em;color:#1B2430;background:#FBFBF8}</style>
+</head><body>
+<h1>{{ site.title }}</h1>
+{% if latest %}<p><a href="{{ latest }}/it/index.html">Edizione italiana</a> · <a href="{{ latest }}/en/index.html">English edition</a></p>
+{% else %}<p>No edition has been published yet. The first one appears after the next 08:00 run (Europe/Luxembourg).</p>{% endif %}
+<p><a href="status.html">System status</a></p>
+</body></html>

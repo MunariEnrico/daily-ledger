@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}{{ T.about[lang] }} — {{ site.title }}{% endblock %}
+{% block otherlang %}{{ root }}{{ 'en' if lang == 'it' else 'it' }}/about.html{% endblock %}
+{% block main %}
+<h1 class="page-h">{{ T.about[lang] }}</h1>
+<div class="prose">
+{% if lang == 'it' %}
+<p>The Daily Ledger viene composto ogni mattina da un programma, non da una redazione umana. Raccoglie i feed pubblici di agenzie, giornali e istituzioni ufficiali, raggruppa gli articoli che parlano dello stesso sviluppo e scrive una notizia solo quando può collegare ogni affermazione alla sua fonte.</p>
+<h2 class="sub-h">Le regole</h2>
+<ul>
+<li>Ogni affermazione cita un passaggio letterale di una fonte identificata. Numeri, date, nomi e citazioni che non compaiono nelle fonti bloccano la pubblicazione: il controllo è nel codice, non affidato al modello di scrittura.</li>
+<li>Due testate dello stesso gruppo, o che ripubblicano lo stesso lancio d'agenzia, contano come una sola fonte.</li>
+<li>Quando abbiamo solo titolo e sommario lo diciamo, e l'articolo resta breve. Non aggiriamo mai i paywall.</li>
+<li>Proposte, bozze, leggi approvate e norme in vigore sono distinte. Arresti e indagini non sono condanne.</li>
+<li>Se una notizia non supera i controlli compare solo come titolo attribuito con il link all'originale. Una sezione può restare vuota.</li>
+<li>Le rettifiche restano visibili insieme alla versione precedente.</li>
+</ul>
+<h2 class="sub-h">Limiti</h2>
+<p>I controlli automatici rendono molto difficile pubblicare dettagli inventati, ma non possono escludere che una frase colleghi in modo improprio due fatti veri. Per questo ogni articolo mostra il registro delle prove e i link alle fonti.</p>
+{% else %}
+<p>The Daily Ledger is assembled every morning by software, not by a human newsroom. It reads the public feeds of news agencies, newspapers and official institutions, groups reports about the same development, and writes a story only when it can tie every claim to its source.</p>
+<h2 class="sub-h">The rules</h2>
+<ul>
+<li>Every claim cites a verbatim passage from an identified source. Figures, dates, names and quotations that do not appear in the sources block publication — the check is in code, not left to the drafting model.</li>
+<li>Two outlets from the same group, or two outlets reprinting the same wire story, count as one source.</li>
+<li>When we only had a headline and summary we say so, and the story stays short. Paywalls are never bypassed.</li>
+<li>Proposals, drafts, approved laws and rules in force are kept apart. Arrests and investigations are not convictions.</li>
+<li>A story that fails the checks appears only as an attributed headline linking to the original. A section may stay empty.</li>
+<li>Corrections stay visible next to the earlier version.</li>
+</ul>
+<h2 class="sub-h">Limits</h2>
+<p>Automated checks make invented specifics very hard to publish, but they cannot rule out a sentence that wrongly relates two true facts. That is why every story shows its evidence record and links to its sources.</p>
+{% endif %}
+<h2 class="sub-h">{{ 'Fonti monitorate' if lang == 'it' else 'Monitored sources' }} ({{ sources | length }})</h2>
+<table class="src-table"><thead><tr><th>{{ 'Fonte' if lang == 'it' else 'Source' }}</th><th>{{ 'Tipo' if lang == 'it' else 'Type' }}</th><th>{{ 'Paese' if lang == 'it' else 'Country' }}</th><th>{{ 'Lingua' if lang == 'it' else 'Language' }}</th><th>{{ 'Gruppo' if lang == 'it' else 'Owner group' }}</th></tr></thead>
+<tbody>{% for s in sources %}<tr><td><a href="{{ s.home }}" rel="noopener">{{ s.name }}</a>{% if s.paywall %} <span class="muted">({{ 'paywall' }})</span>{% endif %}</td><td>{{ s.type }}</td><td>{{ s.country }}</td><td>{{ s.lang }}</td><td>{{ s.owner }}</td></tr>{% endfor %}</tbody></table>
+</div>
+{% endblock %}

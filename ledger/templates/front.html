@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m with context %}
+{% block title %}{{ site.title }} — {{ ed.date | when(lang, False) }}{% endblock %}
+{% block otherlang %}{{ root }}{{ date }}/{{ 'en' if lang == 'it' else 'it' }}/index.html{% endblock %}
+{% block main %}
+{% set front = ed.international.front | select('in', S) | list %}
+<div class="front">
+  <section class="lead-col" aria-label="{{ T.five[lang] }}">
+    {% if front %}
+      <h1 class="edition-h">{{ S[front[0]].content[lang].headline }}</h1>
+      {{ m.card(S[front[0]], lang, root, date, 'lead') }}
+      <div class="tops">
+        {% for sid in front[1:] %}{{ m.card(S[sid], lang, root, date) }}{% endfor %}
+      </div>
+    {% else %}
+      <h1 class="edition-h">{{ T.edition_of[lang] }} {{ ed.date | when(lang, False) }}</h1>
+      <p class="empty">{{ T.no_news[lang] }}</p>
+    {% endif %}
+  </section>
+
+  <aside class="brief-col" aria-labelledby="mb">
+    <h2 id="mb" class="sec-h">{{ T.morning_brief[lang] }}</h2>
+    {% set B = ed.morning_brief %}
+    <ol class="brief-five">
+      {% for sid in B.top if sid in S %}<li><a href="{{ m.href(root, date, lang, sid) if S[sid].kind != 'brief' else S[sid].evidence[0].url }}">{{ S[sid].content[lang].headline }}</a></li>{% endfor %}
+    </ol>
+    {% for key, label in [('markets', T.for_markets[lang]), ('consequential', T.consequential[lang]), ('households', T.households[lang])] %}
+      <h3 class="brief-q">{{ label }}</h3>
+      {% if B[key] and B[key] in S %}{% set s = S[B[key]] %}
+        <p><a href="{{ m.href(root, date, lang, s.id) }}">{{ s.content[lang].headline }}</a>{% if s.content[lang].subheadline %} — {{ s.content[lang].subheadline }}{% endif %}</p>
+      {% else %}<p class="muted">{{ T.nothing_for[lang] }}</p>{% endif %}
+    {% endfor %}
+    <h3 class="brief-q">{{ T.watch[lang] }}</h3>
+    {% if B.watch or B.calendar %}
+      <ul class="watch">
+        {% for w in B.watch %}<li>{{ w.text[lang] }} <a href="{{ m.href(root, date, lang, w.story_id) }}" aria-label="{{ T.read_more[lang] }}">↗</a></li>{% endfor %}
+        {% for c in B.calendar %}<li><time>{{ c.when | when(lang) }}</time> — <a href="{{ c.url }}" rel="noopener">{{ c.title }}</a> ({{ c.source }})</li>{% endfor %}
+      </ul>
+    {% else %}<p class="muted">{{ T.none_scheduled[lang] }}</p>{% endif %}
+    <h3 class="brief-q">{{ T.editor_note[lang] }}</h3>
+    <p class="note">{{ ed.editor_note[lang] }}</p>
+  </aside>
+</div>
+
+{{ m.market(ed.market, lang) }}
+
+<section class="cities-strip" aria-labelledby="ct">
+  <h2 id="ct" class="sec-h">{{ T.cities[lang] }}</h2>
+  <ul>
+  {% for cid, c in eds.cities.items() %}
+    {% set cd = ed.cities[cid] if cid in ed.cities else {'front': []} %}
+    {% set lead = (cd.front | select('in', S) | list) %}
+    <li><a class="city-name" href="{{ root }}{{ date }}/{{ lang }}/city-{{ cid }}.html">{{ c.name[lang] }}</a>
+      {% if lead %}<span class="city-lead">{{ S[lead[0]].content[lang].headline }}</span>{% else %}<span class="city-lead muted">{{ T.no_news[lang] }}</span>{% endif %}</li>
+  {% endfor %}
+  </ul>
+</section>
+
+<div class="sections-preview">
+{% for sec in eds.international.sections %}
+  {% set ids = (ed.international.sections[sec.id] or []) | select('in', S) | list %}
+  <section class="sp" aria-labelledby="sp-{{ sec.id }}">
+    <h2 id="sp-{{ sec.id }}" class="sec-h"><a href="{{ root }}{{ date }}/{{ lang }}/{{ sec.id }}.html">{{ sec.label[lang] }}</a></h2>
+    {% if ids %}{% for sid in ids[:3] %}{{ m.card(S[sid], lang, root, date, 'mini') }}{% endfor %}{% else %}<p class="empty">{{ T.no_news[lang] }}</p>{% endif %}
+  </section>
+{% endfor %}
+</div>
+{% endblock %}

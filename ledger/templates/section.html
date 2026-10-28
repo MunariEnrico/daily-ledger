@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m with context %}
+{% block title %}{{ sec.label[lang] }} — {{ site.title }}{% endblock %}
+{% block otherlang %}{{ root }}{{ date }}/{{ 'en' if lang == 'it' else 'it' }}/{{ sec.id }}.html{% endblock %}
+{% block main %}
+<h1 class="page-h">{{ sec.label[lang] }}</h1>
+{% if sec.id == 'finance' %}{{ m.market(ed.market, lang) }}{% endif %}
+{{ m.stack(ids, S, lang, root, date) }}
+{% endblock %}

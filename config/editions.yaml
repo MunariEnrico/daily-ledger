@@ -1,0 +1,73 @@
+# Edition structure. Labels are bilingual; topics refer to config/lexicon.yaml.
+
+international:
+  name: {en: "International Edition", it: "Edizione internazionale"}
+  sections:
+    - {id: finance,   topics: [finance],   label: {en: "Finance & Markets",   it: "Finanza e mercati"}}
+    - {id: economics, topics: [economics], label: {en: "Economics",           it: "Economia"}}
+    - {id: politics,  topics: [politics],  label: {en: "Politics",            it: "Politica"}}
+    - {id: society,   topics: [society],   label: {en: "Society",             it: "Società"}}
+    - {id: tax,       topics: [tax],       label: {en: "Tax & Fiscal Policy", it: "Fisco e finanza pubblica"}}
+    - {id: law,       topics: [law],       label: {en: "Law & Regulation",    it: "Diritto e regolamentazione"}}
+    - {id: crime,     topics: [crime],     label: {en: "Current Affairs",     it: "Cronaca e attualità"}}
+    - {id: culture,   topics: [culture],   label: {en: "Culture & Lifestyle", it: "Cultura e stile di vita"}}
+    - {id: travel,    topics: [travel],    label: {en: "Travel",              it: "Viaggi"}}
+
+cities:
+  venice:
+    name: {en: "Venice", it: "Venezia"}
+    country: IT
+    priorities: {en: "City government, Mestre & the metropolitan area, tourism management, MOSE, housing and depopulation, transport, port and lagoon, heritage, municipal tax, Veneto", it: "Comune, Mestre e città metropolitana, gestione dei flussi turistici, MOSE, casa e spopolamento, trasporti, porto e laguna, patrimonio, tributi locali, Veneto"}
+  luxembourg:
+    name: {en: "Luxembourg", it: "Lussemburgo"}
+    country: LU
+    priorities: {en: "Government and parliament, tax, banking and funds, housing, jobs and salaries, cost of living, cross-border commuting, transport, EU institutions, immigration and labour policy", it: "Governo e parlamento, fisco, banche e fondi, casa, lavoro e salari, costo della vita, frontalieri, trasporti, istituzioni UE, immigrazione e politiche del lavoro"}
+  milan:
+    name: {en: "Milan", it: "Milano"}
+    country: IT
+    priorities: {en: "City council, Lombardy, housing, urban development, public transport, jobs, finance, fashion and design, tourism and municipal tax", it: "Comune, Regione Lombardia, casa, sviluppo urbano, trasporto pubblico, lavoro, finanza, moda e design, turismo e tributi locali"}
+  rome:
+    name: {en: "Rome", it: "Roma"}
+    country: IT
+    priorities: {en: "City government, Lazio, national institutions, public transport, housing, infrastructure, public administration, tourism, urban development", it: "Campidoglio, Regione Lazio, istituzioni nazionali, trasporto pubblico, casa, infrastrutture, pubblica amministrazione, turismo, sviluppo urbano"}
+  london:
+    name: {en: "London", it: "Londra"}
+    country: UK
+    priorities: {en: "Greater London Authority, the City, housing, transport, jobs, financial services, urban development, public safety, local government", it: "Greater London Authority, la City, casa, trasporti, lavoro, servizi finanziari, sviluppo urbano, sicurezza, enti locali"}
+  paris:
+    name: {en: "Paris", it: "Parigi"}
+    country: FR
+    priorities: {en: "City hall, Île-de-France, housing, transport, urban development, jobs, tax, business, tourism and culture", it: "Comune, Île-de-France, casa, trasporti, sviluppo urbano, lavoro, fisco, imprese, turismo e cultura"}
+  nyc:
+    name: {en: "New York", it: "New York"}
+    country: US
+    priorities: {en: "City Hall, city government, housing and commercial real estate, MTA, public safety, jobs, NYC business and finance, urban development, culture and events", it: "City Hall, amministrazione cittadina, casa e immobili commerciali, MTA, sicurezza, lavoro, economia e finanza di NYC, sviluppo urbano, cultura ed eventi"}
+
+city_sections:
+  - {id: government, topics: [politics],          label: {en: "Politics & Government",       it: "Politica e amministrazione"}}
+  - {id: economy,    topics: [economics, finance], label: {en: "Economy & Jobs",              it: "Economia e lavoro"}}
+  - {id: housing,    topics: [housing],           label: {en: "Property & Housing",          it: "Casa e immobili"}}
+  - {id: tax,        topics: [tax, law],          label: {en: "Tax & Regulation",            it: "Fisco e regole"}}
+  - {id: society,    topics: [society],           label: {en: "Society & Public Services",   it: "Società e servizi pubblici"}}
+  - {id: crime,      topics: [crime],             label: {en: "Crime & Courts",              it: "Cronaca e giustizia"}}
+  - {id: transport,  topics: [transport],         label: {en: "Transport & Infrastructure",  it: "Trasporti e infrastrutture"}}
+  - {id: culture,    topics: [culture],           label: {en: "Culture & Lifestyle",         it: "Cultura e stile di vita"}}
+  - {id: events,     topics: [events, travel],    label: {en: "Events & Travel",             it: "Eventi e viaggi"}}
+
+# Persistent story trackers. A published story joins a tracker when it matches
+# ALL of `all` (if given) and at least one of `any`.
+trackers:
+  - {id: ecb-rates, label: {en: "ECB interest rates", it: "Tassi BCE"}, any: [ecb, bce, lagarde, "european central bank", "banca centrale europea"], all_topics: [finance]}
+  - {id: fed-rates, label: {en: "Federal Reserve", it: "Federal Reserve"}, any: ["federal reserve", fomc, powell, "fed "], all_topics: [finance]}
+  - {id: boe-rates, label: {en: "Bank of England", it: "Bank of England"}, any: ["bank of england", "monetary policy committee", bailey]}
+  - {id: italy-budget, label: {en: "Italy's budget law", it: "Legge di bilancio"}, any: ["legge di bilancio", manovra, "budget law", "italian budget", "documento programmatico"]}
+  - {id: uk-budget, label: {en: "UK Budget & tax", it: "Bilancio UK e fisco"}, any: [reeves, "autumn budget", "spring statement", "uk budget", "the budget"], all_topics: [tax]}
+  - {id: us-tariffs, label: {en: "US tariffs & trade", it: "Dazi USA e commercio"}, any: [tariff, tariffs, dazi, dazio]}
+  - {id: italy-inflation, label: {en: "Italian inflation & GDP", it: "Inflazione e PIL in Italia"}, any: [istat], all_topics: [economics]}
+  - {id: venice-access-fee, label: {en: "Venice access fee", it: "Contributo di accesso a Venezia"}, any: ["contributo di accesso", "access fee", "ticket d'accesso", "ticket di accesso", "day-tripper"]}
+  - {id: venice-mose, label: {en: "MOSE & high water", it: "MOSE e acqua alta"}, any: [mose, "acqua alta", "high water", "high tide"], cities: [venice]}
+  - {id: lux-housing, label: {en: "Luxembourg housing", it: "Casa in Lussemburgo"}, any: [housing, logement, wunneng, wohnung, rent, loyer, casa], cities: [luxembourg]}
+  - {id: nyc-housing, label: {en: "New York housing & rent", it: "Casa e affitti a New York"}, any: [rent, housing, "rent guidelines", "affordable"], cities: [nyc]}
+  - {id: london-transport, label: {en: "London transport", it: "Trasporti a Londra"}, any: [tfl, tube, "elizabeth line", "ulez", bus, strike], cities: [london]}
+  - {id: milan-cortina, label: {en: "Milan-Cortina legacy", it: "Eredità Milano-Cortina"}, any: ["milano cortina", "milan cortina", olympic, olimpiadi]}
+  - {id: eu-ai-regulation, label: {en: "EU tech regulation", it: "Regole UE sul digitale"}, any: ["ai act", "digital markets act", "digital services act", dma, dsa, gdpr]}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}{{ T.trackers[lang] }} — {{ site.title }}{% endblock %}
+{% block otherlang %}{{ root }}{{ 'en' if lang == 'it' else 'it' }}/trackers.html{% endblock %}
+{% block main %}
+<h1 class="page-h">{{ T.trackers[lang] }}</h1>
+<div class="trackers">
+{% for t in tracker_defs %}
+  {% set rec = trackers[t.id] if t.id in trackers else {'entries': []} %}
+  {% set es = rec.entries %}
+  <section class="tracker" aria-labelledby="tr-{{ t.id }}">
+    <h2 id="tr-{{ t.id }}" class="sub-h">{{ t.label[lang] }}</h2>
+    {% if es %}{% set last = es[-1] %}
+      {% if latest and last.date != latest %}<p class="muted">{{ T.no_tracker_news[lang] }}</p>{% endif %}
+      <p><strong>{{ T.latest_dev[lang] }} ({{ last.date }}):</strong> <a href="{{ root }}{{ last.date }}/{{ lang }}/s/{{ last.story_id }}.html">{{ last.headline[lang] }}</a>{% if last.subheadline[lang] %} — {{ last.subheadline[lang] }}{% endif %}</p>
+      {% if es | length > 1 %}{% set prev = es[-2] %}<p><strong>{{ T.previous_update[lang] }} ({{ prev.date }}):</strong> <a href="{{ root }}{{ prev.date }}/{{ lang }}/s/{{ prev.story_id }}.html">{{ prev.headline[lang] }}</a></p>{% endif %}
+      <p><strong>{{ T.next_milestone[lang] }}:</strong> {% if last.next[lang] %}{{ last.next[lang] | join(' ') }}{% else %}<span class="muted">{{ T.none_scheduled[lang] }}</span>{% endif %}</p>
+      <p class="muted">{{ T.sources[lang] }}: {% for src in last.sources %}<a href="{{ src.url }}" rel="noopener">{{ src.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
+    {% else %}<p class="muted">{{ T.no_tracker_news[lang] }}</p>{% endif %}
+  </section>
+{% endfor %}
+</div>
+{% endblock %}

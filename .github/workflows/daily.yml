@@ -1,0 +1,89 @@
+name: Daily edition
+
+# Three daily triggers in Europe/Luxembourg time (GitHub applies DST through the
+# IANA `timezone` field, supported since March 2026). `python -m ledger auto`
+# decides what to do from the clock and the stored state, so every trigger is
+# safe to repeat and a published edition is never rebuilt or re-sent:
+#   05:20  build and stage the edition (≈5–15 min with AI drafting)
+#   07:50  publish at 08:00 (waits up to 20 min); builds first if 05:20 never ran
+#   08:25  safety net: publishes (flagged late) if both earlier runs were delayed or dropped
+# GitHub does not guarantee start times; delays of a few minutes are normal.
+on:
+  schedule:
+    - cron: '20 5 * * *'
+      timezone: 'Europe/Luxembourg'
+    - cron: '50 7 * * *'
+      timezone: 'Europe/Luxembourg'
+    - cron: '25 8 * * *'
+      timezone: 'Europe/Luxembourg'
+  workflow_dispatch:
+    inputs:
+      command:
+        description: 'auto | build | publish | redraft | render | sources'
+        default: 'auto'
+        required: true
+
+permissions:
+  contents: write    # commit the archive in data/
+  pages: write       # deploy the site
+  id-token: write
+  models: read       # GitHub Models (free tier) via GITHUB_TOKEN
+
+concurrency:
+  group: daily-ledger
+  cancel-in-progress: false
+
+jobs:
+  edition:
+    runs-on: ubuntu-latest
+    timeout-minutes: 100
+    outputs:
+      deploy: ${{ steps.run.outputs.deploy }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Run the newsroom
+        id: run
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+          SITE_URL: ${{ vars.SITE_URL }}
+          LEDGER_CONTACT_URL: https://github.com/${{ github.repository }}
+          LOG_LEVEL: INFO
+        run: |
+          python -m ledger ${{ inputs.command || 'auto' }}
+          [ -d _site ] || python -m ledger render
+          grep -q '^deploy=' "$GITHUB_OUTPUT" || echo "deploy=true" >> "$GITHUB_OUTPUT"
+      - name: Commit archive and audit trail
+        if: always()
+        run: |
+          git config user.name  "daily-ledger-bot"
+          git config user.email "daily-ledger-bot@users.noreply.github.com"
+          git add data
+          if ! git diff --cached --quiet; then
+            git commit -m "Edition data $(TZ=Europe/Luxembourg date '+%Y-%m-%d %H:%M %Z')"
+            for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
+          fi
+      - uses: actions/upload-pages-artifact@v3
+        if: steps.run.outputs.deploy == 'true'
+        with:
+          path: _site
+
+  deploy:
+    needs: edition
+    if: needs.edition.outputs.deploy == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

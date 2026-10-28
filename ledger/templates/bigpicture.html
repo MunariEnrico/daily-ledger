@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m with context %}
+{% block title %}{{ T.big_picture[lang] }} — {{ site.title }}{% endblock %}
+{% block otherlang %}{{ root }}{{ date }}/{{ 'en' if lang == 'it' else 'it' }}/big-picture.html{% endblock %}
+{% block main %}
+<h1 class="page-h">{{ T.big_picture[lang] }}</h1>
+{% set shown = ids | select('in', S) | list %}
+{% if not shown %}<p class="empty">{{ T.big_picture_empty[lang] }}</p>{% endif %}
+{% for sid in shown %}{% set s = S[sid] %}{% set c = s.content[lang] %}
+<article class="analysis">
+  {{ m.labels(s, lang) }}
+  <h2 class="hl"><a href="{{ m.href(root, date, lang, sid) }}">{{ c.headline }}</a></h2>
+  {% if c.subheadline %}<p class="dek">{{ c.subheadline }}</p>{% endif %}
+  {% for key, en, it in [('current_situation','Where things stand','La situazione'),('evidence','What the evidence shows','Cosa dicono i dati'),('interpretations','Competing readings','Letture a confronto'),('implications','Implications','Implicazioni'),('uncertainties','What we do not know','Cosa non sappiamo'),('watch','What would confirm or challenge this','Cosa potrebbe confermarlo o smentirlo')] %}
+    {% if c[key] %}<h3 class="sub-h">{{ it if lang == 'it' else en }}</h3>{{ m.paras(c[key], lang) }}{% endif %}
+  {% endfor %}
+  {{ m.byline(s, lang) }}
+</article>
+{% endfor %}
+{% endblock %}

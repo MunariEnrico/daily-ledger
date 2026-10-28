@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}{{ T.status[lang] }} — {{ site.title }}{% endblock %}
+{% block langswitch %}{% endblock %}
+{% block main %}
+<h1 class="page-h">System status</h1>
+{% set r = status.run if status and status.run else None %}
+{% if not r %}<p class="empty">No run has completed yet.</p>{% else %}
+<dl class="status-grid">
+  <dt>Edition</dt><dd>{{ status.date }} — {{ status.state }}{% if status.late %} (published late){% endif %}</dd>
+  <dt>Last successful publication</dt><dd>{{ (status.last_published | when('en')) if status.last_published else '—' }}</dd>
+  <dt>Run</dt><dd>{{ r.started_at | when('en') }} → {{ (r.finished_at | when('en')) if r.finished_at else 'running' }} ({{ r.seconds }} s)</dd>
+  <dt>Sources checked</dt><dd>{{ r.sources.checked }} ({{ r.sources.ok }} ok, {{ r.sources.failed | length }} failed)</dd>
+  <dt>Articles retrieved</dt><dd>{{ r['items'].retrieved }} retrieved, {{ r['items'].fresh }} within {{ r.lookback_hours }} h</dd>
+  <dt>Unique stories (clusters)</dt><dd>{{ r.clusters }}</dd>
+  <dt>Selected</dt><dd>{{ r.candidates_planned }} planned, {{ r.candidates_with_evidence }} with valid evidence</dd>
+  <dt>Published</dt><dd>{{ r.stories.articles }} verified articles, {{ r.stories.briefs }} headline briefs, {{ r.stories.analyses }} analyses</dd>
+  <dt>Verification</dt><dd>{{ r.verification.unsupported_claims_detected }} unsupported details detected, {{ r.verification.unsupported_claims_blocked }} blocked; {{ r.verification.validation_failures }} drafts failed a check; {{ r.verification.repairs }} repaired; {{ r.verification.attribution_failures }} attribution failures; {{ r.verification.numerical_inconsistencies }} numerical inconsistencies</dd>
+  <dt>Italian edition</dt><dd>{{ status.get('editions_status', {}).get('it', 'ready' if r.stories.articles or r.stories.briefs else 'empty') }}</dd>
+  <dt>English edition</dt><dd>{{ status.get('editions_status', {}).get('en', 'ready' if r.stories.articles or r.stories.briefs else 'empty') }}</dd>
+  <dt>Drafting model</dt><dd>{{ r.llm_status }} — {{ r.llm.calls or 0 }} calls{% if r.llm.by_model %} ({% for k, v in r.llm.by_model.items() %}{{ k }}: {{ v }}{% if not loop.last %}, {% endif %}{% endfor %}){% endif %}{% if r.llm.exhausted_models %}; quota exhausted: {{ r.llm.exhausted_models | join(', ') }}{% endif %}</dd>
+  <dt>Market data</dt><dd>{{ r.market_status }}{% if r.market_errors %} — {{ r.market_errors | join('; ') }}{% endif %}</dd>
+  <dt>Email</dt><dd>{% if status.email %}{{ status.email.state }}{% if status.email.detail %} — {{ status.email.detail }}{% endif %}{% else %}not attempted{% endif %}</dd>
+  <dt>Current errors</dt><dd>{% if r.errors %}<ul>{% for e in r.errors[:15] %}<li><code>{{ e[:300] }}</code></li>{% endfor %}</ul>{% else %}none{% endif %}</dd>
+</dl>
+<h2 class="sec-h">Retrieval failures</h2>
+{% if r.sources.failures %}<table class="src-table"><tbody>{% for k, v in r.sources.failures.items() %}<tr><td>{{ k }}</td><td>{{ v }}</td></tr>{% endfor %}</tbody></table>{% else %}<p>None.</p>{% endif %}
+{% endif %}
+<h2 class="sec-h">Editions</h2>
+<table class="src-table"><thead><tr><th>Date</th><th>Status</th><th>Built</th><th>Published</th><th>Articles</th><th>Briefs</th></tr></thead><tbody>
+{% for d, e in index | dictsort(reverse=True) %}<tr><td>{{ d }}</td><td>{{ e.status }}{% if e.late %} (late){% endif %}</td><td>{{ (e.built_at | when('en')) if e.built_at else '' }}</td><td>{{ (e.published_at | when('en')) if e.published_at else '' }}</td><td>{{ e.articles }}</td><td>{{ e.briefs }}</td></tr>{% endfor %}
+</tbody></table>
+{% endblock %}

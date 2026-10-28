@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m with context %}
+{% block title %}{{ ccfg.name[lang] }} — {{ site.title }}{% endblock %}
+{% block otherlang %}{{ root }}{{ date }}/{{ 'en' if lang == 'it' else 'it' }}/city-{{ city }}.html{% endblock %}
+{% block main %}
+<h1 class="page-h">{{ ccfg.name[lang] }}</h1>
+<p class="city-prior"><strong>{{ T.priorities[lang] }}:</strong> {{ ccfg.priorities[lang] }}</p>
+{% set down_reason = None %}
+{% if cdata.sources_failed %}
+  <p class="notice">{{ T.sources_down[lang] }} {{ cdata.sources_failed | join(', ') }}.</p>
+  {% set down_reason = T.sources_down[lang] ~ ' ' ~ (cdata.sources_failed | join(', ')) %}
+{% endif %}
+<section aria-labelledby="lf"><h2 id="lf" class="sec-h">{{ T.local_front[lang] }}</h2>
+{% set lead = cdata.front | select('in', S) | list %}
+{% if lead %}
+  <div class="front city-front">
+    <div class="lead-col">{{ m.card(S[lead[0]], lang, root, date, 'lead') }}</div>
+    <div class="tops">{% for sid in lead[1:5] %}{{ m.card(S[sid], lang, root, date) }}{% endfor %}</div>
+  </div>
+{% else %}<p class="empty">{{ T.no_news[lang] }}</p>{% endif %}
+</section>
+{% for sec in eds.city_sections %}
+<section class="city-sec" aria-labelledby="cs-{{ sec.id }}">
+  <h2 id="cs-{{ sec.id }}" class="sec-h">{{ sec.label[lang] }}</h2>
+  {{ m.stack(cdata.sections[sec.id] or [], S, lang, root, date) }}
+</section>
+{% endfor %}
+<section class="city-sec" aria-labelledby="cs-out">
+  <h2 id="cs-out" class="sec-h">{{ T.outlook[lang] }}</h2>
+  {% set ids = (cdata.front + (cdata.sections.values() | sum(start=[]))) | unique | list %}
+  {% set nexts = [] %}
+  {% for sid in ids if sid in S and S[sid].kind == 'article' %}{% for p in S[sid].content[lang].what_next or [] %}{% set _ = nexts.append((sid, p.text)) %}{% endfor %}{% endfor %}
+  {% if nexts %}<ul class="watch">{% for sid, t in nexts %}<li>{{ t }} <a href="{{ m.href(root, date, lang, sid) }}" aria-label="{{ T.read_more[lang] }}">↗</a></li>{% endfor %}</ul>
+  {% else %}<p class="muted">{{ T.none_scheduled[lang] }}</p>{% endif %}
+</section>
+{% endblock %}

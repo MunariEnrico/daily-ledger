@@ -1,0 +1,85 @@
+{% macro href(root, date, lang, sid) %}{{ root }}{{ date }}/{{ lang }}/s/{{ sid }}.html{% endmacro %}
+
+{% macro labels(s, lang) %}
+<p class="labels">
+  {% for l in s.labels %}{% if LABELS[l] %}<span class="lab lab-{{ l }}">{{ LABELS[l][lang] }}</span>{% endif %}{% endfor %}
+  {% if s.corrections %}<span class="lab lab-corrected">{{ LABELS.corrected[lang] }}</span>{% endif %}
+  {% if s.legal_status and s.legal_status not in ('none', '') and LEGAL[s.legal_status] %}<span class="lab lab-legal">{{ LEGAL[s.legal_status][lang] }}</span>{% endif %}
+</p>
+{% endmacro %}
+
+{% macro byline(s, lang) %}
+<p class="byline">
+  {% if s.kind == 'article' or s.kind == 'analysis' %}
+    {% if s.n_independent >= 2 %}{{ 'Confermata da' if lang == 'it' else 'Confirmed by' }} {{ s.n_independent }} {{ 'fonti indipendenti' if lang == 'it' else 'independent sources' }}{% else %}{{ 'Fonte' if lang == 'it' else 'Source' }}: {{ s.evidence[0].source_name if s.evidence else '' }}{% endif %}
+    · {{ ACCESS[s.access][lang] if ACCESS[s.access] else s.access }}
+  {% else %}
+    {{ s.evidence[0].source_name }}{% if s.evidence[0].published %}, {{ s.evidence[0].published | when(lang) }}{% endif %}
+  {% endif %}
+</p>
+{% endmacro %}
+
+{% macro card(s, lang, root, date, size='std') %}
+{% set c = s.content[lang] %}
+<article class="card card-{{ size }} kind-{{ s.kind }}" data-story="{{ s.id }}" data-topic="{{ s.primary_topic }}">
+  {{ labels(s, lang) }}
+  {% if s.kind == 'brief' %}
+    <h3 class="hl"><a href="{{ s.evidence[0].url }}" rel="noopener" lang="{{ c.headline_lang }}">{{ c.headline }}</a></h3>
+    {% if c.headline_lang != lang %}<p class="orig">{{ T.original_headline[lang] }} ({{ c.headline_lang | upper }})</p>{% endif %}
+    {{ byline(s, lang) }}
+  {% else %}
+    <h3 class="hl"><a href="{{ href(root, date, lang, s.id) }}">{{ c.headline }}</a></h3>
+    {% if c.subheadline %}<p class="dek">{{ c.subheadline }}</p>{% endif %}
+    {% if size == 'lead' %}
+      {% for p in c.body[:2] %}<p class="body">{{ p.text }}</p>{% endfor %}
+    {% endif %}
+    {{ byline(s, lang) }}
+  {% endif %}
+  <button class="save" type="button" data-save="{{ s.id }}" data-date="{{ date }}" aria-pressed="false">{{ 'Salva' if lang == 'it' else 'Save' }}</button>
+</article>
+{% endmacro %}
+
+{% macro stack(ids, S, lang, root, date, empty_reason=None) %}
+{% set shown = ids | select('in', S) | list %}
+{% if shown %}
+<div class="stack">{% for sid in shown %}{{ card(S[sid], lang, root, date) }}{% endfor %}</div>
+{% else %}
+<p class="empty">{{ T.no_news[lang] }}</p>
+{% if empty_reason %}<p class="empty-why">{{ empty_reason }}</p>{% endif %}
+{% endif %}
+{% endmacro %}
+
+{% macro market(m, lang, compact=False) %}
+<section class="ledger" aria-labelledby="mk-{{ lang }}">
+  <h2 id="mk-{{ lang }}" class="sec-h">{{ T.markets[lang] }}</h2>
+  <p class="ledger-note">{{ T.data_note[lang] }}</p>
+  {% set groups = [('policy', 'Tassi ufficiali' if lang == 'it' else 'Policy rates'), ('bonds', 'Titoli di Stato' if lang == 'it' else 'Government bonds'), ('fx', 'Cambi' if lang == 'it' else 'Currencies'), ('commodities', 'Materie prime' if lang == 'it' else 'Commodities'), ('equities', 'Azioni' if lang == 'it' else 'Equities')] %}
+  <div class="ledger-grid">
+  {% for gid, gname in groups %}
+    {% set rows = m.rows | selectattr('group', 'equalto', gid) | list %}
+    {% if rows and (not compact or gid in ('policy', 'bonds', 'fx')) %}
+    <table class="ledger-t">
+      <caption>{{ gname }}</caption>
+      <tbody>
+      {% for r in rows %}
+        <tr class="st-{{ r.status }}">
+          <th scope="row">{{ r.label[lang] }}</th>
+          {% if r.status in ('ok', 'stale') %}
+            <td class="v">{{ r.value | num(lang, r.decimals or 2) }}{% if r.unit == '%' %}%{% elif r.unit == 'bp' %} {{ 'pb' if lang == 'it' else 'bp' }}{% endif %}</td>
+            <td class="d">{% if r.change is not none and r.frequency != 'event' %}<span class="{{ 'dn' if r.change < 0 else 'up' if r.change > 0 else '' }}" title="{{ T.computed[lang] }}">{{ '+' if r.change > 0 }}{{ r.change | num(lang, r.decimals or 2) }}</span>{% endif %}</td>
+            <td class="t"><a href="{{ r.source_url }}" rel="noopener" title="{{ r.provider }} — {{ r.instrument }} — {{ r.nature }}">{{ r.date }}</a>{% if r.status == 'stale' %} <em>({{ T.stale[lang] }})</em>{% endif %}{% if r.note %} <span class="n">{{ r.note }}</span>{% endif %}</td>
+          {% else %}
+            <td class="v na" colspan="3">{{ T.unavailable[lang] }}{% if r.reason %} — <span class="why">{{ r.reason[lang] }}</span>{% endif %}</td>
+          {% endif %}
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    {% endif %}
+  {% endfor %}
+  </div>
+  {% if m.summary and m.summary[lang] %}<ul class="ledger-sum">{% for n in m.summary[lang] %}<li>{{ n }}</li>{% endfor %}</ul>{% endif %}
+</section>
+{% endmacro %}
+
+{% macro paras(list, lang) %}{% for p in list %}<p>{{ p.text }}</p>{% endfor %}{% endmacro %}

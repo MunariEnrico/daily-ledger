@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m with context %}
+{% block title %}{{ T.edition_of[lang] }} {{ ed.date }} — {{ site.title }}{% endblock %}
+{% block otherlang %}{{ root }}{{ date }}/{{ 'en' if lang == 'it' else 'it' }}/index.html{% endblock %}
+{% block main %}
+<h1 class="page-h">{{ T.edition_of[lang] }} {{ ed.date | when(lang, False) }}</h1>
+<p class="muted">{{ 'Edizione d\'archivio in formato compatto: ogni notizia, con le sue fonti, è riportata integralmente qui sotto.' if lang == 'it' else 'Archived edition in compact form: every story and its sources appear in full below.' }}</p>
+<p class="note">{{ ed.editor_note[lang] }}</p>
+{% for s in S.values() | sort(attribute='score', reverse=True) %}{% set c = s.content[lang] %}
+<article class="story compact-story" id="{{ s.id }}">
+  {{ m.labels(s, lang) }}
+  <h2 class="hl">{{ c.headline }}</h2>
+  {% if c.subheadline %}<p class="dek">{{ c.subheadline }}</p>{% endif %}
+  {% for key in ['body', 'current_situation', 'evidence', 'interpretations', 'implications', 'uncertainties', 'watch', 'why_it_matters', 'what_next'] %}{% if c[key] %}{{ m.paras(c[key], lang) }}{% endif %}{% endfor %}
+  {% for corr in s.corrections %}<p class="correction"><strong>{{ T.correction[lang] }}:</strong> {{ corr.note[lang] if corr.note is mapping else corr.note }}</p>{% endfor %}
+  <ol class="sources">{% for e in s.evidence %}<li><a href="{{ e.url }}" rel="noopener">{{ e.title }}</a> — {{ e.source_name }}{% if e.published %}, {{ e.published | when(lang) }}{% endif %}</li>{% endfor %}</ol>
+</article>
+{% endfor %}
+{% endblock %}
