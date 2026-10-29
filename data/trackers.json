@@ -1,0 +1,170 @@
+{
+ "trackers": {
+  "ecb-rates": {
+   "label": {
+    "en": "ECB interest rates",
+    "it": "Tassi BCE"
+   },
+   "entries": [
+    {
+     "date": "2026-10-29",
+     "story_id": "s69b2013ee2",
+     "headline": {
+      "en": "Lagarde to leave ECB; Hernández de Cos and Knot lead succession race",
+      "it": "Lagarde lascia la BCE; Hernández de Cos e Knot in testa alla successione"
+     },
+     "subheadline": {
+      "en": "Christine Lagarde will depart on 7 February 2027, with two frontrunners vying for the presidency.",
+      "it": "Christine Lagarde uscirà il 7 febbraio 2027, con due candidati principali per la presidenza."
+     },
+     "next": {
+      "en": [],
+      "it": []
+     },
+     "sources": [
+      {
+       "name": "Financial Times",
+       "url": "https://www.ft.com/content/281690fe-ac0c-43f1-9a36-a3e6b5ee175d?syn-25a6b1a6=1"
+      },
+      {
+       "name": "Money.it",
+       "url": "https://www.money.it/dopo-lagarde-chi-sara-il-nuovo-presidente-bce-tutti-i-possibili-successori-da-hernandez-de-cos-e-knot-e-panetta"
+      }
+     ]
+    }
+   ],
+   "checked": "2026-10-29"
+  },
+  "fed-rates": {
+   "label": {
+    "en": "Federal Reserve",
+    "it": "Federal Reserve"
+   },
+   "entries": [],
+   "checked": "2026-10-29"
+  },
+  "boe-rates": {
+   "label": {
+    "en": "Bank of England",
+    "it": "Bank of England"
+   },
+   "entries": [],
+   "checked": "2026-10-29"
+  },
+  "italy-budget": {
+   "label": {
+    "en": "Italy's budget law",
+    "it": "Legge di bilancio"
+   },
+   "entries": [
+    {
+     "date": "2026-10-29",
+     "story_id": "sdf0a5c0b5e",
+     "headline": {
+      "en": "Palazzo Chigi adopts draft budget law featuring new social and tax measures",
+      "it": "Palazzo Chigi adotta il disegno della legge di bilancio con nuove misure fiscali e sociali"
+     },
+     "subheadline": {
+      "en": "The draft budget law includes measures ranging from baby bonuses to commercial property tax changes.",
+      "it": "Il disegno della legge di bilancio include misure che vanno dai bonus bebè alle modifiche sugli immobili commerciali."
+     },
+     "next": {
+      "en": [],
+      "it": []
+     },
+     "sources": [
+      {
+       "name": "la Repubblica",
+       "url": "https://www.repubblica.it/economia/2026/10/29/news/manovra_misure_governo_meloni_inps_bollo_pensioni-425682960/"
+      },
+      {
+       "name": "Corriere della Sera Economia",
+       "url": "https://video.corriere.it/economia/meloni-dopo-l-ok-del-cdm-alla-manovra-una-legge-di-bilancio-da-26-miliardi-non-abbiamo-fatto-promesse-che-non-possiamo-mantenere/3b39fda9-4f8f-4fd1-a223-c7d1be5a9xlk"
+      }
+     ]
+    }
+   ],
+   "checked": "2026-10-29"
+  },
+  "uk-budget": {
+   "label": {
+    "en": "UK Budget & tax",
+    "it": "Bilancio UK e fisco"
+   },
+   "entries": [],
+   "checked": "2026-10-29"
+  },
+  "us-tariffs": {
+   "label": {
+    "en": "US tariffs & trade",
+    "it": "Dazi USA e commercio"
+   },
+   "entries": [],
+   "checked": "2026-10-29"
+  },
+  "italy-inflation": {
+   "label": {
+    "en": "Italian inflation & GDP",
+    "it": "Inflazione e PIL in Italia"
+   },
+   "entries": [],
+   "checked": "2026-10-29"
+  },
+  "venice-access-fee": {
+   "label": {
+    "en": "Venice access fee",
+    "it": "Contributo di accesso a Venezia"
+   },
+   "entries": [],
+   "checked": "2026-10-29"
+  },
+  "venice-mose": {
+   "label": {
+    "en": "MOSE & high water",
+    "it": "MOSE e acqua alta"
+   },
+   "entries": [],
+   "checked": "2026-10-29"
+  },
+  "lux-housing": {
+   "label": {
+    "en": "Luxembourg housing",
+    "it": "Casa in Lussemburgo"
+   },
+   "entries": [],
+   "checked": "2026-10-29"
+  },
+  "nyc-housing": {
+   "label": {
+    "en": "New York housing & rent",
+    "it": "Casa e affitti a New York"
+   },
+   "entries": [],
+   "checked": "2026-10-29"
+  },
+  "london-transport": {
+   "label": {
+    "en": "London transport",
+    "it": "Trasporti a Londra"
+   },
+   "entries": [],
+   "checked": "2026-10-29"
+  },
+  "milan-cortina": {
+   "label": {
+    "en": "Milan-Cortina legacy",
+    "it": "Eredità Milano-Cortina"
+   },
+   "entries": [],
+   "checked": "2026-10-29"
+  },
+  "eu-ai-regulation": {
+   "label": {
+    "en": "EU tech regulation",
+    "it": "Regole UE sul digitale"
+   },
+   "entries": [],
+   "checked": "2026-10-29"
+  }
+ }
+}

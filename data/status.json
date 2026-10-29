@@ -1,6 +1,6 @@
 {
  "date": "2026-10-29",
- "state": "staged",
+ "state": "published",
  "run": {
   "started_at": "2026-10-29T18:50:20Z",
   "finished_at": "2026-10-29T18:51:22Z",
@@ -112,5 +112,12 @@
   "errors": [],
   "redrafted_at": "2026-10-29T19:55:09Z"
  },
- "updated_at": "2026-10-29T19:55:09Z"
+ "updated_at": "2026-10-29T20:29:34Z",
+ "last_published": "2026-10-29T20:29:34Z",
+ "late": true,
+ "email": {
+  "state": "disabled",
+  "detail": "email.enabled is false in settings"
+ },
+ "editions_status": null
 }

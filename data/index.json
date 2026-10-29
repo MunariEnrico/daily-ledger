@@ -1,11 +1,13 @@
 {
  "editions": {
   "2026-10-29": {
-   "status": "staged",
+   "status": "published",
    "started_at": "2026-10-29T18:50:20Z",
    "built_at": "2026-10-29T18:51:22Z",
    "articles": 4,
-   "briefs": 192
+   "briefs": 192,
+   "published_at": "2026-10-29T20:29:34Z",
+   "late": true
   }
  }
 }
