@@ -1,0 +1,65 @@
+{
+ "started_at": "2026-10-29T18:50:20Z",
+ "finished_at": "2026-10-29T18:51:22Z",
+ "seconds": 61.5,
+ "sources": {
+  "checked": 209,
+  "ok": 206,
+  "failed": [
+   "agi",
+   "europarl",
+   "statec"
+  ],
+  "failures": {
+   "agi": "feed parsed but contained no usable entries",
+   "europarl": "HTTP 202",
+   "statec": "feed parsed but contained no usable entries"
+  }
+ },
+ "items": {
+  "retrieved": 6942,
+  "fresh": 3297,
+  "dropped": {
+   "low_value": 23,
+   "too_old": 3558,
+   "date_missing": 24,
+   "opinion": 30
+  },
+  "calendar": 10
+ },
+ "lookback_hours": 30,
+ "clusters": 2471,
+ "candidates_planned": 196,
+ "candidates_with_evidence": 196,
+ "stories": {
+  "articles": 0,
+  "briefs": 196,
+  "analyses": 0
+ },
+ "verification": {
+  "drafts": 0,
+  "published_articles": 0,
+  "fallback_briefs": 196,
+  "repairs": 0,
+  "language_regenerations": 0,
+  "unsupported_claims_detected": 0,
+  "unsupported_claims_blocked": 0,
+  "attribution_failures": 0,
+  "numerical_inconsistencies": 0,
+  "validation_failures": 0,
+  "llm_errors": 3
+ },
+ "llm": {
+  "calls": 8,
+  "failures": 0,
+  "by_model": {},
+  "circuit_open": true,
+  "exhausted_models": [],
+  "errors": [],
+  "budget": 110
+ },
+ "llm_status": "unavailable",
+ "market_status": "ok",
+ "market_errors": [],
+ "errors": []
+}
