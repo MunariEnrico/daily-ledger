@@ -119,7 +119,7 @@ _UNIT_ALT = "|".join(sorted(
     [re.escape(x) for x in list(_SCALE) + list(_PCT) + list(_BP)], key=len, reverse=True))
 NUM_RE = re.compile(
     r"(?<![\w.,])(\d{1,3}(?:[.,]\d{3})+(?:[.,]\d+)?|\d+(?:[.,]\d+)?)"
-    r"(?:\s?(" + _UNIT_ALT + r"))?(?![\w])")
+    r"(?:[\s-]?(" + _UNIT_ALT + r"))?(?![\w])")
 
 _NUMBER_WORDS = {
     # en
@@ -276,9 +276,53 @@ def extract_quotes(text: str, min_words: int = 3) -> list[str]:
     return out
 
 
+_ALIAS_RX: list | None = None
+
+
+def canon(squashed: str) -> str:
+    """Replace multi-word aliases by one canonical form (European Central Bank
+    → ecb, Banca centrale europea → ecb …) so a verbatim check is not defeated
+    by an institution written out in full in one place and abbreviated in the other."""
+    global _ALIAS_RX
+    if _ALIAS_RX is None:
+        from . import config
+        pairs = []
+        for grp in config.lexicon()["aliases"]:
+            target = squash(grp[0])
+            for a in grp:
+                a2 = squash(a)
+                if a2 and a2 != target:
+                    pairs.append((a2, target))
+        pairs.sort(key=lambda x: -len(x[0]))
+        _ALIAS_RX = [(re.compile(r"\b" + re.escape(a) + r"\b"), t) for a, t in pairs]
+    out = f" {squashed} "
+    for rx, t in _ALIAS_RX:
+        out = rx.sub(t, out)
+    return re.sub(r"\s+", " ", out).strip()
+
+
 def span_in(span: str, haystack_squashed: str) -> bool:
-    s = squash(span)
-    return bool(s) and s in haystack_squashed
+    """Verbatim check. A support excerpt may skip text with an ellipsis
+    ("A … B"): every part must then occur, in order, in the same passage."""
+    parts = [squash(x) for x in re.split(r"\.\.\.|…|\[\.\.\.\]", span)]
+    parts = [x for x in parts if x]
+    if not parts:
+        return False
+    if len(parts) > 1 and any(len(x.split()) < 3 for x in parts):
+        return False
+    hay = haystack_squashed
+    hay_c = None
+    pos = 0
+    for part in parts:
+        i = hay.find(part, pos)
+        if i < 0:
+            hay_c = hay_c or canon(hay)
+            j = hay_c.find(canon(part))
+            if j < 0:
+                return False
+            continue
+        pos = i + len(part)
+    return True
 
 
 # ───────────────────────────────────────────── semantic markers
@@ -305,8 +349,8 @@ LEGAL_STATUS = {
                  "in kraft"],
     "published": ["gazzetta ufficiale", "official journal", "journal officiel", "published in the", "pubblicato in",
                   "statutory instrument", "bundesgesetzblatt"],
-    "judgment": ["ruled", "ruling", "judgment", "judgement", "verdict", "sentenza", "ha stabilito", "ha respinto",
-                 "ha accolto", "arret", "jugement", "urteil"],
+    "judgment": ["court ruled", "judge ruled", "ruling", "judgment", "judgement", "verdict", "sentenza", "arret",
+                 "jugement", "urteil"],
     "guidance": ["guidance", "circolare", "interpello", "risoluzione", "faq", "chiarimenti", "clarification"],
 }
 

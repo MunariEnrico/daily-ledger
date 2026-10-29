@@ -54,16 +54,16 @@ llm:
     - name: gemini          # free with a Google account: aistudio.google.com → Get API key
       endpoint: "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
       key_env: GEMINI_API_KEY
-      models: ["gemini-flash-latest", "gemini-flash-lite-latest"]
+      models: ["gemini-flash-lite-latest", "gemini-flash-latest"]   # flash-lite answered reliably on 29 Oct; flash timed out under load
     - name: cerebras        # free: cloud.cerebras.ai → API Keys
       endpoint: "https://api.cerebras.ai/v1/chat/completions"
       key_env: CEREBRAS_API_KEY
       models: ["gpt-oss-120b"]
   max_calls_per_run: 140        # hard budget across providers
   max_parallel: 2               # free tiers cap tokens per minute; more parallelism only causes waits
-  timeout_s: 120
+  timeout_s: 90
   temperature: 0.1
-  max_input_chars: 14000        # keeps each request within free per-minute token limits
+  max_input_chars: 10000        # keeps each request within free per-minute token limits
   max_output_tokens: 3000
   circuit_breaker_failures: 4   # a provider failing this many times in a row is switched off for the run
 

@@ -9,7 +9,7 @@ import traceback
 from collections import Counter
 from datetime import timedelta
 
-from . import cluster as clmod, classify, config, evidence as evmod, ingest, rank, store, textutil, timeutil
+from . import cluster as clmod, classify, config, evidence as evmod, ingest, rank, store, textutil, timeutil, validate
 from .llm import LLMClient
 from .market import Market
 from .writer import Writer
@@ -430,6 +430,9 @@ def build(date_str: str | None = None, llm=None, items_override=None, market_ove
     store.write_json(store.edition_dir(date_str) / "sources.json", res_dicts)
     # 2 normalise / filter
     news, calendar, dropped = prepare(raw, now)
+    # common words of the day (for the name check in the gate)
+    common = validate.common_words_from(i["title"] + ". " + i.get("summary", "") for i in news)
+    validate.set_common_words(common)
     # 3–4 cluster & rank
     cands = build_candidates(news, now)
     by_id = {c["cluster_id"]: c for c in cands}
@@ -521,7 +524,8 @@ def build(date_str: str | None = None, llm=None, items_override=None, market_ove
              "story_ids": list(old.get("stories", {}))}]
     store.save_edition(date_str, edition)
     save_state(date_str, {"plan": plan_, "inputs": inputs, "story_by_cluster": story_by_cluster, "calendar": calendar,
-                          "feed_results": res_dicts, "themes": [t["theme_id"] for t in big_picture_themes(cands, st)]})
+                          "feed_results": res_dicts, "themes": [t["theme_id"] for t in big_picture_themes(cands, st)],
+                          "common_words": sorted(common)})
     store.write_audit(date_str, audit)
     store.write_json(store.edition_dir(date_str) / "run.json", run)
     store.set_index(date_str, status="staged", built_at=edition["built_at"],
@@ -611,6 +615,11 @@ def redraft(date_str: str, llm=None, only_briefs: bool = True, force: bool = Fal
     llm = llm if llm is not None else LLMClient()
     audit: list[dict] = []
     writer = Writer(llm, audit)
+    if state.get("common_words"):
+        validate.set_common_words(state["common_words"])
+    else:  # editions built before this field existed: rebuild it from stored evidence
+        validate.set_common_words(validate.common_words_from(
+            e["passage"] for inp in state["inputs"].values() for e in inp["evidence"]))
     changed = 0
     # highest-priority stories first (same order as the morning run), so a
     # limited AI quota is spent where it matters most

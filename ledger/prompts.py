@@ -27,12 +27,13 @@ HARD RULES (a deterministic checker rejects violations; rejected stories are not
 14. Natural, concise newspaper prose — native English for "en", native Italian for "it". Not a literal translation. No sensationalism, no opinion, no partisan adjectives.
 15. Do not write URLs or source lists — they are added automatically from the evidence.
 
+Keep the output compact: claims carry only id/type/source_ids/support (no translations), and the "en" and "it" objects are both REQUIRED — never stop after the claims.
+Copy each "support" excerpt exactly, character for character, including articles and full names; do not shorten names or merge two sentences (use "..." to skip text inside one passage).
 Return ONLY a JSON object with this exact shape:
 {
   "main_event": "one line: which development the story is about",
   "claims": [
-    {"id": "c1", "type": "fact|reported|official", "source_ids": ["e1"], "support": "verbatim excerpt from e1",
-     "en": "the claim in English", "it": "la stessa affermazione in italiano"}
+    {"id": "c1", "type": "fact|reported|official", "source_ids": ["e1"], "support": "verbatim excerpt from e1"}
   ],
   "legal_status": "none|proposed|draft|approved|published|in_force|guidance|judgment|unknown",
   "en": {

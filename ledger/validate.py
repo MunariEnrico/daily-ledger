@@ -37,6 +37,36 @@ HEDGED_SECTIONS = {"why_it_matters", "implications"}
 
 URL_RE = re.compile(r"(https?://|www\.)\S+", re.I)
 
+# Words seen in lower case in the day's news corpus are ordinary words, not
+# names, even when capitalised (title-case headlines, "il Consiglio").
+COMMON_WORDS: set[str] = set()
+
+
+def _base_common_words() -> set[str]:
+    try:
+        with open(config.CONFIG_DIR / "common_words.txt", encoding="utf-8") as fh:
+            return {ln.strip() for ln in fh if ln.strip() and not ln.startswith("#")}
+    except FileNotFoundError:
+        return set()
+
+
+def set_common_words(words) -> None:
+    COMMON_WORDS.clear()
+    COMMON_WORDS.update(_base_common_words())
+    COMMON_WORDS.update(words)
+
+
+def common_words_from(texts) -> set[str]:
+    cnt: Counter = Counter()
+    for t in texts:
+        for m in re.finditer(r"(?<![.!?:]\s)(?<!^)\b([a-zà-ÿ][a-zà-ÿ'’-]{2,})\b", t or ""):
+            cnt[textutil.fold(m.group(1))] += 1
+    return {w for w, c in cnt.items() if c >= 2}
+
+
+def names_in(text: str) -> set[str]:
+    return {a for a in cluster.anchors(text) if a not in COMMON_WORDS}
+
 
 class Report:
     def __init__(self):
@@ -149,7 +179,7 @@ def _check_atoms(text: str, lang: str, where: str, ev: dict, rep: Report, strict
                 f"asserts {', '.join(sorted(asserted - ev['legal']))} but evidence does not")
     if section in HEDGED_SECTIONS and not textutil.markers_in(f, textutil.FORECAST_HEDGE) and textutil.word_count(text) > 12:
         rep.warn("analysis_unhedged", lang, where, "analysis paragraph without conditional wording")
-    for a in cluster.anchors(text):
+    for a in names_in(text):
         if a not in ev["names"] and a not in textutil.STOPWORDS:
             (rep.err if strict_names else rep.warn)("unsupported_name", lang, where,
                                                       f"name '{a}' does not occur in the cited evidence")
@@ -208,8 +238,12 @@ def validate(draft: dict, evidence: list[dict], meta: dict, kind: str = "story")
         if not (obj.get("headline") or "").strip():
             rep.err("missing_field", lang, "headline", "headline missing")
         ev_all = EV.view(union_eids)
+        # headline words may also come from this version's own body (title-case
+        # headlines capitalise ordinary words; the body itself is checked strictly)
+        body_words = set(textutil.words(" ".join(p.get("text", "") for _, _, p in _paragraphs(obj, sections))))
+        ev_head = dict(ev_all, names=ev_all["names"] | body_words)
         for fld in ("headline", "subheadline"):
-            _check_atoms(obj.get(fld, ""), lang, fld, ev_all, rep, strict_names)
+            _check_atoms(obj.get(fld, ""), lang, fld, ev_head, rep, strict_names)
         lead = sections[0]
         if not obj.get(lead):
             rep.err("missing_field", lang, lead, f"{lead} missing")
@@ -263,7 +297,10 @@ def validate(draft: dict, evidence: list[dict], meta: dict, kind: str = "story")
     # legal status field
     ls = (draft.get("legal_status") or "none").lower()
     if ls in ("approved", "in_force", "published", "judgment") and ls not in EV.view(all_eids)["legal"]:
-        rep.err("legal_status_upgrade", "both", "legal_status", f"legal_status '{ls}' not supported by evidence")
+        # the label is ours to set: downgrade it instead of rejecting the story
+        # (assertions in the TEXT are still blocked above)
+        rep.warn("legal_status_downgraded", "both", "legal_status", f"legal_status '{ls}' not supported; shown as unclear")
+        draft["legal_status"] = "unknown"
     # 3 ── bilingual parity
     if isinstance(draft.get("en"), dict) and isinstance(draft.get("it"), dict):
         parity(draft, sections, rep, strict_names)
@@ -296,12 +333,14 @@ def parity(draft: dict, sections: list[str], rep: Report, strict_names: bool = T
         rep.err("parity_dates", "both", "parity", "weekdays differ between Italian and English")
     if _claim_refs(en, sections) != _claim_refs(it, sections):
         rep.err("parity_claims", "both", "parity", "the two versions cite different claims (facts differ)")
-    a_en, a_it = cluster.anchors(t_en), cluster.anchors(t_it)
-    head = cluster.anchors(en.get("headline", "")) | cluster.anchors(it.get("headline", ""))
+    a_en, a_it = names_in(t_en), names_in(t_it)
+    head = names_in(en.get("headline", "")) | names_in(it.get("headline", ""))
     only = (a_en - a_it) | (a_it - a_en)
     key = {a for a in only if a in head or textutil.fold(t_en).count(a) + textutil.fold(t_it).count(a) >= 3}
     if key:
-        (rep.err if strict_names else rep.warn)("parity_names", "both", "parity",
+        # names are already checked against the evidence in each language; a
+        # name present in one version only is a consistency warning, not a fact error
+        rep.warn("parity_names", "both", "parity",
                                                  f"names appear in only one language: {sorted(key)[:6]}")
     elif only:
         rep.warn("parity_names_minor", "both", "parity", f"minor name differences: {sorted(only)[:6]}")

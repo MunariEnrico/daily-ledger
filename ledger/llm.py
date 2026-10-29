@@ -169,6 +169,8 @@ class LLMClient:
         key = f"{prov.name}:{model}"
         if key not in self._no_json_mode:
             body["response_format"] = {"type": "json_object"}
+        if "gpt-oss" in model:
+            body["reasoning_effort"] = "low"   # reasoning tokens otherwise eat the output budget
         headers = {"Content-Type": "application/json", "Accept": "application/json"}
         if prov.token:
             headers["Authorization"] = f"Bearer {prov.token}"
@@ -183,8 +185,11 @@ class LLMClient:
                 wait = 60 * int(m.group(1) or 0) + float(m.group(2))
             daily = any(k in low for k in ("per day", "tokens per day", "requests per day", "(tpd)", "(rpd)", "daily", "perday", "byday", "86400"))
             raise _RateLimited(wait, daily=daily, detail=text[:200])
-        if r.status_code == 400 and ("response_format" in low or "json_object" in low or "json mode" in low) \
+        if r.status_code == 400 and ("response_format" in low or "json_object" in low or "json mode" in low
+                                     or "json_validate_failed" in low or "reasoning_effort" in low) \
                 and key not in self._no_json_mode:
+            # provider-side JSON enforcement failed: retry once with plain output
+            # (our parser extracts the JSON object and the gate validates it)
             self._no_json_mode.add(key)
             return self._post(prov, model, system, user, max_tokens)
         if r.status_code in (401, 403) or (r.status_code == 400 and "api key" in low):

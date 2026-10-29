@@ -67,7 +67,7 @@ def _attach(draft: dict, rep: validate.Report, evidence: list[dict]) -> dict:
     claims = []
     for cid, c in good.items():
         claims.append({"id": cid, "type": c.get("type", "fact"), "source_ids": c["source_ids"],
-                       "support": c["support"], "text": {"en": c.get("en", ""), "it": c.get("it", "")},
+                       "support": c["support"], "text": {"en": c.get("en") or c["support"], "it": c.get("it") or c["support"]},
                        "status": "verified" if len({evidence_origin(evidence, e) for e in c["source_ids"]}) > 1
                        or any(_ev(evidence, e)["official"] for e in c["source_ids"]) else "reported"})
     return {"kind": "article", "claims": claims, "evidence": ev_out, "legal_status": draft.get("legal_status", "none"),
