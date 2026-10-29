@@ -372,16 +372,14 @@
    "cities": [],
    "verification": "corroborated",
    "independent_origins": [
-    "axel_springer",
-    "gedi",
     "moneyit",
     "nikkei"
    ],
-   "n_independent": 1,
+   "n_independent": 2,
    "score": 86.2,
    "conflicts": [],
    "access": "headline_snippet",
-   "created_at": "2026-10-29T18:50:52Z",
+   "created_at": "2026-10-29T19:20:18Z",
    "versions": [],
    "corrections": [],
    "updates": null,
@@ -415,48 +413,77 @@
      "origin": "moneyit"
     }
    ],
-   "kind": "brief",
-   "content": {
-    "en": {
-     "headline": "Bce, Lagarde lascerà il 7 febbraio. La presidente verso il World Economic Forum",
-     "headline_lang": "it",
-     "subheadline": "",
-     "body": [],
-     "why_it_matters": [],
-     "what_next": [],
-     "key_facts": []
+   "kind": "article",
+   "claims": [
+    {
+     "id": "c1",
+     "type": "reported",
+     "source_ids": [
+      "e4"
+     ],
+     "support": "Christine Lagarde lascerà la Banca centrale europea il 7 febbraio 2027.",
+     "text": {
+      "en": "Christine Lagarde will leave the European Central Bank on 7 February 2027.",
+      "it": "Christine Lagarde lascerà la Banca centrale europea il 7 febbraio 2027."
+     },
+     "status": "reported"
     },
-    "it": {
-     "headline": "Bce, Lagarde lascerà il 7 febbraio. La presidente verso il World Economic Forum",
-     "headline_lang": "it",
-     "subheadline": "",
-     "body": [],
-     "why_it_matters": [],
-     "what_next": [],
-     "key_facts": []
+    {
+     "id": "c2",
+     "type": "reported",
+     "source_ids": [
+      "e2"
+     ],
+     "support": "Pablo Hernández de Cos and Klaas Knot are currently frontrunners to become the fifth president of Europe’s top monetary institution",
+     "text": {
+      "en": "Pablo Hernández de Cos and Klaas Knot are currently frontrunners to become the ECB’s fifth president.",
+      "it": "Pablo Hernández de Cos e Klaas Knot sono i principali candidati per diventare il quinto presidente della BCE."
+     },
+     "status": "reported"
     }
-   },
-   "claims": [],
-   "legal_status": "none",
-   "brief_reason": "AI unavailable: circuit open after repeated failures; last: openai/gpt-4.1-mini: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+   ],
    "evidence": [
     {
-     "eid": "e1",
-     "item_id": "f4f8eef29268ca12",
-     "source_id": "repubblica_economia",
-     "source_name": "la Repubblica Economia",
+     "eid": "e2",
+     "item_id": "be9848c726376189",
+     "source_id": "ft_home",
+     "source_name": "Financial Times",
      "source_type": "newspaper",
      "official": false,
-     "origin": "gedi",
-     "title": "Bce, Lagarde lascerà il 7 febbraio. La presidente verso il World Economic Forum",
-     "url": "https://www.repubblica.it/economia/2026/10/29/news/lagarde_lascia_bce_7_febbraio-425683908/",
-     "published": "2026-10-29T15:20:49Z",
+     "origin": "nikkei",
+     "title": "The two pragmatists leading the race to run the ECB",
+     "url": "https://www.ft.com/content/281690fe-ac0c-43f1-9a36-a3e6b5ee175d?syn-25a6b1a6=1",
+     "published": "2026-10-29T14:04:42Z",
      "date_quality": "exact",
-     "retrieved_at": "2026-10-29T18:50:23Z",
+     "retrieved_at": "2026-10-29T18:50:28Z",
+     "access_level": "headline_snippet",
+     "lang": "en",
+     "passage": "The two pragmatists leading the race to run the ECB. Pablo Hernández de Cos and Klaas Knot are currently frontrunners to become the fifth president of Europe’s top monetary institution",
+     "paywall": true,
+     "url_check": {
+      "ok": true,
+      "code": 403,
+      "at": "2026-10-29T18:50:37Z"
+     },
+     "domain_mismatch": false
+    },
+    {
+     "eid": "e4",
+     "item_id": "39fa53f3bc807110",
+     "source_id": "moneyit",
+     "source_name": "Money.it",
+     "source_type": "specialist",
+     "official": false,
+     "origin": "moneyit",
+     "title": "Dopo Lagarde, chi sarà il nuovo presidente Bce? Tutti i possibili successori, da Hernández de Cos e Knot e Panetta",
+     "url": "https://www.money.it/dopo-lagarde-chi-sara-il-nuovo-presidente-bce-tutti-i-possibili-successori-da-hernandez-de-cos-e-knot-e-panetta",
+     "published": "2026-10-29T14:06:54Z",
+     "date_quality": "exact",
+     "retrieved_at": "2026-10-29T18:50:22Z",
      "access_level": "headline_snippet",
      "lang": "it",
-     "passage": "Bce, Lagarde lascerà il 7 febbraio. La presidente verso il World Economic Forum. Per la successione in prima fila Klaas Knot e Pablo Hernandez de Cos. Cambio di poltrone in arrivo anche nel board. Berlino punta alla casella di capoeconomista. Intanto la Francia guarda alla Banca Centrale come possibile scudo alla tempesta sui mercati",
-     "paywall": true,
+     "passage": "Dopo Lagarde, chi sarà il nuovo presidente Bce? Tutti i possibili successori, da Hernández de Cos e Knot e Panetta. Christine Lagarde lascerà la Banca centrale europea il 7 febbraio 2027. Chi sarà il nuovo presidente Bce? Ecco chi sono i candidati alla successione e quali ostacoli dovranno superare. - Economia internazionale / Bce , Christine Lagarde , Fabio Panetta , Klaas Knot",
+     "paywall": false,
      "url_check": {
       "ok": true,
       "code": 200,
@@ -465,16 +492,92 @@
      "domain_mismatch": false
     }
    ],
-   "generated_by": "extractive",
+   "legal_status": "unknown",
+   "content": {
+    "en": {
+     "headline": "Lagarde to leave ECB; Hernández de Cos and Knot lead succession race",
+     "subheadline": "Christine Lagarde will depart on 7 February 2027, with two frontrunners vying for the presidency.",
+     "body": [
+      {
+       "text": "Christine Lagarde will leave the European Central Bank on 7 February 2027. Pablo Hernández de Cos and Klaas Knot are currently frontrunners to become the ECB’s fifth president.",
+       "claims": [
+        "c1",
+        "c2"
+       ]
+      }
+     ],
+     "why_it_matters": [
+      {
+       "text": "The choice could shape the ECB’s policy stance amid ongoing market uncertainty.",
+       "claims": [
+        "c2"
+       ]
+      }
+     ],
+     "what_next": [],
+     "key_facts": [
+      {
+       "text": "Lagarde departs on 7 February 2027.",
+       "claims": [
+        "c1"
+       ]
+      },
+      {
+       "text": "Hernández de Cos and Knot are front‑runners for the ECB presidency.",
+       "claims": [
+        "c2"
+       ]
+      }
+     ]
+    },
+    "it": {
+     "headline": "Lagarde lascia la BCE; Hernández de Cos e Knot in testa alla successione",
+     "subheadline": "Christine Lagarde uscirà il 7 febbraio 2027, con due candidati principali per la presidenza.",
+     "body": [
+      {
+       "text": "Christine Lagarde lascerà la Banca centrale europea il 7 febbraio 2027. Pablo Hernández de Cos e Klaas Knot sono i principali candidati per diventare il quinto presidente della BCE.",
+       "claims": [
+        "c1",
+        "c2"
+       ]
+      }
+     ],
+     "why_it_matters": [
+      {
+       "text": "La scelta potrebbe influenzare l’orientamento della BCE in un contesto di mercato incerto.",
+       "claims": [
+        "c2"
+       ]
+      }
+     ],
+     "what_next": [],
+     "key_facts": [
+      {
+       "text": "Lagarde lascia la BCE il 7 febbraio 2027.",
+       "claims": [
+        "c1"
+       ]
+      }
+     ]
+    }
+   },
+   "generated_by": "llm:groq:openai/gpt-oss-120b",
    "validation": {
     "passed": true,
     "errors": [],
-    "warnings": [],
-    "metrics": {},
-    "brief_reason": "AI unavailable: circuit open after repeated failures; last: openai/gpt-4.1-mini: JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+    "warnings": [
+     {
+      "code": "parity_names_minor",
+      "lang": "both",
+      "where": "parity",
+      "msg": "minor name differences: ['banca', 'bank', 'central', 'europe']"
+     }
+    ],
+    "metrics": {}
    },
    "labels": [
-    "brief"
+    "corroborated",
+    "snippet_based"
    ]
   },
   "s6cfef19791": {
@@ -5120,11 +5223,11 @@
     "gedi",
     "rcs"
    ],
-   "n_independent": 1,
+   "n_independent": 2,
    "score": 78.5,
    "conflicts": [],
    "access": "headline_snippet",
-   "created_at": "2026-10-29T18:50:54Z",
+   "created_at": "2026-10-29T19:41:42Z",
    "versions": [],
    "corrections": [],
    "updates": null,
@@ -5144,30 +5247,48 @@
      "origin": "rcs"
     }
    ],
-   "kind": "brief",
-   "content": {
-    "en": {
-     "headline": "Manovra, dai 100 euro per i bebè alla carta per le spese sanitarie degli anziani: tutte le misure",
-     "headline_lang": "it",
-     "subheadline": "",
-     "body": [],
-     "why_it_matters": [],
-     "what_next": [],
-     "key_facts": []
+   "kind": "article",
+   "claims": [
+    {
+     "id": "c1",
+     "type": "fact",
+     "source_ids": [
+      "e1"
+     ],
+     "support": "Manovra, dai 100 euro per i bebè alla carta per le spese sanitarie degli anziani: tutte le misure.",
+     "text": {
+      "en": "The measures include 100 euros for babies and a health expense card for the elderly.",
+      "it": "Le misure comprendono 100 euro per i bebè e una carta per le spese sanitarie degli anziani."
+     },
+     "status": "reported"
     },
-    "it": {
-     "headline": "Manovra, dai 100 euro per i bebè alla carta per le spese sanitarie degli anziani: tutte le misure",
-     "headline_lang": "it",
-     "subheadline": "",
-     "body": [],
-     "why_it_matters": [],
-     "what_next": [],
-     "key_facts": []
+    {
+     "id": "c2",
+     "type": "fact",
+     "source_ids": [
+      "e1"
+     ],
+     "support": "Climatizzatori nelle scuole, addio al bollo auto, cedolare secca per l’affitto degli immobili commerciali: sono solo alcuni punti del disegno della legge di bilancio varato ieri da Palazzo Chigi",
+     "text": {
+      "en": "Air conditioning in schools, the abolition of the car tax, and a flat tax for commercial property rentals are points in the draft budget law launched yesterday by Palazzo Chigi.",
+      "it": "Climatizzatori nelle scuole, addio al bollo auto e cedolare secca per l’affitto degli immobili commerciali sono punti del disegno della legge di bilancio varato ieri da Palazzo Chigi."
+     },
+     "status": "reported"
+    },
+    {
+     "id": "c3",
+     "type": "reported",
+     "source_ids": [
+      "e2"
+     ],
+     "support": "Meloni dopo l'ok del cdm alla Manovra: «Una legge di bilancio da 26 miliardi, non abbiamo fatto promesse che non possiamo mantenere».",
+     "text": {
+      "en": "Meloni stated after the cabinet approval of the maneuver that it is a 26 billion budget law and that they did not make promises they cannot keep.",
+      "it": "Meloni ha dichiarato dopo l'ok del cdm alla Manovra che si tratta di una legge di bilancio da 26 miliardi e che non hanno fatto promesse che non possono mantenere."
+     },
+     "status": "reported"
     }
-   },
-   "claims": [],
-   "legal_status": "none",
-   "brief_reason": "AI drafting disabled or not configured",
+   ],
    "evidence": [
     {
      "eid": "e1",
@@ -5192,18 +5313,126 @@
       "at": "2026-10-29T18:50:41Z"
      },
      "domain_mismatch": false
+    },
+    {
+     "eid": "e2",
+     "item_id": "2ed2aef4ac9ced80",
+     "source_id": "corriere_economia",
+     "source_name": "Corriere della Sera Economia",
+     "source_type": "newspaper",
+     "official": false,
+     "origin": "rcs",
+     "title": "Meloni dopo l'ok del cdm alla Manovra: «Una legge di bilancio da 26 miliardi, non abbiamo fatto promesse che non possiamo mantenere»",
+     "url": "https://video.corriere.it/economia/meloni-dopo-l-ok-del-cdm-alla-manovra-una-legge-di-bilancio-da-26-miliardi-non-abbiamo-fatto-promesse-che-non-possiamo-mantenere/3b39fda9-4f8f-4fd1-a223-c7d1be5a9xlk",
+     "published": "2026-10-28T17:10:14Z",
+     "date_quality": "exact",
+     "retrieved_at": "2026-10-29T18:50:22Z",
+     "access_level": "headline_snippet",
+     "lang": "it",
+     "passage": "Meloni dopo l'ok del cdm alla Manovra: «Una legge di bilancio da 26 miliardi, non abbiamo fatto promesse che non possiamo mantenere». Le immagini dalla conferenza stampa a Palazzo Chigi",
+     "paywall": true,
+     "url_check": {
+      "ok": true,
+      "code": 200,
+      "at": "2026-10-29T18:50:42Z"
+     },
+     "domain_mismatch": false
     }
    ],
-   "generated_by": "extractive",
+   "legal_status": "draft",
+   "content": {
+    "en": {
+     "headline": "Palazzo Chigi adopts draft budget law featuring new social and tax measures",
+     "subheadline": "The draft budget law includes measures ranging from baby bonuses to commercial property tax changes.",
+     "body": [
+      {
+       "text": "Palazzo Chigi launched a draft budget law containing measures such as 100 euros for babies, a health expense card for seniors, air conditioning in schools, the elimination of the car tax, and a flat tax on commercial property rentals.",
+       "claims": [
+        "c1",
+        "c2"
+       ]
+      },
+      {
+       "text": "According to Meloni following the cabinet green light, the budget law totals 26 billion, with the statement that they did not make promises they cannot keep.",
+       "claims": [
+        "c3"
+       ]
+      }
+     ],
+     "why_it_matters": [
+      {
+       "text": "The proposed draft budget law could introduce wide-ranging fiscal and social adjustments affecting households and businesses.",
+       "claims": [
+        "c1",
+        "c2"
+       ]
+      }
+     ],
+     "what_next": [],
+     "key_facts": [
+      {
+       "text": "Draft budget law valued at 26 billion.",
+       "claims": [
+        "c3"
+       ]
+      }
+     ]
+    },
+    "it": {
+     "headline": "Palazzo Chigi adotta il disegno della legge di bilancio con nuove misure fiscali e sociali",
+     "subheadline": "Il disegno della legge di bilancio include misure che vanno dai bonus bebè alle modifiche sugli immobili commerciali.",
+     "body": [
+      {
+       "text": "Palazzo Chigi ha varato un disegno della legge di bilancio che prevede 100 euro per i bebè, la carta per le spese sanitarie degli anziani, climatizzatori nelle scuole, l'addio al bollo auto e la cedolare secca per l’affitto degli immobili commerciali.",
+       "claims": [
+        "c1",
+        "c2"
+       ]
+      },
+      {
+       "text": "Secondo Meloni dopo l'ok del cdm alla Manovra, si tratta di una legge di bilancio da 26 miliardi, aggiungendo che non sono state fatte promesse che non possono mantenere.",
+       "claims": [
+        "c3"
+       ]
+      }
+     ],
+     "why_it_matters": [
+      {
+       "text": "Il disegno della legge di bilancio potrebbe introdurre modifiche fiscali e sociali rilevanti per famiglie e imprese.",
+       "claims": [
+        "c1",
+        "c2"
+       ]
+      }
+     ],
+     "what_next": [],
+     "key_facts": [
+      {
+       "text": "Legge di bilancio da 26 miliardi.",
+       "claims": [
+        "c3"
+       ]
+      }
+     ]
+    }
+   },
+   "generated_by": "llm:gemini:gemini-flash-lite-latest",
    "validation": {
     "passed": true,
     "errors": [],
-    "warnings": [],
-    "metrics": {},
-    "brief_reason": "AI drafting disabled or not configured"
+    "warnings": [
+     {
+      "code": "parity_names_minor",
+      "lang": "both",
+      "where": "parity",
+      "msg": "minor name differences: ['manovra']"
+     }
+    ],
+    "metrics": {}
    },
    "labels": [
-    "brief"
+    "corroborated",
+    "snippet_based"
    ]
   },
   "s9566a63f8b": {
@@ -5226,11 +5455,11 @@
     "gmg",
     "lebedev"
    ],
-   "n_independent": 1,
+   "n_independent": 2,
    "score": 76.2,
    "conflicts": [],
    "access": "headline_snippet",
-   "created_at": "2026-10-29T18:50:54Z",
+   "created_at": "2026-10-29T19:46:05Z",
    "versions": [],
    "corrections": [],
    "updates": null,
@@ -5250,30 +5479,48 @@
      "origin": "lebedev"
     }
    ],
-   "kind": "brief",
-   "content": {
-    "en": {
-     "headline": "‘Scattergun’ budget will still leave Britons facing higher energy bills, says thinktank",
-     "headline_lang": "en",
-     "subheadline": "",
-     "body": [],
-     "why_it_matters": [],
-     "what_next": [],
-     "key_facts": []
+   "kind": "article",
+   "claims": [
+    {
+     "id": "c1",
+     "type": "reported",
+     "source_ids": [
+      "e1"
+     ],
+     "support": "‘Scattergun’ budget will still leave Britons facing higher energy bills, says thinktank.",
+     "text": {
+      "en": "A thinktank stated that the budget will still leave Britons facing higher energy bills.",
+      "it": "Un thinktank ha dichiarato che la manovra lascerà comunque i britannici ad affrontare bollette energetiche più elevate."
+     },
+     "status": "reported"
     },
-    "it": {
-     "headline": "‘Scattergun’ budget will still leave Britons facing higher energy bills, says thinktank",
-     "headline_lang": "en",
-     "subheadline": "",
-     "body": [],
-     "why_it_matters": [],
-     "what_next": [],
-     "key_facts": []
+    {
+     "id": "c2",
+     "type": "reported",
+     "source_ids": [
+      "e2"
+     ],
+     "support": "The Resolution Foundation says the Budget will do little to address ‘the sharp challenges facing Britain’",
+     "text": {
+      "en": "The Resolution Foundation stated that the budget will do little to address the sharp challenges facing Britain.",
+      "it": "La Resolution Foundation ha affermato che la manovra farà poco per affrontare le acute sfide che il Regno Unito deve affrontare."
+     },
+     "status": "reported"
+    },
+    {
+     "id": "c3",
+     "type": "reported",
+     "source_ids": [
+      "e1"
+     ],
+     "support": "John Healey delivered a “scattergun” budget that did little to boost living standards",
+     "text": {
+      "en": "John Healey delivered a budget that did little to boost living standards according to the thinktank.",
+      "it": "John Healey ha presentato una manovra che ha fatto poco per stimolare il tenore di vita, secondo il thinktank."
+     },
+     "status": "reported"
     }
-   },
-   "claims": [],
-   "legal_status": "none",
-   "brief_reason": "AI drafting disabled or not configured",
+   ],
    "evidence": [
     {
      "eid": "e1",
@@ -5298,18 +5545,116 @@
       "at": "2026-10-29T18:50:41Z"
      },
      "domain_mismatch": false
+    },
+    {
+     "eid": "e2",
+     "item_id": "e6e226bf584d637d",
+     "source_id": "independent_uk",
+     "source_name": "The Independent · UK",
+     "source_type": "newspaper",
+     "official": false,
+     "origin": "lebedev",
+     "title": "Healey’s Budget slammed as ‘scattergun’ by think tank formerly run by Treasury minister",
+     "url": "https://www.independent.co.uk/news/uk/politics/resolution-foundation-think-tank-budget-torsten-bell-b3075451.html",
+     "published": "2026-10-29T13:52:35Z",
+     "date_quality": "exact",
+     "retrieved_at": "2026-10-29T18:50:29Z",
+     "access_level": "headline_snippet",
+     "lang": "en",
+     "passage": "Healey’s Budget slammed as ‘scattergun’ by think tank formerly run by Treasury minister. The Resolution Foundation says the Budget will do little to address ‘the sharp challenges facing Britain’",
+     "paywall": false,
+     "url_check": {
+      "ok": true,
+      "code": 200,
+      "at": "2026-10-29T18:50:44Z"
+     },
+     "domain_mismatch": false
     }
    ],
-   "generated_by": "extractive",
+   "legal_status": "none",
+   "content": {
+    "en": {
+     "headline": "Resolution Foundation criticises budget over energy bills",
+     "subheadline": "A leading economic thinktank has warned that energy bills will remain higher this year.",
+     "body": [
+      {
+       "text": "John Healey delivered a budget that did little to boost living standards, according to a leading economic thinktank. The Resolution Foundation stated that the budget will still leave Britons facing higher energy bills. Furthermore, the thinktank stated that the budget will do little to address the sharp challenges facing Britain.",
+       "claims": [
+        "c3",
+        "c1",
+        "c2"
+       ]
+      }
+     ],
+     "why_it_matters": [
+      {
+       "text": "Higher energy bills could mean households face continued financial pressure.",
+       "claims": [
+        "c1"
+       ]
+      }
+     ],
+     "what_next": [],
+     "key_facts": [
+      {
+       "text": "The Resolution Foundation criticised the recent budget.",
+       "claims": [
+        "c1",
+        "c2"
+       ]
+      }
+     ]
+    },
+    "it": {
+     "headline": "La Resolution Foundation critica la manovra sulle bollette",
+     "subheadline": "Un importante thinktank economico ha avvertito che le bollette energetiche rimarranno più alte quest'anno.",
+     "body": [
+      {
+       "text": "John Healey ha presentato una manovra che ha fatto poco per stimolare il tenore di vita, secondo un importante thinktank economico. La Resolution Foundation ha dichiarato che la manovra lascerà comunque i britannici ad affrontare bollette energetiche più elevate. Inoltre, la stessa organizzazione ha affermato che il bilancio farà poco per affrontare le acute sfide che il Regno Unito deve affrontare.",
+       "claims": [
+        "c3",
+        "c1",
+        "c2"
+       ]
+      }
+     ],
+     "why_it_matters": [
+      {
+       "text": "Bollette energetiche più elevate potrebbero significare che le famiglie affrontano una continua pressione finanziaria.",
+       "claims": [
+        "c1"
+       ]
+      }
+     ],
+     "what_next": [],
+     "key_facts": [
+      {
+       "text": "La Resolution Foundation ha criticato la recente manovra.",
+       "claims": [
+        "c1",
+        "c2"
+       ]
+      }
+     ]
+    }
+   },
+   "generated_by": "llm:gemini:gemini-flash-lite-latest",
    "validation": {
     "passed": true,
     "errors": [],
-    "warnings": [],
-    "metrics": {},
-    "brief_reason": "AI drafting disabled or not configured"
+    "warnings": [
+     {
+      "code": "parity_names_minor",
+      "lang": "both",
+      "where": "parity",
+      "msg": "minor name differences: ['britain', 'britons', 'regno', 'unito']"
+     }
+    ],
+    "metrics": {}
    },
    "labels": [
-    "brief"
+    "corroborated",
+    "snippet_based"
    ]
   },
   "s55a6a5e0ea": {
@@ -5535,11 +5880,11 @@
     "bea",
     "nyt"
    ],
-   "n_independent": 1,
+   "n_independent": 2,
    "score": 71.3,
    "conflicts": [],
    "access": "official_document",
-   "created_at": "2026-10-29T18:50:54Z",
+   "created_at": "2026-10-29T19:54:55Z",
    "versions": [],
    "corrections": [],
    "updates": null,
@@ -5559,30 +5904,61 @@
      "origin": "nyt"
     }
    ],
-   "kind": "brief",
-   "content": {
-    "en": {
-     "headline": "GDP (Advance Estimate), 3rd Quarter 2026",
-     "headline_lang": "en",
-     "subheadline": "",
-     "body": [],
-     "why_it_matters": [],
-     "what_next": [],
-     "key_facts": []
+   "kind": "article",
+   "claims": [
+    {
+     "id": "c1",
+     "type": "official",
+     "source_ids": [
+      "e1"
+     ],
+     "support": "Real gross domestic product (GDP) increased at an annual rate of 3.4 percent in the third quarter of 2026",
+     "text": {
+      "en": "Real gross domestic product increased at an annual rate of 3.4 percent in the third quarter of 2026",
+      "it": "Real gross domestic product increased at an annual rate of 3.4 percent in the third quarter of 2026"
+     },
+     "status": "verified"
     },
-    "it": {
-     "headline": "GDP (Advance Estimate), 3rd Quarter 2026",
-     "headline_lang": "en",
-     "subheadline": "",
-     "body": [],
-     "why_it_matters": [],
-     "what_next": [],
-     "key_facts": []
+    {
+     "id": "c2",
+     "type": "official",
+     "source_ids": [
+      "e1"
+     ],
+     "support": "In the second quarter, real GDP increased 2.2 percent.",
+     "text": {
+      "en": "In the second quarter, real GDP increased 2.2 percent.",
+      "it": "In the second quarter, real GDP increased 2.2 percent."
+     },
+     "status": "verified"
+    },
+    {
+     "id": "c3",
+     "type": "official",
+     "source_ids": [
+      "e1"
+     ],
+     "support": "The contributors to the increase in real GDP in the third quarter were increases in investment, consumer spending, and government spending that were partly offset by a decrease in exports.",
+     "text": {
+      "en": "The contributors to the increase in real GDP in the third quarter were increases in investment, consumer spending, and government spending that were partly offset by a decrease in exports.",
+      "it": "The contributors to the increase in real GDP in the third quarter were increases in investment, consumer spending, and government spending that were partly offset by a decrease in exports."
+     },
+     "status": "verified"
+    },
+    {
+     "id": "c4",
+     "type": "reported",
+     "source_ids": [
+      "e2"
+     ],
+     "support": "The economy grew 3.4 percent in the third quarter, the fastest pace in a year.",
+     "text": {
+      "en": "The economy grew 3.4 percent in the third quarter, the fastest pace in a year, according to The New York Times.",
+      "it": "The economy grew 3.4 percent in the third quarter, the fastest pace in a year, secondo The New York Times."
+     },
+     "status": "reported"
     }
-   },
-   "claims": [],
-   "legal_status": "none",
-   "brief_reason": "AI drafting disabled or not configured",
+   ],
    "evidence": [
     {
      "eid": "e1",
@@ -5607,18 +5983,131 @@
       "at": "2026-10-29T18:50:42Z"
      },
      "domain_mismatch": false
+    },
+    {
+     "eid": "e2",
+     "item_id": "b16cf27d59676408",
+     "source_id": "nyt_economy",
+     "source_name": "The New York Times · Economy",
+     "source_type": "newspaper",
+     "official": false,
+     "origin": "nyt",
+     "title": "U.S. GDP Increased 3.4% in Third Quarter",
+     "url": "https://www.nytimes.com/2026/10/29/business/economy/us-economy-gdp.html",
+     "published": "2026-10-29T15:58:35Z",
+     "date_quality": "exact",
+     "retrieved_at": "2026-10-29T18:50:25Z",
+     "access_level": "headline_snippet",
+     "lang": "en",
+     "passage": "U.S. GDP Increased 3.4% in Third Quarter. The economy grew 3.4 percent in the third quarter, the fastest pace in a year. Strong spending and growth contrast with the poor marks many voters are giving the economy.",
+     "paywall": true,
+     "url_check": {
+      "ok": true,
+      "code": 403,
+      "at": "2026-10-29T18:50:42Z"
+     },
+     "domain_mismatch": false
     }
    ],
-   "generated_by": "extractive",
+   "legal_status": "none",
+   "content": {
+    "en": {
+     "headline": "Real GDP Increased 3.4 Percent in Third Quarter",
+     "subheadline": "Real gross domestic product increased at an annual rate of 3.4 percent in the third quarter of 2026.",
+     "body": [
+      {
+       "text": "Real gross domestic product (GDP) increased at an annual rate of 3.4 percent in the third quarter of 2026. In the second quarter, real GDP increased 2.2 percent.",
+       "claims": [
+        "c1",
+        "c2"
+       ]
+      },
+      {
+       "text": "The contributors to the increase in real GDP in the third quarter were increases in investment, consumer spending, and government spending that were partly offset by a decrease in exports. The economy grew 3.4 percent in the third quarter, the fastest pace in a year, according to The New York Times.",
+       "claims": [
+        "c3",
+        "c4"
+       ]
+      }
+     ],
+     "why_it_matters": [
+      {
+       "text": "The increase in real GDP could reflect changes in investment, consumer spending, and government spending.",
+       "claims": [
+        "c3"
+       ]
+      }
+     ],
+     "what_next": [],
+     "key_facts": [
+      {
+       "text": "Real gross domestic product increased at an annual rate of 3.4 percent in the third quarter of 2026",
+       "claims": [
+        "c1"
+       ]
+      },
+      {
+       "text": "In the second quarter, real GDP increased 2.2 percent.",
+       "claims": [
+        "c2"
+       ]
+      }
+     ]
+    },
+    "it": {
+     "headline": "Real GDP Increased 3.4 Percent in Third Quarter",
+     "subheadline": "Real gross domestic product increased at an annual rate of 3.4 percent in the third quarter of 2026.",
+     "body": [
+      {
+       "text": "Real gross domestic product (GDP) increased at an annual rate of 3.4 percent in the third quarter of 2026. In the second quarter, real GDP increased 2.2 percent.",
+       "claims": [
+        "c1",
+        "c2"
+       ]
+      },
+      {
+       "text": "The contributors to the increase in real GDP in the third quarter were increases in investment, consumer spending, and government spending that were partly offset by a decrease in exports. The economy grew 3.4 percent in the third quarter, the fastest pace in a year, secondo The New York Times.",
+       "claims": [
+        "c3",
+        "c4"
+       ]
+      }
+     ],
+     "why_it_matters": [
+      {
+       "text": "The increase in real GDP could reflect changes in investment, consumer spending, and government spending.",
+       "claims": [
+        "c3"
+       ]
+      }
+     ],
+     "what_next": [],
+     "key_facts": [
+      {
+       "text": "Real gross domestic product increased at an annual rate of 3.4 percent in the third quarter of 2026",
+       "claims": [
+        "c1"
+       ]
+      },
+      {
+       "text": "In the second quarter, real GDP increased 2.2 percent.",
+       "claims": [
+        "c2"
+       ]
+      }
+     ]
+    }
+   },
+   "generated_by": "llm:gemini:gemini-flash-lite-latest",
    "validation": {
     "passed": true,
     "errors": [],
     "warnings": [],
-    "metrics": {},
-    "brief_reason": "AI drafting disabled or not configured"
+    "metrics": {}
    },
    "labels": [
-    "brief"
+    "official_source",
+    "corroborated"
    ]
   },
   "s455abcebbe": {
@@ -20946,17 +21435,17 @@
  },
  "international": {
   "front": [
-   "sc1656e0f78",
-   "s820efd50d2",
    "s69b2013ee2",
-   "s6cfef19791",
-   "s3f3e90d073"
+   "sdf0a5c0b5e",
+   "s9566a63f8b",
+   "s6eb637f597",
+   "sc1656e0f78"
   ],
   "sections": {
    "finance": [
+    "s69b2013ee2",
     "sc1656e0f78",
     "s820efd50d2",
-    "s69b2013ee2",
     "sd0746f82b0",
     "s10787ee7d8",
     "s5bb57a233f"
@@ -20964,9 +21453,9 @@
    "economics": [
     "sdf0a5c0b5e",
     "s9566a63f8b",
+    "s6eb637f597",
     "s55a6a5e0ea",
     "s3a94f302b7",
-    "s6eb637f597",
     "s455abcebbe"
    ],
    "politics": [
@@ -21869,61 +22358,103 @@
   "candidates_planned": 196,
   "candidates_with_evidence": 196,
   "stories": {
-   "articles": 0,
-   "briefs": 196,
+   "articles": 4,
+   "briefs": 192,
    "analyses": 0
   },
   "verification": {
-   "drafts": 0,
-   "published_articles": 0,
-   "fallback_briefs": 196,
-   "repairs": 0,
+   "drafts": 26,
+   "published_articles": 4,
+   "fallback_briefs": 218,
+   "repairs": 26,
    "language_regenerations": 0,
-   "unsupported_claims_detected": 0,
-   "unsupported_claims_blocked": 0,
-   "attribution_failures": 0,
-   "numerical_inconsistencies": 0,
-   "validation_failures": 0,
+   "unsupported_claims_detected": 158,
+   "unsupported_claims_blocked": 98,
+   "attribution_failures": 1,
+   "numerical_inconsistencies": 19,
+   "validation_failures": 48,
    "llm_errors": 3
   },
   "llm": {
-   "calls": 8,
-   "failures": 0,
-   "by_model": {},
-   "circuit_open": true,
-   "exhausted_models": [],
-   "errors": [],
-   "budget": 110
+   "calls": 140,
+   "failures": 24,
+   "by_model": {
+    "groq:openai/gpt-oss-120b": 34,
+    "gemini:gemini-flash-lite-latest": 18
+   },
+   "circuit_open": false,
+   "providers": [
+    {
+     "name": "groq",
+     "models": [
+      "openai/gpt-oss-120b",
+      "moonshotai/kimi-k2-instruct",
+      "meta-llama/llama-4-scout-17b-16e-instruct",
+      "llama-3.3-70b-versatile"
+     ],
+     "switched_off": false
+    },
+    {
+     "name": "gemini",
+     "models": [
+      "gemini-flash-latest",
+      "gemini-flash-lite-latest"
+     ],
+     "switched_off": false
+    }
+   ],
+   "exhausted_models": [
+    "gemini:gemini-flash-latest",
+    "groq:llama-3.3-70b-versatile",
+    "groq:meta-llama/llama-4-scout-17b-16e-instruct",
+    "groq:moonshotai/kimi-k2-instruct",
+    "groq:openai/gpt-oss-120b"
+   ],
+   "errors": [
+    "gemini:gemini-flash-latest: ReadTimeout: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120.0)",
+    "gemini:gemini-flash-latest: ReadTimeout: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120.0)",
+    "groq:openai/gpt-oss-120b: LLMError: HTTP 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"\"}}\n",
+    "groq:openai/gpt-oss-120b: LLMError: HTTP 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"\"}}\n",
+    "gemini:gemini-flash-latest: LLMError: HTTP 503: [{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n]",
+    "gemini:gemini-flash-latest: ReadTimeout: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120.0)",
+    "gemini:gemini-flash-latest: LLMError: HTTP 503: [{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n]",
+    "groq:openai/gpt-oss-120b: LLMError: HTTP 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"\"}}\n",
+    "groq:openai/gpt-oss-120b: LLMError: HTTP 400: {\"error\":{\"message\":\"Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"max completion tokens reached before gener",
+    "groq:openai/gpt-oss-120b: LLMError: HTTP 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"\"}}\n",
+    "gemini:gemini-flash-latest: rate limited ([{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-) → model skipped for this run",
+    "groq:openai/gpt-oss-120b: LLMError: HTTP 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"\"}}\n",
+    "groq:openai/gpt-oss-120b: LLMError: HTTP 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"\"}}\n",
+    "groq:openai/gpt-oss-120b: LLMError: HTTP 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"\"}}\n",
+    "groq:openai/gpt-oss-120b: rate limited ({\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m64grrf0ejr9f3bzvgvpy9tp` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 194775, Re) → model skipped for this run"
+   ],
+   "budget": 140
   },
-  "llm_status": "unavailable",
+  "llm_status": "ok",
   "market_status": "ok",
   "market_errors": [],
-  "errors": []
+  "errors": [],
+  "redrafted_at": "2026-10-29T19:55:09Z"
  },
  "morning_brief": {
   "top": [
-   "sc1656e0f78",
-   "s820efd50d2",
    "s69b2013ee2",
-   "s6cfef19791",
-   "s3f3e90d073"
+   "sdf0a5c0b5e",
+   "s9566a63f8b",
+   "s6eb637f597",
+   "sc1656e0f78"
   ],
-  "markets": null,
-  "consequential": null,
-  "households": null,
+  "markets": "s69b2013ee2",
+  "consequential": "sdf0a5c0b5e",
+  "households": "sdf0a5c0b5e",
   "watch": [],
   "calendar": []
  },
  "editor_note": {
-  "en": "This edition draws on 3,297 reports published in the past 30 hours by 206 of 209 monitored sources, grouped into 2,471 distinct developments. 0 stories passed every evidence check (0 confirmed by two or more independent outlets, 0 backed by official sources); 196 more appear only as attributed headlines because their details could not be verified to our standard. Sources unavailable this morning: agi, europarl, statec. Automated drafting was unavailable or limited today; affected stories are shown as headline briefs.",
-  "it": "Questa edizione si basa su 3.297 notizie pubblicate nelle ultime 30 ore da 206 delle 209 fonti monitorate, raggruppate in 2.471 sviluppi distinti. 0 articoli hanno superato tutti i controlli sulle fonti (0 confermati da almeno due testate indipendenti, 0 basati su fonti ufficiali); altri 196 compaiono solo come titoli attribuiti perché i dettagli non erano verificabili secondo i nostri criteri. Fonti non raggiungibili stamattina: agi, europarl, statec. La redazione automatica oggi non era disponibile o era limitata; le notizie interessate compaiono come titoli."
+  "en": "This edition draws on 3,297 reports published in the past 30 hours by 206 of 209 monitored sources, grouped into 2,471 distinct developments. 4 stories passed every evidence check (4 confirmed by two or more independent outlets, 1 backed by official sources); 192 more appear only as attributed headlines because their details could not be verified to our standard. Sources unavailable this morning: agi, europarl, statec.",
+  "it": "Questa edizione si basa su 3.297 notizie pubblicate nelle ultime 30 ore da 206 delle 209 fonti monitorate, raggruppate in 2.471 sviluppi distinti. 4 articoli hanno superato tutti i controlli sulle fonti (4 confermati da almeno due testate indipendenti, 1 basati su fonti ufficiali); altri 192 compaiono solo come titoli attribuiti perché i dettagli non erano verificabili secondo i nostri criteri. Fonti non raggiungibili stamattina: agi, europarl, statec."
  },
  "headline": {
-  "en": "MPS shareholders reject CEO Lovaglio plan to fend off Intesa Sanpaolo takeover",
-  "it": "MPS shareholders reject CEO Lovaglio plan to fend off Intesa Sanpaolo takeover"
- },
- "editions_status": {
-  "en": "ready",
-  "it": "ready"
+  "en": "Lagarde to leave ECB; Hernández de Cos and Knot lead succession race",
+  "it": "Lagarde lascia la BCE; Hernández de Cos e Knot in testa alla successione"
  }
 }

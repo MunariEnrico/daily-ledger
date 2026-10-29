@@ -35,36 +35,82 @@
   "candidates_planned": 196,
   "candidates_with_evidence": 196,
   "stories": {
-   "articles": 0,
-   "briefs": 196,
+   "articles": 4,
+   "briefs": 192,
    "analyses": 0
   },
   "verification": {
-   "drafts": 0,
-   "published_articles": 0,
-   "fallback_briefs": 196,
-   "repairs": 0,
+   "drafts": 26,
+   "published_articles": 4,
+   "fallback_briefs": 218,
+   "repairs": 26,
    "language_regenerations": 0,
-   "unsupported_claims_detected": 0,
-   "unsupported_claims_blocked": 0,
-   "attribution_failures": 0,
-   "numerical_inconsistencies": 0,
-   "validation_failures": 0,
+   "unsupported_claims_detected": 158,
+   "unsupported_claims_blocked": 98,
+   "attribution_failures": 1,
+   "numerical_inconsistencies": 19,
+   "validation_failures": 48,
    "llm_errors": 3
   },
   "llm": {
-   "calls": 8,
-   "failures": 0,
-   "by_model": {},
-   "circuit_open": true,
-   "exhausted_models": [],
-   "errors": [],
-   "budget": 110
+   "calls": 140,
+   "failures": 24,
+   "by_model": {
+    "groq:openai/gpt-oss-120b": 34,
+    "gemini:gemini-flash-lite-latest": 18
+   },
+   "circuit_open": false,
+   "providers": [
+    {
+     "name": "groq",
+     "models": [
+      "openai/gpt-oss-120b",
+      "moonshotai/kimi-k2-instruct",
+      "meta-llama/llama-4-scout-17b-16e-instruct",
+      "llama-3.3-70b-versatile"
+     ],
+     "switched_off": false
+    },
+    {
+     "name": "gemini",
+     "models": [
+      "gemini-flash-latest",
+      "gemini-flash-lite-latest"
+     ],
+     "switched_off": false
+    }
+   ],
+   "exhausted_models": [
+    "gemini:gemini-flash-latest",
+    "groq:llama-3.3-70b-versatile",
+    "groq:meta-llama/llama-4-scout-17b-16e-instruct",
+    "groq:moonshotai/kimi-k2-instruct",
+    "groq:openai/gpt-oss-120b"
+   ],
+   "errors": [
+    "gemini:gemini-flash-latest: ReadTimeout: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120.0)",
+    "gemini:gemini-flash-latest: ReadTimeout: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120.0)",
+    "groq:openai/gpt-oss-120b: LLMError: HTTP 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"\"}}\n",
+    "groq:openai/gpt-oss-120b: LLMError: HTTP 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"\"}}\n",
+    "gemini:gemini-flash-latest: LLMError: HTTP 503: [{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n]",
+    "gemini:gemini-flash-latest: ReadTimeout: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=120.0)",
+    "gemini:gemini-flash-latest: LLMError: HTTP 503: [{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n]",
+    "groq:openai/gpt-oss-120b: LLMError: HTTP 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"\"}}\n",
+    "groq:openai/gpt-oss-120b: LLMError: HTTP 400: {\"error\":{\"message\":\"Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"max completion tokens reached before gener",
+    "groq:openai/gpt-oss-120b: LLMError: HTTP 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"\"}}\n",
+    "gemini:gemini-flash-latest: rate limited ([{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-) → model skipped for this run",
+    "groq:openai/gpt-oss-120b: LLMError: HTTP 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"\"}}\n",
+    "groq:openai/gpt-oss-120b: LLMError: HTTP 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"\"}}\n",
+    "groq:openai/gpt-oss-120b: LLMError: HTTP 400: {\"error\":{\"message\":\"Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.\",\"type\":\"invalid_request_error\",\"code\":\"json_validate_failed\",\"failed_generation\":\"\"}}\n",
+    "groq:openai/gpt-oss-120b: rate limited ({\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m64grrf0ejr9f3bzvgvpy9tp` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 194775, Re) → model skipped for this run"
+   ],
+   "budget": 140
   },
-  "llm_status": "unavailable",
+  "llm_status": "ok",
   "market_status": "ok",
   "market_errors": [],
-  "errors": []
+  "errors": [],
+  "redrafted_at": "2026-10-29T19:55:09Z"
  },
- "updated_at": "2026-10-29T18:51:22Z"
+ "updated_at": "2026-10-29T19:55:09Z"
 }
