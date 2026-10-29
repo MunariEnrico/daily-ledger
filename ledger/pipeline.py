@@ -636,6 +636,8 @@ def redraft(date_str: str, llm=None, only_briefs: bool = True, force: bool = Fal
         for k, v in writer.metrics.items():
             run["verification"][k] = run["verification"].get(k, 0) + v
         run["llm_status"] = "ok" if writer.metrics["llm_errors"] == 0 else "degraded"
+        run["llm"] = llm.stats() if hasattr(llm, "stats") else run.get("llm", {})
+        run["redrafted_at"] = timeutil.iso(timeutil.now_utc())
         rebuilt = assemble(date_str, state["plan"], state["story_by_cluster"], ed["stories"],
                            [s for s in ed["stories"].values() if s["kind"] == "analysis"], state["feed_results"],
                            state["calendar"], ed["market"], run)
@@ -645,4 +647,7 @@ def redraft(date_str: str, llm=None, only_briefs: bool = True, force: bool = Fal
         store.save_edition(date_str, rebuilt)
         store.write_audit(date_str, audit)
         store.set_index(date_str, articles=run["stories"]["articles"], briefs=run["stories"]["briefs"])
+        _write_status(run, date_str, rebuilt.get("status", "staged"))
+        if rebuilt.get("status") == "published":
+            update_trackers(rebuilt)
     return {"redrafted": changed, "llm": llm.stats() if hasattr(llm, "stats") else {}}

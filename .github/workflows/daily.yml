@@ -19,7 +19,7 @@ on:
   workflow_dispatch:
     inputs:
       command:
-        description: 'auto | build | publish | redraft | render | sources'
+        description: 'auto | build | publish | redraft --force | render | sources'
         default: 'auto'
         required: true
 
@@ -27,7 +27,6 @@ permissions:
   contents: write    # commit the archive in data/
   pages: write       # deploy the site
   id-token: write
-  models: read       # GitHub Models (free tier) via GITHUB_TOKEN
 
 concurrency:
   group: daily-ledger
@@ -36,12 +35,12 @@ concurrency:
 jobs:
   edition:
     runs-on: ubuntu-latest
-    timeout-minutes: 100
+    timeout-minutes: 150
     outputs:
       deploy: ${{ steps.run.outputs.deploy }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
           cache: pip
@@ -49,7 +48,9 @@ jobs:
       - name: Run the newsroom
         id: run
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          CEREBRAS_API_KEY: ${{ secrets.CEREBRAS_API_KEY }}
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
@@ -72,7 +73,7 @@ jobs:
             git commit -m "Edition data $(TZ=Europe/Luxembourg date '+%Y-%m-%d %H:%M %Z')"
             for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
           fi
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         if: steps.run.outputs.deploy == 'true'
         with:
           path: _site

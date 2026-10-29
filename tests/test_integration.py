@@ -124,11 +124,11 @@ def test_llm_client_against_local_openai_compatible_server(monkeypatch):
     try:
         monkeypatch.setenv("LLM_ENDPOINT", f"http://localhost:{srv.server_port}/v1/chat/completions")
         monkeypatch.setenv("LLM_MODELS", "quota/model,good/model")
-        monkeypatch.setenv("GITHUB_TOKEN", "test-token")
+        monkeypatch.setenv("LLM_API_KEY", "test-token")
         c = llmmod.LLMClient()
         data, model = c.chat_json("system", "user")
-        assert model == "good/model" and data["en"]["headline"].startswith("Italian inflation")
-        assert "quota/model" in c.exhausted  # daily quota detected → model skipped for the rest of the run
+        assert model == "custom:good/model" and data["en"]["headline"].startswith("Italian inflation")
+        assert "custom:quota/model" in c.exhausted  # daily quota detected → model skipped for the rest of the run
         assert _Handler.calls[0][1] == "Bearer test-token"
         c.max_calls = c.calls
         with pytest.raises(llmmod.BudgetExhausted):
@@ -146,3 +146,29 @@ def test_registry_is_consistent():
         assert s.tier in (1, 2, 3, 4)
     cities = {c for s in srcs.values() for c in s.cities}
     assert cities == set(config.editions()["cities"])
+
+
+def test_provider_chain_falls_through(monkeypatch):
+    """A rejected key switches that provider off; the next provider is used."""
+    from ledger import llm as llmmod
+    monkeypatch.setenv("GROQ_API_KEY", "bad")
+    monkeypatch.setenv("GEMINI_API_KEY", "good")
+    monkeypatch.setattr(llmmod.time, "sleep", lambda s: None)
+
+    class R:
+        def __init__(self, code, body):
+            self.status_code, self.text, self.headers = code, json.dumps(body), {}
+        def json(self):
+            return json.loads(self.text)
+    seen = []
+
+    def post(url, json=None, headers=None, timeout=None):
+        seen.append(url)
+        if "groq" in url:
+            return R(401, {"error": {"message": "Invalid API Key"}})
+        return R(200, {"choices": [{"message": {"content": '{"ok": true}'}}]})
+    monkeypatch.setattr(llmmod.requests, "post", post)
+    c = llmmod.LLMClient()
+    data, model = c.chat_json("s", "u")
+    assert data == {"ok": True} and model.startswith("gemini:")
+    assert c.providers[0].open and sum("groq" in u for u in seen) == 1

@@ -60,7 +60,7 @@ On real drafts written from live evidence on 2026-10-28, the gate passed honest 
 | Ingestion, dedupe, clustering, ranking | ✅ | ✅ live (≈7,000 items → ≈2,300 developments, ~1–3 min) | ″ |
 | Evidence records, triangulation, conflicts | ✅ | ✅ unit + live | ″ |
 | Publication gate + IT/EN parity | ✅ | ✅ 20 required scenarios + live drafts | ″ |
-| AI drafting (GitHub Models, OpenAI-compatible) | ✅ | ✅ against a local OpenAI-compatible server. ❌ **Not called live**: the sandbox proxy intercepts models.github.ai | Needs first run in Actions to confirm |
+| AI drafting (Groq → Gemini → Cerebras, free tiers) | ✅ | ✅ provider chain, key rejection, quota fallthrough (mocked). The three endpoints were reached live and answered as expected without a key | After adding `GROQ_API_KEY` (and optionally `GEMINI_API_KEY`) |
 | Fallback when AI fails (briefs, circuit breaker, `redraft`) | ✅ | ✅ (also hit live: a bogus endpoint opened the breaker) | ″ |
 | Market panel (ECB, Bundesbank, US Treasury, BoE) | ✅ | ✅ live | ″ |
 | Market panel (FRED: Brent, Henry Hub, Fed range) | ✅ | ⚠️ endpoint reachable; needs your free key | After adding `FRED_API_KEY` |
@@ -84,11 +84,14 @@ On real drafts written from live evidence on 2026-10-28, the gate passed honest 
    ```
 2. **Enable Pages:** go to the repository's Settings → Pages → Build and deployment → Source: **GitHub Actions**.
 3. **Allow the workflow to write:** go to Settings → Actions → General → Workflow permissions → **Read and write**.
-4. **(Optional) Add secrets** under Settings → Secrets and variables → Actions:
+4. **Add secrets** under Settings → Secrets and variables → Actions:
+   - `GROQ_API_KEY` — **required for written articles**. Free, no card: console.groq.com → API Keys.
+   - `GEMINI_API_KEY` — recommended backup. Free with a Google account: aistudio.google.com → Get API key.
+   - `CEREBRAS_API_KEY` — optional second backup (cloud.cerebras.ai).
    - `FRED_API_KEY` — free from fred.stlouisfed.org (Brent, Henry Hub, Fed target range).
    - `SMTP_USER`, `SMTP_PASSWORD`, `EMAIL_TO` — for the email edition. With Gmail, `SMTP_PASSWORD` is an *app password*, which requires 2-step verification. Then set `email.enabled: true` in `config/settings.yaml`.
    - Variable `SITE_URL` = `https://<you>.github.io/daily-ledger` (used for links in the email).
-5. **First run:** go to Actions → *Daily edition* → *Run workflow* with command `build`, then run it again with `publish`. Check that the run log shows AI calls succeeding (`llm_status: ok`) and open the Pages URL. If the drafting model is unavailable, the edition still publishes as attributed headlines, and `redraft` can be run later.
+5. **First run:** go to Actions → *Daily edition* → *Run workflow* with command `build`, then run it again with `publish`. Check `data/status.json` (or the site's status page) for `llm_status: ok` and open the Pages URL. If the drafting model is unavailable, the edition still publishes as attributed headlines, and `redraft` can be run later.
 
 ### Activating the 08:00 publication
 
@@ -105,7 +108,7 @@ GitHub does not guarantee start times; delays of a few minutes are normal. Sched
 
 ```bash
 pip install -r requirements.txt
-export GITHUB_TOKEN=<fine-grained PAT with Models: read>   # or LLM_ENDPOINT/LLM_MODELS for Ollama or another OpenAI-compatible server
+export GROQ_API_KEY=...   # and/or GEMINI_API_KEY, CEREBRAS_API_KEY; or LLM_ENDPOINT/LLM_MODELS/LLM_API_KEY for Ollama or any OpenAI-compatible server
 python -m ledger build && python -m ledger publish          # site in _site/
 python -m pytest -q                                          # 29 tests
 ```
@@ -130,7 +133,7 @@ For a local schedule, use cron with `CRON_TZ=Europe/Luxembourg` and `20 5,7 * * 
 | Item | Service | Cost |
 |---|---|---|
 | News retrieval | Public RSS/Atom feeds and official sites | €0 |
-| AI drafting | GitHub Models free tier via the Actions `GITHUB_TOKEN` (`models: read`). Free tier ≈150 requests/day for "low" models, 50/day for "high"; 8k input / 4k output tokens per request; three models chained, each with its own quota | €0 (rate-limited; budget capped at 110 calls per run) |
+| AI drafting | Free tiers of Groq (each model has its own daily token quota: roughly 100k–500k tokens/day per model in 2026), Gemini and Cerebras, chained in that order. GitHub Models, the original plan, was retired by GitHub on 30 July 2026 | €0 (rate-limited; budget capped at 140 calls per run) |
 | Market data | ECB, Bundesbank, US Treasury, Bank of England (free, official); FRED (free key) | €0 |
 | Hosting | GitHub Pages (public repository) | €0 |
 | Scheduler and compute | GitHub Actions, public repository | €0 |
@@ -147,7 +150,7 @@ Future costs, only if you choose them: a paid model for longer and richer articl
 ## Known limitations and mitigations
 
 - **Most publisher feeds expose only headline and summary.** Stories built on them are short and labelled "from headlines and summaries". Official documents are fetched in full where robots.txt allows.
-- **Free AI quota:** about 60 stories per day can be fully written. The rest appear as attributed headline briefs, never as invented text. `redraft` can complete them later the same day.
+- **Free AI quota:** with Groq alone, roughly 40–80 stories per day can be fully written (each story uses about 6–9k tokens; limits are per model and change without notice). Adding a Gemini key raises this. The rest appear as attributed headline briefs, never as invented text. `redraft` can complete them later the same day.
 - **Clustering recall:** the same event reported in different languages, with few shared names, can stay split (for example, Luxembourg's tax reform in RTL Today, the Luxembourg Times and Le Quotidien). The result is a single-source label where corroboration existed, never a fabrication.
 - **Equity indices** (FTSE MIB, EURO STOXX 50, STOXX 600, FTSE 100), gold and TTF gas have no free licensed source. They are shown as "unavailable". US index levels via FRED are licensed for display, so they are off by default because the site is public (`show_licensed_index_levels`).
 - **Day Ahead** lists only official calendars that can be read (currently ONS) and milestones stated in verified stories. ECB, ISTAT and Fed calendars are not wired in.

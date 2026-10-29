@@ -42,17 +42,30 @@ verification:
 
 llm:
   enabled: true
-  provider: github_models       # github_models | openai_compatible (Groq, local Ollama/llama.cpp, …)
-  endpoint: "https://models.github.ai/inference/chat/completions"
-  # Each model has its own free daily quota on GitHub Models; the writer falls
-  # through the list when one is exhausted or failing.
-  models: ["openai/gpt-4.1-mini", "openai/gpt-4o-mini", "meta/Llama-3.3-70B-Instruct"]
-  token_env: GITHUB_TOKEN       # env var holding the key (GITHUB_TOKEN is injected by Actions)
-  max_calls_per_run: 110        # hard budget (free low tier ≈ 150 requests/day/model)
-  max_parallel: 3
-  timeout_s: 90
+  # Free providers, tried in order; a provider is used only if its key is set
+  # (GitHub secret of the same name). Every model has its own free daily quota,
+  # so the list is walked as quotas run out. GitHub Models was retired on
+  # 30 July 2026 and is no longer used.
+  providers:
+    - name: groq            # free, no card: console.groq.com → API Keys
+      endpoint: "https://api.groq.com/openai/v1/chat/completions"
+      key_env: GROQ_API_KEY
+      models: ["openai/gpt-oss-120b", "moonshotai/kimi-k2-instruct", "meta-llama/llama-4-scout-17b-16e-instruct", "llama-3.3-70b-versatile"]
+    - name: gemini          # free with a Google account: aistudio.google.com → Get API key
+      endpoint: "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
+      key_env: GEMINI_API_KEY
+      models: ["gemini-flash-latest", "gemini-flash-lite-latest"]
+    - name: cerebras        # free: cloud.cerebras.ai → API Keys
+      endpoint: "https://api.cerebras.ai/v1/chat/completions"
+      key_env: CEREBRAS_API_KEY
+      models: ["gpt-oss-120b"]
+  max_calls_per_run: 140        # hard budget across providers
+  max_parallel: 2               # free tiers cap tokens per minute; more parallelism only causes waits
+  timeout_s: 120
   temperature: 0.1
-  max_input_chars: 22000        # free tier caps input at ~8k tokens per request
+  max_input_chars: 14000        # keeps each request within free per-minute token limits
+  max_output_tokens: 3000
+  circuit_breaker_failures: 4   # a provider failing this many times in a row is switched off for the run
 
 market:
   enabled: true

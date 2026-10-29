@@ -233,7 +233,8 @@ def public_settings() -> dict:
     st = config.settings()
     return {"publication": st["publication"], "editorial": {k: v for k, v in st["editorial"].items()},
             "verification": st["verification"], "market": st["market"],
-            "llm": {"provider": st["llm"]["provider"], "models": st["llm"]["models"],
+            "llm": {"provider": ", ".join(p["name"] for p in st["llm"]["providers"]),
+                    "models": [m for p in st["llm"]["providers"] for m in p["models"]],
                     "max_calls_per_run": st["llm"]["max_calls_per_run"]},
             "email_enabled": st["email"]["enabled"], "channels": st["delivery"]["channels"],
             "default_language": st["site"]["default_language"]}

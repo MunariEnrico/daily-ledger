@@ -396,8 +396,9 @@ def test_17b_circuit_breaker_stops_spending_quota(monkeypatch):
             raise ValueError("not json")
     monkeypatch.setattr(llmmod.requests, "post", lambda *a, **k: Resp())
     monkeypatch.setattr(llmmod.time, "sleep", lambda s: None)
-    monkeypatch.setenv("GITHUB_TOKEN", "x")
+    monkeypatch.setenv("GROQ_API_KEY", "x")
     c = llmmod.LLMClient()
+    assert [p.name for p in c.providers] == ["groq"]
     for _ in range(5):
         with pytest.raises(LLMError):
             c.chat_json("s", "u")
