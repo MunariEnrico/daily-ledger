@@ -31,9 +31,31 @@
        "url": "https://www.money.it/dopo-lagarde-chi-sara-il-nuovo-presidente-bce-tutti-i-possibili-successori-da-hernandez-de-cos-e-knot-e-panetta"
       }
      ]
+    },
+    {
+     "date": "2026-10-30",
+     "story_id": "sb93268dd1e",
+     "headline": {
+      "en": "ECB President Lagarde to resign in February 2027",
+      "it": "La presidente della BCE Lagarde si dimetterà a febbraio 2027"
+     },
+     "subheadline": {
+      "en": "She will leave nine months before her term ends, successor to be chosen by the European Council.",
+      "it": "Lascerà l’incarico nove mesi prima della scadenza del mandato, il successore sarà scelto dal Consiglio europeo."
+     },
+     "next": {
+      "en": [],
+      "it": []
+     },
+     "sources": [
+      {
+       "name": "France 24 · Europe",
+       "url": "https://www.france24.com/en/europe/20261029-ecb-president-christine-lagarde-to-step-down-in-february-2027-nine-months-before-term-ends"
+      }
+     ]
     }
    ],
-   "checked": "2026-10-29"
+   "checked": "2026-10-30"
   },
   "fed-rates": {
    "label": {
@@ -41,7 +63,7 @@
     "it": "Federal Reserve"
    },
    "entries": [],
-   "checked": "2026-10-29"
+   "checked": "2026-10-30"
   },
   "boe-rates": {
    "label": {
@@ -49,7 +71,7 @@
     "it": "Bank of England"
    },
    "entries": [],
-   "checked": "2026-10-29"
+   "checked": "2026-10-30"
   },
   "italy-budget": {
    "label": {
@@ -84,7 +106,7 @@
      ]
     }
    ],
-   "checked": "2026-10-29"
+   "checked": "2026-10-30"
   },
   "uk-budget": {
    "label": {
@@ -92,7 +114,7 @@
     "it": "Bilancio UK e fisco"
    },
    "entries": [],
-   "checked": "2026-10-29"
+   "checked": "2026-10-30"
   },
   "us-tariffs": {
    "label": {
@@ -100,15 +122,46 @@
     "it": "Dazi USA e commercio"
    },
    "entries": [],
-   "checked": "2026-10-29"
+   "checked": "2026-10-30"
   },
   "italy-inflation": {
    "label": {
     "en": "Italian inflation & GDP",
     "it": "Inflazione e PIL in Italia"
    },
-   "entries": [],
-   "checked": "2026-10-29"
+   "entries": [
+    {
+     "date": "2026-10-30",
+     "story_id": "s431d7c6da0",
+     "headline": {
+      "en": "Csm requests protective practice for Milan gip",
+      "it": "Csm, chiesta apertura pratica a tutela per gip di Milano"
+     },
+     "subheadline": {
+      "en": "Council members and lay members requested the protective practice while Cosimo Ferri was re-elected.",
+      "it": "Richiesta avanzata da consiglieri togati e laici, mentre Cosimo Ferri viene rieletto."
+     },
+     "next": {
+      "en": [],
+      "it": []
+     },
+     "sources": [
+      {
+       "name": "ANSA Lombardia",
+       "url": "https://www.ansa.it/lombardia/notizie/2026/10/29/csm-chiesta-apertura-pratica-a-tutela-per-gip-di-milano_33462912-0e92-470a-8eb7-b550871e94d0.html"
+      },
+      {
+       "name": "Domani",
+       "url": "https://www.editorialedomani.it/politica/italia/maranza-giudici-istat-meloni-nemici-ferri-elezione-csm-bzupfxrt"
+      },
+      {
+       "name": "ANSA Lazio",
+       "url": "https://www.ansa.it/lazio/notizie/2026/10/29/csm-chiesta-apertura-pratica-a-tutela-per-gip-di-milano_5165e475-98a8-4259-9863-a069db598aa6.html"
+      }
+     ]
+    }
+   ],
+   "checked": "2026-10-30"
   },
   "venice-access-fee": {
    "label": {
@@ -116,7 +169,7 @@
     "it": "Contributo di accesso a Venezia"
    },
    "entries": [],
-   "checked": "2026-10-29"
+   "checked": "2026-10-30"
   },
   "venice-mose": {
    "label": {
@@ -124,7 +177,7 @@
     "it": "MOSE e acqua alta"
    },
    "entries": [],
-   "checked": "2026-10-29"
+   "checked": "2026-10-30"
   },
   "lux-housing": {
    "label": {
@@ -132,7 +185,7 @@
     "it": "Casa in Lussemburgo"
    },
    "entries": [],
-   "checked": "2026-10-29"
+   "checked": "2026-10-30"
   },
   "nyc-housing": {
    "label": {
@@ -140,7 +193,7 @@
     "it": "Casa e affitti a New York"
    },
    "entries": [],
-   "checked": "2026-10-29"
+   "checked": "2026-10-30"
   },
   "london-transport": {
    "label": {
@@ -148,7 +201,7 @@
     "it": "Trasporti a Londra"
    },
    "entries": [],
-   "checked": "2026-10-29"
+   "checked": "2026-10-30"
   },
   "milan-cortina": {
    "label": {
@@ -156,7 +209,7 @@
     "it": "Eredità Milano-Cortina"
    },
    "entries": [],
-   "checked": "2026-10-29"
+   "checked": "2026-10-30"
   },
   "eu-ai-regulation": {
    "label": {
@@ -164,7 +217,7 @@
     "it": "Regole UE sul digitale"
    },
    "entries": [],
-   "checked": "2026-10-29"
+   "checked": "2026-10-30"
   }
  }
 }

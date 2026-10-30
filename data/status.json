@@ -1,6 +1,6 @@
 {
  "date": "2026-10-30",
- "state": "staged",
+ "state": "published",
  "run": {
   "started_at": "2026-10-30T04:57:58Z",
   "finished_at": "2026-10-30T05:08:04Z",
@@ -101,12 +101,15 @@
   "market_errors": [],
   "errors": []
  },
- "updated_at": "2026-10-30T05:08:04Z",
- "last_published": "2026-10-29T20:29:34Z",
+ "updated_at": "2026-10-30T07:42:55Z",
+ "last_published": "2026-10-30T07:42:55Z",
  "late": true,
  "email": {
   "state": "disabled",
   "detail": "email.enabled is false in settings"
  },
- "editions_status": null
+ "editions_status": {
+  "en": "ready",
+  "it": "ready"
+ }
 }
