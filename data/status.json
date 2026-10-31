@@ -1,65 +1,69 @@
 {
- "date": "2026-10-30",
- "state": "published",
+ "date": "2026-10-31",
+ "state": "staged",
  "run": {
-  "started_at": "2026-10-30T04:57:58Z",
-  "finished_at": "2026-10-30T05:08:04Z",
-  "seconds": 606.2,
+  "started_at": "2026-10-31T04:55:24Z",
+  "finished_at": "2026-10-31T05:07:32Z",
+  "seconds": 727.7,
   "sources": {
    "checked": 209,
-   "ok": 205,
+   "ok": 203,
    "failed": [
-    "agi",
+    "bis",
     "euronews_business",
     "europarl",
-    "statec"
+    "siliconlux",
+    "statec",
+    "ytali"
    ],
    "failures": {
-    "agi": "feed parsed but contained no usable entries",
+    "bis": "feed parsed but contained no usable entries",
     "euronews_business": "HTTP 406",
     "europarl": "HTTP 202",
-    "statec": "feed parsed but contained no usable entries"
+    "siliconlux": "HTTP 520",
+    "statec": "feed parsed but contained no usable entries",
+    "ytali": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
    }
   },
   "items": {
-   "retrieved": 6905,
-   "fresh": 2912,
+   "retrieved": 6892,
+   "fresh": 2700,
    "dropped": {
-    "low_value": 27,
-    "too_old": 3912,
-    "date_missing": 25,
-    "opinion": 19
+    "too_old": 4101,
+    "low_value": 28,
+    "date_missing": 29,
+    "opinion": 24
    },
    "calendar": 10
   },
   "lookback_hours": 30,
-  "clusters": 2163,
-  "candidates_planned": 190,
-  "candidates_with_evidence": 190,
+  "clusters": 1946,
+  "candidates_planned": 189,
+  "candidates_with_evidence": 189,
   "stories": {
-   "articles": 14,
-   "briefs": 176,
+   "articles": 11,
+   "briefs": 178,
    "analyses": 0
   },
   "verification": {
-   "drafts": 28,
-   "published_articles": 14,
-   "fallback_briefs": 176,
+   "drafts": 25,
+   "published_articles": 11,
+   "fallback_briefs": 178,
    "repairs": 22,
-   "language_regenerations": 6,
-   "unsupported_claims_detected": 124,
-   "unsupported_claims_blocked": 61,
-   "attribution_failures": 1,
-   "numerical_inconsistencies": 27,
-   "validation_failures": 41,
+   "language_regenerations": 4,
+   "unsupported_claims_detected": 118,
+   "unsupported_claims_blocked": 57,
+   "attribution_failures": 5,
+   "numerical_inconsistencies": 39,
+   "validation_failures": 39,
    "llm_errors": 0
   },
   "llm": {
    "calls": 140,
-   "failures": 21,
+   "failures": 16,
    "by_model": {
-    "groq:openai/gpt-oss-120b": 31,
-    "gemini:gemini-flash-lite-latest": 24
+    "groq:openai/gpt-oss-120b": 38,
+    "gemini:gemini-flash-lite-latest": 12
    },
    "circuit_open": false,
    "providers": [
@@ -85,14 +89,12 @@
    "exhausted_models": [
     "groq:llama-3.3-70b-versatile",
     "groq:meta-llama/llama-4-scout-17b-16e-instruct",
-    "groq:moonshotai/kimi-k2-instruct",
-    "groq:openai/gpt-oss-120b"
+    "groq:moonshotai/kimi-k2-instruct"
    ],
    "errors": [
     "groq:moonshotai/kimi-k2-instruct: HTTP 404: model unavailable — {\"error\":{\"message\":\"The model `moonshotai/kimi-k2-instruct` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_f",
     "groq:meta-llama/llama-4-scout-17b-16e-instruct: HTTP 404: model unavailable — {\"error\":{\"message\":\"The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code",
-    "groq:llama-3.3-70b-versatile: HTTP 404: model unavailable — {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found",
-    "groq:openai/gpt-oss-120b: rate limited ({\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m64grrf0ejr9f3bzvgvpy9tp` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198385, Re) → model skipped for this run"
+    "groq:llama-3.3-70b-versatile: HTTP 404: model unavailable — {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found"
    ],
    "budget": 140
   },
@@ -101,7 +103,7 @@
   "market_errors": [],
   "errors": []
  },
- "updated_at": "2026-10-30T07:42:55Z",
+ "updated_at": "2026-10-31T05:07:32Z",
  "last_published": "2026-10-30T07:42:55Z",
  "late": true,
  "email": {
