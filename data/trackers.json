@@ -55,7 +55,7 @@
      ]
     }
    ],
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   "fed-rates": {
    "label": {
@@ -63,7 +63,7 @@
     "it": "Federal Reserve"
    },
    "entries": [],
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   "boe-rates": {
    "label": {
@@ -71,7 +71,7 @@
     "it": "Bank of England"
    },
    "entries": [],
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   "italy-budget": {
    "label": {
@@ -106,7 +106,7 @@
      ]
     }
    ],
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   "uk-budget": {
    "label": {
@@ -114,7 +114,7 @@
     "it": "Bilancio UK e fisco"
    },
    "entries": [],
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   "us-tariffs": {
    "label": {
@@ -122,7 +122,7 @@
     "it": "Dazi USA e commercio"
    },
    "entries": [],
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   "italy-inflation": {
    "label": {
@@ -159,9 +159,35 @@
        "url": "https://www.ansa.it/lazio/notizie/2026/10/29/csm-chiesta-apertura-pratica-a-tutela-per-gip-di-milano_5165e475-98a8-4259-9863-a069db598aa6.html"
       }
      ]
+    },
+    {
+     "date": "2026-10-31",
+     "story_id": "sff73ff5e82",
+     "headline": {
+      "en": "Italian inflation jumps to 5.4% in October",
+      "it": "L'inflazione italiana sale al 5,4% a ottobre"
+     },
+     "subheadline": {
+      "en": "Preliminary Istat data shows a rise from 4.2% in September, driven by energy price spikes.",
+      "it": "Stime preliminari dell'Istat mostrano un balzo rispetto al 4,2% di settembre, spinto dall'aumento dei prezzi dell'energia."
+     },
+     "next": {
+      "en": [],
+      "it": []
+     },
+     "sources": [
+      {
+       "name": "ANSA English",
+       "url": "https://www.ansa.it/english/news/2026/10/30/italian-inflation-hit-5.4-in-october-says-istat_49a667a4-9f3a-4ed5-89a6-84d4ecdbdb35.html"
+      },
+      {
+       "name": "Money.it",
+       "url": "https://www.money.it/l-inflazione-schizza-in-italia-54-a-ottobre-codacons-mazzata-da-1803-euro-a-famiglia-alert-bollette-energia"
+      }
+     ]
     }
    ],
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   "venice-access-fee": {
    "label": {
@@ -169,7 +195,7 @@
     "it": "Contributo di accesso a Venezia"
    },
    "entries": [],
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   "venice-mose": {
    "label": {
@@ -177,15 +203,38 @@
     "it": "MOSE e acqua alta"
    },
    "entries": [],
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   "lux-housing": {
    "label": {
     "en": "Luxembourg housing",
     "it": "Casa in Lussemburgo"
    },
-   "entries": [],
-   "checked": "2026-10-30"
+   "entries": [
+    {
+     "date": "2026-10-31",
+     "story_id": "sd18a5b98f3",
+     "headline": {
+      "en": "Court curbs tax authority in under‑market rent case",
+      "it": "Il tribunale limita l’amministrazione fiscale per affitto sotto mercato"
+     },
+     "subheadline": {
+      "en": "Family’s six‑year fight over a below‑market rent for their son is reported.",
+      "it": "La lotta di sei anni della famiglia per un affitto inferiore al valore di mercato per il figlio è riportata."
+     },
+     "next": {
+      "en": [],
+      "it": []
+     },
+     "sources": [
+      {
+       "name": "Luxemburger Wort",
+       "url": "https://www.wort.lu/politik/verwaltungsgerichtshof-weist-steuerbehoerde-in-die-schranken/163755290.html"
+      }
+     ]
+    }
+   ],
+   "checked": "2026-10-31"
   },
   "nyc-housing": {
    "label": {
@@ -193,7 +242,7 @@
     "it": "Casa e affitti a New York"
    },
    "entries": [],
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   "london-transport": {
    "label": {
@@ -201,7 +250,7 @@
     "it": "Trasporti a Londra"
    },
    "entries": [],
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   "milan-cortina": {
    "label": {
@@ -209,7 +258,7 @@
     "it": "Eredità Milano-Cortina"
    },
    "entries": [],
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   },
   "eu-ai-regulation": {
    "label": {
@@ -217,7 +266,7 @@
     "it": "Regole UE sul digitale"
    },
    "entries": [],
-   "checked": "2026-10-30"
+   "checked": "2026-10-31"
   }
  }
 }
