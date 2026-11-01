@@ -1,69 +1,70 @@
 {
- "date": "2026-10-31",
- "state": "published",
+ "date": "2026-11-01",
+ "state": "staged",
  "run": {
-  "started_at": "2026-10-31T04:55:24Z",
-  "finished_at": "2026-10-31T05:07:32Z",
-  "seconds": 727.7,
+  "started_at": "2026-11-01T04:59:27Z",
+  "finished_at": "2026-11-01T05:09:27Z",
+  "seconds": 599.8,
   "sources": {
    "checked": 209,
    "ok": 203,
    "failed": [
     "bis",
-    "euronews_business",
     "europarl",
+    "independent_business",
     "siliconlux",
     "statec",
     "ytali"
    ],
    "failures": {
     "bis": "feed parsed but contained no usable entries",
-    "euronews_business": "HTTP 406",
     "europarl": "HTTP 202",
+    "independent_business": "feed parsed but contained no usable entries",
     "siliconlux": "HTTP 520",
     "statec": "feed parsed but contained no usable entries",
     "ytali": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
    }
   },
   "items": {
-   "retrieved": 6892,
-   "fresh": 2700,
+   "retrieved": 6735,
+   "fresh": 1800,
    "dropped": {
-    "too_old": 4101,
-    "low_value": 28,
-    "date_missing": 29,
-    "opinion": 24
+    "low_value": 29,
+    "too_old": 4868,
+    "date_missing": 20,
+    "opinion": 7,
+    "date_ambiguous": 1
    },
    "calendar": 10
   },
   "lookback_hours": 30,
-  "clusters": 1946,
-  "candidates_planned": 189,
-  "candidates_with_evidence": 189,
+  "clusters": 1258,
+  "candidates_planned": 178,
+  "candidates_with_evidence": 178,
   "stories": {
-   "articles": 11,
-   "briefs": 178,
+   "articles": 15,
+   "briefs": 162,
    "analyses": 0
   },
   "verification": {
-   "drafts": 25,
-   "published_articles": 11,
-   "fallback_briefs": 178,
-   "repairs": 22,
-   "language_regenerations": 4,
-   "unsupported_claims_detected": 118,
-   "unsupported_claims_blocked": 57,
-   "attribution_failures": 5,
-   "numerical_inconsistencies": 39,
-   "validation_failures": 39,
+   "drafts": 28,
+   "published_articles": 15,
+   "fallback_briefs": 162,
+   "repairs": 24,
+   "language_regenerations": 2,
+   "unsupported_claims_detected": 101,
+   "unsupported_claims_blocked": 53,
+   "attribution_failures": 17,
+   "numerical_inconsistencies": 21,
+   "validation_failures": 36,
    "llm_errors": 0
   },
   "llm": {
    "calls": 140,
-   "failures": 16,
+   "failures": 19,
    "by_model": {
-    "groq:openai/gpt-oss-120b": 38,
-    "gemini:gemini-flash-lite-latest": 12
+    "groq:openai/gpt-oss-120b": 36,
+    "gemini:gemini-flash-lite-latest": 16
    },
    "circuit_open": false,
    "providers": [
@@ -101,9 +102,11 @@
   "llm_status": "ok",
   "market_status": "ok",
   "market_errors": [],
-  "errors": []
+  "errors": [
+   "write c2d59cdb6b1: AttributeError: 'int' object has no attribute 'get'\nTraceback (most recent call last):\n  File \"/home/runner/work/daily-ledger/daily-ledger/ledger/pipeline.py\", line 463, in write\n    return cid, writer.write_story(inputs[cid], date_str)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/daily-ledger/daily-ledger/ledger/writer.py\", line 113, in write_story\n    draft, rep, model = self._draft_with_repair(evidence, meta)\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'int' object has no attribute 'get'\n"
+  ]
  },
- "updated_at": "2026-10-31T07:37:13Z",
+ "updated_at": "2026-11-01T05:09:27Z",
  "last_published": "2026-10-31T07:37:13Z",
  "late": true,
  "email": {

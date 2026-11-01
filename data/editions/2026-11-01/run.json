@@ -1,0 +1,105 @@
+{
+ "started_at": "2026-11-01T04:59:27Z",
+ "finished_at": "2026-11-01T05:09:27Z",
+ "seconds": 599.8,
+ "sources": {
+  "checked": 209,
+  "ok": 203,
+  "failed": [
+   "bis",
+   "europarl",
+   "independent_business",
+   "siliconlux",
+   "statec",
+   "ytali"
+  ],
+  "failures": {
+   "bis": "feed parsed but contained no usable entries",
+   "europarl": "HTTP 202",
+   "independent_business": "feed parsed but contained no usable entries",
+   "siliconlux": "HTTP 520",
+   "statec": "feed parsed but contained no usable entries",
+   "ytali": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  }
+ },
+ "items": {
+  "retrieved": 6735,
+  "fresh": 1800,
+  "dropped": {
+   "low_value": 29,
+   "too_old": 4868,
+   "date_missing": 20,
+   "opinion": 7,
+   "date_ambiguous": 1
+  },
+  "calendar": 10
+ },
+ "lookback_hours": 30,
+ "clusters": 1258,
+ "candidates_planned": 178,
+ "candidates_with_evidence": 178,
+ "stories": {
+  "articles": 15,
+  "briefs": 162,
+  "analyses": 0
+ },
+ "verification": {
+  "drafts": 28,
+  "published_articles": 15,
+  "fallback_briefs": 162,
+  "repairs": 24,
+  "language_regenerations": 2,
+  "unsupported_claims_detected": 101,
+  "unsupported_claims_blocked": 53,
+  "attribution_failures": 17,
+  "numerical_inconsistencies": 21,
+  "validation_failures": 36,
+  "llm_errors": 0
+ },
+ "llm": {
+  "calls": 140,
+  "failures": 19,
+  "by_model": {
+   "groq:openai/gpt-oss-120b": 36,
+   "gemini:gemini-flash-lite-latest": 16
+  },
+  "circuit_open": false,
+  "providers": [
+   {
+    "name": "groq",
+    "models": [
+     "openai/gpt-oss-120b",
+     "moonshotai/kimi-k2-instruct",
+     "meta-llama/llama-4-scout-17b-16e-instruct",
+     "llama-3.3-70b-versatile"
+    ],
+    "switched_off": false
+   },
+   {
+    "name": "gemini",
+    "models": [
+     "gemini-flash-lite-latest",
+     "gemini-flash-latest"
+    ],
+    "switched_off": false
+   }
+  ],
+  "exhausted_models": [
+   "groq:llama-3.3-70b-versatile",
+   "groq:meta-llama/llama-4-scout-17b-16e-instruct",
+   "groq:moonshotai/kimi-k2-instruct"
+  ],
+  "errors": [
+   "groq:moonshotai/kimi-k2-instruct: HTTP 404: model unavailable — {\"error\":{\"message\":\"The model `moonshotai/kimi-k2-instruct` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_f",
+   "groq:meta-llama/llama-4-scout-17b-16e-instruct: HTTP 404: model unavailable — {\"error\":{\"message\":\"The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code",
+   "groq:llama-3.3-70b-versatile: HTTP 404: model unavailable — {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found"
+  ],
+  "budget": 140
+ },
+ "llm_status": "ok",
+ "market_status": "ok",
+ "market_errors": [],
+ "errors": [
+  "write c2d59cdb6b1: AttributeError: 'int' object has no attribute 'get'\nTraceback (most recent call last):\n  File \"/home/runner/work/daily-ledger/daily-ledger/ledger/pipeline.py\", line 463, in write\n    return cid, writer.write_story(inputs[cid], date_str)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/daily-ledger/daily-ledger/ledger/writer.py\", line 113, in write_story\n    draft, rep, model = self._draft_with_repair(evidence, meta)\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'int' object has no attribute 'get'\n"
+ ]
+}
