@@ -1,6 +1,6 @@
 {
  "date": "2026-11-01",
- "state": "staged",
+ "state": "published",
  "run": {
   "started_at": "2026-11-01T04:59:27Z",
   "finished_at": "2026-11-01T05:09:27Z",
@@ -106,8 +106,8 @@
    "write c2d59cdb6b1: AttributeError: 'int' object has no attribute 'get'\nTraceback (most recent call last):\n  File \"/home/runner/work/daily-ledger/daily-ledger/ledger/pipeline.py\", line 463, in write\n    return cid, writer.write_story(inputs[cid], date_str)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/daily-ledger/daily-ledger/ledger/writer.py\", line 113, in write_story\n    draft, rep, model = self._draft_with_repair(evidence, meta)\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: 'int' object has no attribute 'get'\n"
   ]
  },
- "updated_at": "2026-11-01T05:09:27Z",
- "last_published": "2026-10-31T07:37:13Z",
+ "updated_at": "2026-11-01T07:41:01Z",
+ "last_published": "2026-11-01T07:41:01Z",
  "late": true,
  "email": {
   "state": "disabled",

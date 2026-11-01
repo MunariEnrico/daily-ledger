@@ -55,7 +55,7 @@
      ]
     }
    ],
-   "checked": "2026-10-31"
+   "checked": "2026-11-01"
   },
   "fed-rates": {
    "label": {
@@ -63,7 +63,7 @@
     "it": "Federal Reserve"
    },
    "entries": [],
-   "checked": "2026-10-31"
+   "checked": "2026-11-01"
   },
   "boe-rates": {
    "label": {
@@ -71,7 +71,7 @@
     "it": "Bank of England"
    },
    "entries": [],
-   "checked": "2026-10-31"
+   "checked": "2026-11-01"
   },
   "italy-budget": {
    "label": {
@@ -104,9 +104,35 @@
        "url": "https://video.corriere.it/economia/meloni-dopo-l-ok-del-cdm-alla-manovra-una-legge-di-bilancio-da-26-miliardi-non-abbiamo-fatto-promesse-che-non-possiamo-mantenere/3b39fda9-4f8f-4fd1-a223-c7d1be5a9xlk"
       }
      ]
+    },
+    {
+     "date": "2026-11-01",
+     "story_id": "se79d8cd490",
+     "headline": {
+      "en": "2027‑2029 budget proposal draws fire over school cuts and pension savings",
+      "it": "Manovra 2027‑2029 attira critiche per tagli alla scuola e risparmi pensionistici"
+     },
+     "subheadline": {
+      "en": "Opposition and unions condemn the plan as it seeks to cut nearly 7,000 school posts and save €14.2 billion on pensions.",
+      "it": "Opposizioni e sindacati denunciano il piano che prevede quasi 7mila posti in meno e un risparmio di 14,2 miliardi di euro sulle pensioni."
+     },
+     "next": {
+      "en": [],
+      "it": []
+     },
+     "sources": [
+      {
+       "name": "AGI",
+       "url": "https://www.agi.it/economia/news/2026-11-01/manovra-tagli-scuola-pensioni--39807614/"
+      },
+      {
+       "name": "Sky TG24",
+       "url": "https://tg24.sky.it/politica/video/2026/10/31/manovra-polemiche-opposizioni-sindacati-1136285"
+      }
+     ]
     }
    ],
-   "checked": "2026-10-31"
+   "checked": "2026-11-01"
   },
   "uk-budget": {
    "label": {
@@ -114,7 +140,7 @@
     "it": "Bilancio UK e fisco"
    },
    "entries": [],
-   "checked": "2026-10-31"
+   "checked": "2026-11-01"
   },
   "us-tariffs": {
    "label": {
@@ -122,7 +148,7 @@
     "it": "Dazi USA e commercio"
    },
    "entries": [],
-   "checked": "2026-10-31"
+   "checked": "2026-11-01"
   },
   "italy-inflation": {
    "label": {
@@ -187,7 +213,7 @@
      ]
     }
    ],
-   "checked": "2026-10-31"
+   "checked": "2026-11-01"
   },
   "venice-access-fee": {
    "label": {
@@ -195,7 +221,7 @@
     "it": "Contributo di accesso a Venezia"
    },
    "entries": [],
-   "checked": "2026-10-31"
+   "checked": "2026-11-01"
   },
   "venice-mose": {
    "label": {
@@ -203,7 +229,7 @@
     "it": "MOSE e acqua alta"
    },
    "entries": [],
-   "checked": "2026-10-31"
+   "checked": "2026-11-01"
   },
   "lux-housing": {
    "label": {
@@ -234,7 +260,7 @@
      ]
     }
    ],
-   "checked": "2026-10-31"
+   "checked": "2026-11-01"
   },
   "nyc-housing": {
    "label": {
@@ -242,7 +268,7 @@
     "it": "Casa e affitti a New York"
    },
    "entries": [],
-   "checked": "2026-10-31"
+   "checked": "2026-11-01"
   },
   "london-transport": {
    "label": {
@@ -250,7 +276,7 @@
     "it": "Trasporti a Londra"
    },
    "entries": [],
-   "checked": "2026-10-31"
+   "checked": "2026-11-01"
   },
   "milan-cortina": {
    "label": {
@@ -258,7 +284,7 @@
     "it": "Eredità Milano-Cortina"
    },
    "entries": [],
-   "checked": "2026-10-31"
+   "checked": "2026-11-01"
   },
   "eu-ai-regulation": {
    "label": {
@@ -266,7 +292,7 @@
     "it": "Regole UE sul digitale"
    },
    "entries": [],
-   "checked": "2026-10-31"
+   "checked": "2026-11-01"
   }
  }
 }
