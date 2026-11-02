@@ -55,7 +55,7 @@
      ]
     }
    ],
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   "fed-rates": {
    "label": {
@@ -63,7 +63,7 @@
     "it": "Federal Reserve"
    },
    "entries": [],
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   "boe-rates": {
    "label": {
@@ -71,7 +71,7 @@
     "it": "Bank of England"
    },
    "entries": [],
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   "italy-budget": {
    "label": {
@@ -130,9 +130,35 @@
        "url": "https://tg24.sky.it/politica/video/2026/10/31/manovra-polemiche-opposizioni-sindacati-1136285"
       }
      ]
+    },
+    {
+     "date": "2026-11-02",
+     "story_id": "s4b05b7435a",
+     "headline": {
+      "en": "Budget Dispute Over School Staff Cuts",
+      "it": "Scontro sulla manovra per i tagli al personale scolastico"
+     },
+     "subheadline": {
+      "en": "Unions and opposition parties protest reported staffing reductions in the budget.",
+      "it": "Sindacati e opposizioni protestano contro i tagli previsti per docenti e personale Ata."
+     },
+     "next": {
+      "en": [],
+      "it": []
+     },
+     "sources": [
+      {
+       "name": "Corriere della Sera Economia",
+       "url": "https://www.corriere.it/economia/lavoro/26_novembre_01/scuola-tagli-posti-docenti-personale-manovra-c072a278-f400-495d-a6ad-7a2f4496exlk.shtml"
+      },
+      {
+       "name": "Sky TG24",
+       "url": "https://tg24.sky.it/politica/2026/11/01/manovra-2027-scuola-pensioni-ultime-news"
+      }
+     ]
     }
    ],
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   "uk-budget": {
    "label": {
@@ -140,7 +166,7 @@
     "it": "Bilancio UK e fisco"
    },
    "entries": [],
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   "us-tariffs": {
    "label": {
@@ -148,7 +174,7 @@
     "it": "Dazi USA e commercio"
    },
    "entries": [],
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   "italy-inflation": {
    "label": {
@@ -213,7 +239,7 @@
      ]
     }
    ],
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   "venice-access-fee": {
    "label": {
@@ -221,7 +247,7 @@
     "it": "Contributo di accesso a Venezia"
    },
    "entries": [],
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   "venice-mose": {
    "label": {
@@ -229,7 +255,7 @@
     "it": "MOSE e acqua alta"
    },
    "entries": [],
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   "lux-housing": {
    "label": {
@@ -260,7 +286,7 @@
      ]
     }
    ],
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   "nyc-housing": {
    "label": {
@@ -268,15 +294,38 @@
     "it": "Casa e affitti a New York"
    },
    "entries": [],
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   "london-transport": {
    "label": {
     "en": "London transport",
     "it": "Trasporti a Londra"
    },
-   "entries": [],
-   "checked": "2026-11-01"
+   "entries": [
+    {
+     "date": "2026-11-02",
+     "story_id": "s0b4fb94a17",
+     "headline": {
+      "en": "London Tube passengers report ticket machine skimming scam",
+      "it": "I passeggeri della Tube denunciano una truffa di skimming"
+     },
+     "subheadline": {
+      "en": "Travellers say money was taken from their bank accounts.",
+      "it": "I viaggiatori segnalano prelievi dai conti bancari."
+     },
+     "next": {
+      "en": [],
+      "it": []
+     },
+     "sources": [
+      {
+       "name": "The Standard · London",
+       "url": "https://www.standard.co.uk/news/london/london-underground-tube-passengers-ticket-machine-skimming-scam-b1303170.html"
+      }
+     ]
+    }
+   ],
+   "checked": "2026-11-02"
   },
   "milan-cortina": {
    "label": {
@@ -284,7 +333,7 @@
     "it": "Eredità Milano-Cortina"
    },
    "entries": [],
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   },
   "eu-ai-regulation": {
    "label": {
@@ -292,7 +341,7 @@
     "it": "Regole UE sul digitale"
    },
    "entries": [],
-   "checked": "2026-11-01"
+   "checked": "2026-11-02"
   }
  }
 }
