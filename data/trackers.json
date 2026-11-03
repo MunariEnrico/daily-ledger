@@ -55,7 +55,7 @@
      ]
     }
    ],
-   "checked": "2026-11-02"
+   "checked": "2026-11-03"
   },
   "fed-rates": {
    "label": {
@@ -63,7 +63,7 @@
     "it": "Federal Reserve"
    },
    "entries": [],
-   "checked": "2026-11-02"
+   "checked": "2026-11-03"
   },
   "boe-rates": {
    "label": {
@@ -71,7 +71,7 @@
     "it": "Bank of England"
    },
    "entries": [],
-   "checked": "2026-11-02"
+   "checked": "2026-11-03"
   },
   "italy-budget": {
    "label": {
@@ -156,9 +156,39 @@
        "url": "https://tg24.sky.it/politica/2026/11/01/manovra-2027-scuola-pensioni-ultime-news"
       }
      ]
+    },
+    {
+     "date": "2026-11-03",
+     "story_id": "sebbc97c201",
+     "headline": {
+      "en": "Tajani says pension results can be achieved after Cisl talks",
+      "it": "Tajani: risultati pensionistici possibili dopo colloquio con la Cisl"
+     },
+     "subheadline": {
+      "en": "The foreign minister told reporters pension progress is possible following a meeting with Cisl leader Daniela Fumarola.",
+      "it": "Il ministro ha dichiarato che si potranno ottenere risultati sulle pensioni dopo l’incontro con Daniela Fumarola."
+     },
+     "next": {
+      "en": [],
+      "it": []
+     },
+     "sources": [
+      {
+       "name": "ANSA Politica",
+       "url": "https://www.ansa.it/sito/notizie/politica/2026/11/02/manovra-tajani-sulle-pensioni-qualche-risultato-si-puo-ottenere_34905c7c-b628-4ffe-8493-ce82fbaac7f7.html"
+      },
+      {
+       "name": "Sky TG24",
+       "url": "https://tg24.sky.it/politica/video/2026/11/02/manovra-tajani-pensioni-possibili-risultati-1136818"
+      },
+      {
+       "name": "Domani",
+       "url": "https://www.editorialedomani.it/politica/italia/manovra-pochi-fondi-tagli-sanita-meloni-medici-infermieri-baxkbwpo"
+      }
+     ]
     }
    ],
-   "checked": "2026-11-02"
+   "checked": "2026-11-03"
   },
   "uk-budget": {
    "label": {
@@ -166,7 +196,7 @@
     "it": "Bilancio UK e fisco"
    },
    "entries": [],
-   "checked": "2026-11-02"
+   "checked": "2026-11-03"
   },
   "us-tariffs": {
    "label": {
@@ -174,7 +204,7 @@
     "it": "Dazi USA e commercio"
    },
    "entries": [],
-   "checked": "2026-11-02"
+   "checked": "2026-11-03"
   },
   "italy-inflation": {
    "label": {
@@ -239,7 +269,7 @@
      ]
     }
    ],
-   "checked": "2026-11-02"
+   "checked": "2026-11-03"
   },
   "venice-access-fee": {
    "label": {
@@ -247,7 +277,7 @@
     "it": "Contributo di accesso a Venezia"
    },
    "entries": [],
-   "checked": "2026-11-02"
+   "checked": "2026-11-03"
   },
   "venice-mose": {
    "label": {
@@ -255,7 +285,7 @@
     "it": "MOSE e acqua alta"
    },
    "entries": [],
-   "checked": "2026-11-02"
+   "checked": "2026-11-03"
   },
   "lux-housing": {
    "label": {
@@ -286,7 +316,7 @@
      ]
     }
    ],
-   "checked": "2026-11-02"
+   "checked": "2026-11-03"
   },
   "nyc-housing": {
    "label": {
@@ -294,7 +324,7 @@
     "it": "Casa e affitti a New York"
    },
    "entries": [],
-   "checked": "2026-11-02"
+   "checked": "2026-11-03"
   },
   "london-transport": {
    "label": {
@@ -325,7 +355,7 @@
      ]
     }
    ],
-   "checked": "2026-11-02"
+   "checked": "2026-11-03"
   },
   "milan-cortina": {
    "label": {
@@ -333,7 +363,7 @@
     "it": "Eredità Milano-Cortina"
    },
    "entries": [],
-   "checked": "2026-11-02"
+   "checked": "2026-11-03"
   },
   "eu-ai-regulation": {
    "label": {
@@ -341,7 +371,7 @@
     "it": "Regole UE sul digitale"
    },
    "entries": [],
-   "checked": "2026-11-02"
+   "checked": "2026-11-03"
   }
  }
 }
