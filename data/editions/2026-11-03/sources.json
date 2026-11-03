@@ -1,0 +1,2092 @@
+[
+ {
+  "source_id": "agi",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:05:50Z",
+  "seconds": 0.76,
+  "newest": "2026-11-03T02:25:00Z"
+ },
+ {
+  "source_id": "aljazeera",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 25,
+  "fetched_at": "2026-11-03T05:06:05Z",
+  "seconds": 0.16,
+  "newest": "2026-11-03T04:52:08Z"
+ },
+ {
+  "source_id": "alteco",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 10,
+  "fetched_at": "2026-11-03T05:06:02Z",
+  "seconds": 0.67,
+  "newest": "2026-11-02T10:18:00Z"
+ },
+ {
+  "source_id": "amny",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 10,
+  "fetched_at": "2026-11-03T05:05:57Z",
+  "seconds": 0.87,
+  "newest": "2026-11-03T00:00:16Z"
+ },
+ {
+  "source_id": "ansa_cronaca",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 85,
+  "fetched_at": "2026-11-03T05:05:50Z",
+  "seconds": 1.1,
+  "newest": "2026-11-02T19:40:07Z"
+ },
+ {
+  "source_id": "ansa_cultura",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 126,
+  "fetched_at": "2026-11-03T05:05:50Z",
+  "seconds": 1.16,
+  "newest": "2026-11-03T00:01:30Z"
+ },
+ {
+  "source_id": "ansa_economia",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 48,
+  "fetched_at": "2026-11-03T05:05:50Z",
+  "seconds": 0.97,
+  "newest": "2026-11-02T20:13:54Z"
+ },
+ {
+  "source_id": "ansa_english",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 100,
+  "fetched_at": "2026-11-03T05:05:50Z",
+  "seconds": 1.35,
+  "newest": "2026-11-02T18:59:56Z"
+ },
+ {
+  "source_id": "ansa_europa",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 12,
+  "fetched_at": "2026-11-03T05:05:50Z",
+  "seconds": 1.04,
+  "newest": "2026-11-02T19:49:15Z"
+ },
+ {
+  "source_id": "ansa_lazio",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 32,
+  "fetched_at": "2026-11-03T05:05:50Z",
+  "seconds": 1.0,
+  "newest": "2026-11-02T21:30:33Z"
+ },
+ {
+  "source_id": "ansa_lombardia",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 48,
+  "fetched_at": "2026-11-03T05:05:50Z",
+  "seconds": 1.02,
+  "newest": "2026-11-02T22:12:24Z"
+ },
+ {
+  "source_id": "ansa_mondo",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 35,
+  "fetched_at": "2026-11-03T05:05:50Z",
+  "seconds": 1.05,
+  "newest": "2026-11-03T03:11:42Z"
+ },
+ {
+  "source_id": "ansa_politica",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 13,
+  "fetched_at": "2026-11-03T05:05:50Z",
+  "seconds": 1.03,
+  "newest": "2026-11-02T19:36:48Z"
+ },
+ {
+  "source_id": "ansa_top",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 10,
+  "fetched_at": "2026-11-03T05:05:50Z",
+  "seconds": 1.03,
+  "newest": "2026-11-03T03:11:38Z"
+ },
+ {
+  "source_id": "ansa_veneto",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 19,
+  "fetched_at": "2026-11-03T05:05:50Z",
+  "seconds": 0.93,
+  "newest": "2026-11-02T15:35:43Z"
+ },
+ {
+  "source_id": "atlantic",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 25,
+  "fetched_at": "2026-11-03T05:05:56Z",
+  "seconds": 0.88,
+  "newest": "2026-11-02T23:55:00Z"
+ },
+ {
+  "source_id": "axios",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 100,
+  "fetched_at": "2026-11-03T05:05:56Z",
+  "seconds": 2.26,
+  "newest": "2026-11-03T01:19:59Z"
+ },
+ {
+  "source_id": "bbc_asia",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 17,
+  "fetched_at": "2026-11-03T05:06:05Z",
+  "seconds": 0.54,
+  "newest": "2026-11-03T03:59:02Z"
+ },
+ {
+  "source_id": "bbc_business",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 53,
+  "fetched_at": "2026-11-03T05:05:59Z",
+  "seconds": 0.16,
+  "newest": "2026-11-03T02:11:13Z"
+ },
+ {
+  "source_id": "bbc_europe",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 39,
+  "fetched_at": "2026-11-03T05:05:59Z",
+  "seconds": 0.39,
+  "newest": "2026-11-03T01:56:27Z"
+ },
+ {
+  "source_id": "bbc_london",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 28,
+  "fetched_at": "2026-11-03T05:05:59Z",
+  "seconds": 0.5,
+  "newest": "2026-11-02T18:46:33Z"
+ },
+ {
+  "source_id": "bbc_middleeast",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 23,
+  "fetched_at": "2026-11-03T05:06:05Z",
+  "seconds": 0.12,
+  "newest": "2026-11-02T06:00:54Z"
+ },
+ {
+  "source_id": "bbc_politics",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 62,
+  "fetched_at": "2026-11-03T05:05:59Z",
+  "seconds": 0.6,
+  "newest": "2026-11-03T04:28:37Z"
+ },
+ {
+  "source_id": "bbc_tech",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 21,
+  "fetched_at": "2026-11-03T05:05:59Z",
+  "seconds": 0.42,
+  "newest": "2026-11-03T01:23:03Z"
+ },
+ {
+  "source_id": "bbc_uk",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 26,
+  "fetched_at": "2026-11-03T05:05:59Z",
+  "seconds": 0.62,
+  "newest": "2026-11-03T04:28:37Z"
+ },
+ {
+  "source_id": "bbc_us",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 25,
+  "fetched_at": "2026-11-03T05:05:57Z",
+  "seconds": 0.41,
+  "newest": "2026-11-03T03:39:08Z"
+ },
+ {
+  "source_id": "bbc_world",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 36,
+  "fetched_at": "2026-11-03T05:05:59Z",
+  "seconds": 0.5,
+  "newest": "2026-11-03T03:39:08Z"
+ },
+ {
+  "source_id": "bea",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 48,
+  "fetched_at": "2026-11-03T05:05:57Z",
+  "seconds": 0.84,
+  "newest": "2026-10-29T12:30:00Z"
+ },
+ {
+  "source_id": "bis",
+  "ok": false,
+  "status": 200,
+  "error": "feed parsed but contained no usable entries",
+  "n_items": 0,
+  "fetched_at": "2026-11-03T05:06:05Z",
+  "seconds": 1.53,
+  "newest": null
+ },
+ {
+  "source_id": "boe_news",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 50,
+  "fetched_at": "2026-11-03T05:06:01Z",
+  "seconds": 0.69,
+  "newest": "2026-10-29T14:00:00Z"
+ },
+ {
+  "source_id": "boe_pubs",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 50,
+  "fetched_at": "2026-11-03T05:06:01Z",
+  "seconds": 0.48,
+  "newest": "2026-10-30T09:30:00Z"
+ },
+ {
+  "source_id": "boj",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 44,
+  "fetched_at": "2026-11-03T05:06:05Z",
+  "seconds": 0.4,
+  "newest": "2026-11-02T05:00:00Z"
+ },
+ {
+  "source_id": "bundesbank",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 10,
+  "fetched_at": "2026-11-03T05:06:04Z",
+  "seconds": 2.12,
+  "newest": "2026-11-02T10:45:00Z"
+ },
+ {
+  "source_id": "cityam",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 30,
+  "fetched_at": "2026-11-03T05:06:00Z",
+  "seconds": 0.54,
+  "newest": "2026-11-03T05:00:00Z"
+ },
+ {
+  "source_id": "comune_venezia",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 10,
+  "fetched_at": "2026-11-03T05:05:54Z",
+  "seconds": 1.34,
+  "newest": "2026-10-23T09:58:41Z"
+ },
+ {
+  "source_id": "comune_venezia_live",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 10,
+  "fetched_at": "2026-11-03T05:05:54Z",
+  "seconds": 0.72,
+  "newest": "2026-11-02T15:24:44Z"
+ },
+ {
+  "source_id": "consilium",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:06:04Z",
+  "seconds": 0.24,
+  "newest": "2026-11-02T11:22:00Z"
+ },
+ {
+  "source_id": "contacto",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 50,
+  "fetched_at": "2026-11-03T05:06:03Z",
+  "seconds": 1.1,
+  "newest": "2026-11-02T20:00:00Z"
+ },
+ {
+  "source_id": "corriere_economia",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 100,
+  "fetched_at": "2026-11-03T05:05:52Z",
+  "seconds": 0.95,
+  "newest": "2026-11-03T01:00:00Z"
+ },
+ {
+  "source_id": "corriere_milano",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 100,
+  "fetched_at": "2026-11-03T05:05:52Z",
+  "seconds": 0.97,
+  "newest": "2026-11-02T19:55:45Z"
+ },
+ {
+  "source_id": "corriere_roma",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 100,
+  "fetched_at": "2026-11-03T05:05:52Z",
+  "seconds": 0.75,
+  "newest": "2026-11-02T22:12:28Z"
+ },
+ {
+  "source_id": "cssf",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 10,
+  "fetched_at": "2026-11-03T05:06:03Z",
+  "seconds": 0.64,
+  "newest": null
+ },
+ {
+  "source_id": "dailymail",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 150,
+  "fetched_at": "2026-11-03T05:06:00Z",
+  "seconds": 0.96,
+  "newest": "2026-11-03T05:00:48Z"
+ },
+ {
+  "source_id": "domani",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 100,
+  "fetched_at": "2026-11-03T05:05:52Z",
+  "seconds": 0.55,
+  "newest": "2026-11-03T05:00:00Z"
+ },
+ {
+  "source_id": "dw",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 123,
+  "fetched_at": "2026-11-03T05:06:04Z",
+  "seconds": 0.24,
+  "newest": "2026-11-02T23:37:00Z"
+ },
+ {
+  "source_id": "eba",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 10,
+  "fetched_at": "2026-11-03T05:06:04Z",
+  "seconds": 0.6,
+  "newest": "2026-10-29T16:00:03Z"
+ },
+ {
+  "source_id": "ec_press",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 10,
+  "fetched_at": "2026-11-03T05:06:04Z",
+  "seconds": 1.61,
+  "newest": "2026-10-31T23:00:00Z"
+ },
+ {
+  "source_id": "ecb_press",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 15,
+  "fetched_at": "2026-11-03T05:06:04Z",
+  "seconds": 0.48,
+  "newest": "2026-11-02T09:30:00Z"
+ },
+ {
+  "source_id": "ecb_pub",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 15,
+  "fetched_at": "2026-11-03T05:06:04Z",
+  "seconds": 0.94,
+  "newest": "2026-11-02T11:00:00Z"
+ },
+ {
+  "source_id": "economictimes",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 76,
+  "fetched_at": "2026-11-03T05:06:05Z",
+  "seconds": 0.14,
+  "newest": "2026-11-03T04:32:11Z"
+ },
+ {
+  "source_id": "economist_britain",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 150,
+  "fetched_at": "2026-11-03T05:06:00Z",
+  "seconds": 1.46,
+  "newest": "2026-11-02T16:14:40Z"
+ },
+ {
+  "source_id": "economist_business",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 150,
+  "fetched_at": "2026-11-03T05:06:00Z",
+  "seconds": 0.97,
+  "newest": "2026-11-02T21:39:36Z"
+ },
+ {
+  "source_id": "economist_europe",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 150,
+  "fetched_at": "2026-11-03T05:06:00Z",
+  "seconds": 1.44,
+  "newest": "2026-11-02T18:20:28Z"
+ },
+ {
+  "source_id": "economist_finance",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 150,
+  "fetched_at": "2026-11-03T05:06:00Z",
+  "seconds": 0.27,
+  "newest": "2026-11-01T16:08:43Z"
+ },
+ {
+  "source_id": "economist_intl",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 150,
+  "fetched_at": "2026-11-03T05:06:00Z",
+  "seconds": 1.03,
+  "newest": "2026-10-30T16:56:55Z"
+ },
+ {
+  "source_id": "economist_us",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 150,
+  "fetched_at": "2026-11-03T05:06:00Z",
+  "seconds": 0.53,
+  "newest": "2026-11-02T21:53:54Z"
+ },
+ {
+  "source_id": "euractiv",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 100,
+  "fetched_at": "2026-11-03T05:06:04Z",
+  "seconds": 0.51,
+  "newest": "2026-11-03T03:01:02Z"
+ },
+ {
+  "source_id": "euronews",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 50,
+  "fetched_at": "2026-11-03T05:06:04Z",
+  "seconds": 0.38,
+  "newest": "2026-11-03T04:27:32Z"
+ },
+ {
+  "source_id": "euronews_business",
+  "ok": false,
+  "status": 406,
+  "error": "HTTP 406",
+  "n_items": 0,
+  "fetched_at": "2026-11-03T05:06:04Z",
+  "seconds": 0.58,
+  "newest": null
+ },
+ {
+  "source_id": "europarl",
+  "ok": false,
+  "status": 202,
+  "error": "HTTP 202",
+  "n_items": 0,
+  "fetched_at": "2026-11-03T05:06:04Z",
+  "seconds": 0.18,
+  "newest": null
+ },
+ {
+  "source_id": "fatto",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 25,
+  "fetched_at": "2026-11-03T05:05:52Z",
+  "seconds": 0.81,
+  "newest": "2026-11-02T21:25:31Z"
+ },
+ {
+  "source_id": "fca",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:06:01Z",
+  "seconds": 0.28,
+  "newest": "2026-11-02T12:12:00Z"
+ },
+ {
+  "source_id": "fed_all",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:05:57Z",
+  "seconds": 0.25,
+  "newest": "2026-10-29T20:30:00Z"
+ },
+ {
+  "source_id": "fed_monetary",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 15,
+  "fetched_at": "2026-11-03T05:05:57Z",
+  "seconds": 0.55,
+  "newest": "2026-10-28T18:00:00Z"
+ },
+ {
+  "source_id": "forbes_it",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 10,
+  "fetched_at": "2026-11-03T05:05:52Z",
+  "seconds": 0.88,
+  "newest": "2026-11-02T18:05:36Z"
+ },
+ {
+  "source_id": "france24_en",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 24,
+  "fetched_at": "2026-11-03T05:06:02Z",
+  "seconds": 0.52,
+  "newest": "2026-11-03T02:28:07Z"
+ },
+ {
+  "source_id": "france24_europe",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 30,
+  "fetched_at": "2026-11-03T05:06:02Z",
+  "seconds": 0.79,
+  "newest": "2026-11-03T01:43:00Z"
+ },
+ {
+  "source_id": "france24_france",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 30,
+  "fetched_at": "2026-11-03T05:06:02Z",
+  "seconds": 0.79,
+  "newest": "2026-11-02T18:30:33Z"
+ },
+ {
+  "source_id": "fsb",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 10,
+  "fetched_at": "2026-11-03T05:06:05Z",
+  "seconds": 0.23,
+  "newest": "2026-10-29T15:08:42Z"
+ },
+ {
+  "source_id": "ft_companies",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 25,
+  "fetched_at": "2026-11-03T05:05:59Z",
+  "seconds": 0.53,
+  "newest": "2026-11-03T03:01:43Z"
+ },
+ {
+  "source_id": "ft_economy",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 25,
+  "fetched_at": "2026-11-03T05:05:59Z",
+  "seconds": 0.53,
+  "newest": "2026-11-03T04:37:42Z"
+ },
+ {
+  "source_id": "ft_europe",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 25,
+  "fetched_at": "2026-11-03T05:06:00Z",
+  "seconds": 0.52,
+  "newest": "2026-11-03T00:35:42Z"
+ },
+ {
+  "source_id": "ft_home",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 10,
+  "fetched_at": "2026-11-03T05:05:59Z",
+  "seconds": 0.4,
+  "newest": "2026-11-03T04:11:51Z"
+ },
+ {
+  "source_id": "ft_markets",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 25,
+  "fetched_at": "2026-11-03T05:05:59Z",
+  "seconds": 0.64,
+  "newest": "2026-11-02T21:13:04Z"
+ },
+ {
+  "source_id": "ft_uk",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 25,
+  "fetched_at": "2026-11-03T05:06:00Z",
+  "seconds": 0.45,
+  "newest": "2026-11-03T00:01:00Z"
+ },
+ {
+  "source_id": "ft_us",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 25,
+  "fetched_at": "2026-11-03T05:06:00Z",
+  "seconds": 0.3,
+  "newest": "2026-11-03T04:11:51Z"
+ },
+ {
+  "source_id": "gazzettino_economia",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:05:54Z",
+  "seconds": 1.14,
+  "newest": "2026-11-02T17:46:41Z"
+ },
+ {
+  "source_id": "gazzettino_venezia",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:05:53Z",
+  "seconds": 1.64,
+  "newest": "2026-11-03T04:30:03Z"
+ },
+ {
+  "source_id": "genteveneta",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 10,
+  "fetched_at": "2026-11-03T05:05:54Z",
+  "seconds": 0.69,
+  "newest": "2026-11-02T18:12:12Z"
+ },
+ {
+  "source_id": "gothamist",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 40,
+  "fetched_at": "2026-11-03T05:05:56Z",
+  "seconds": 0.49,
+  "newest": "2026-11-03T01:31:00Z"
+ },
+ {
+  "source_id": "governo_it",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 10,
+  "fetched_at": "2026-11-03T05:05:53Z",
+  "seconds": 0.56,
+  "newest": "2026-11-02T17:13:52Z"
+ },
+ {
+  "source_id": "guardian_business",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 40,
+  "fetched_at": "2026-11-03T05:05:57Z",
+  "seconds": 1.18,
+  "newest": "2026-11-03T00:01:32Z"
+ },
+ {
+  "source_id": "guardian_china",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:06:05Z",
+  "seconds": 0.5,
+  "newest": "2026-11-02T14:00:43Z"
+ },
+ {
+  "source_id": "guardian_culture",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 26,
+  "fetched_at": "2026-11-03T05:05:59Z",
+  "seconds": 0.55,
+  "newest": "2026-11-02T18:29:37Z"
+ },
+ {
+  "source_id": "guardian_economics",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:05:58Z",
+  "seconds": 0.61,
+  "newest": "2026-11-03T05:00:39Z"
+ },
+ {
+  "source_id": "guardian_europe",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 18,
+  "fetched_at": "2026-11-03T05:05:59Z",
+  "seconds": 0.52,
+  "newest": "2026-11-03T02:00:38Z"
+ },
+ {
+  "source_id": "guardian_eurozone",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:05:58Z",
+  "seconds": 0.74,
+  "newest": "2026-10-29T16:05:50Z"
+ },
+ {
+  "source_id": "guardian_france",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:06:03Z",
+  "seconds": 0.86,
+  "newest": "2026-11-03T05:00:40Z"
+ },
+ {
+  "source_id": "guardian_germany",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:06:04Z",
+  "seconds": 0.27,
+  "newest": "2026-11-02T13:00:41Z"
+ },
+ {
+  "source_id": "guardian_india",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:06:05Z",
+  "seconds": 0.73,
+  "newest": "2026-11-02T23:37:16Z"
+ },
+ {
+  "source_id": "guardian_italy",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:05:53Z",
+  "seconds": 0.68,
+  "newest": "2026-11-02T11:00:54Z"
+ },
+ {
+  "source_id": "guardian_japan",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:06:05Z",
+  "seconds": 0.52,
+  "newest": "2026-11-03T01:52:44Z"
+ },
+ {
+  "source_id": "guardian_law",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:05:59Z",
+  "seconds": 0.44,
+  "newest": "2026-11-02T13:00:41Z"
+ },
+ {
+  "source_id": "guardian_london",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:05:59Z",
+  "seconds": 0.55,
+  "newest": "2026-11-02T11:00:38Z"
+ },
+ {
+  "source_id": "guardian_luxembourg",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:06:03Z",
+  "seconds": 0.52,
+  "newest": "2026-11-02T19:07:40Z"
+ },
+ {
+  "source_id": "guardian_markets",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:05:58Z",
+  "seconds": 0.84,
+  "newest": "2026-11-02T15:07:29Z"
+ },
+ {
+  "source_id": "guardian_middleeast",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:06:05Z",
+  "seconds": 0.3,
+  "newest": "2026-11-03T03:18:36Z"
+ },
+ {
+  "source_id": "guardian_money",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 26,
+  "fetched_at": "2026-11-03T05:05:59Z",
+  "seconds": 0.47,
+  "newest": "2026-11-03T00:00:33Z"
+ },
+ {
+  "source_id": "guardian_newyork",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:05:57Z",
+  "seconds": 0.7,
+  "newest": "2026-11-02T20:53:36Z"
+ },
+ {
+  "source_id": "guardian_paris",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:06:03Z",
+  "seconds": 0.83,
+  "newest": "2026-11-01T01:43:02Z"
+ },
+ {
+  "source_id": "guardian_politics",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 21,
+  "fetched_at": "2026-11-03T05:05:58Z",
+  "seconds": 0.52,
+  "newest": "2026-11-02T20:39:52Z"
+ },
+ {
+  "source_id": "guardian_property",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:05:59Z",
+  "seconds": 0.63,
+  "newest": "2026-11-02T07:00:34Z"
+ },
+ {
+  "source_id": "guardian_rates",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:05:58Z",
+  "seconds": 1.03,
+  "newest": "2026-11-02T06:00:34Z"
+ },
+ {
+  "source_id": "guardian_society",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 32,
+  "fetched_at": "2026-11-03T05:05:59Z",
+  "seconds": 0.34,
+  "newest": "2026-11-02T21:59:02Z"
+ },
+ {
+  "source_id": "guardian_tax",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:05:58Z",
+  "seconds": 0.95,
+  "newest": "2026-11-02T17:57:49Z"
+ },
+ {
+  "source_id": "guardian_travel",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 22,
+  "fetched_at": "2026-11-03T05:05:59Z",
+  "seconds": 0.34,
+  "newest": "2026-11-02T13:17:19Z"
+ },
+ {
+  "source_id": "guardian_uknews",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 45,
+  "fetched_at": "2026-11-03T05:05:58Z",
+  "seconds": 0.58,
+  "newest": "2026-11-03T00:01:32Z"
+ },
+ {
+  "source_id": "guardian_us",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 33,
+  "fetched_at": "2026-11-03T05:05:57Z",
+  "seconds": 1.4,
+  "newest": "2026-11-03T04:55:38Z"
+ },
+ {
+  "source_id": "guardian_venice",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:05:54Z",
+  "seconds": 0.45,
+  "newest": "2026-10-28T06:00:04Z"
+ },
+ {
+  "source_id": "guardian_world",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 45,
+  "fetched_at": "2026-11-03T05:05:57Z",
+  "seconds": 1.27,
+  "newest": "2026-11-03T04:54:51Z"
+ },
+ {
+  "source_id": "hindu_business",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 60,
+  "fetched_at": "2026-11-03T05:06:05Z",
+  "seconds": 0.2,
+  "newest": "2026-11-03T05:02:01Z"
+ },
+ {
+  "source_id": "hmrc",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:06:01Z",
+  "seconds": 0.5,
+  "newest": "2026-11-02T16:45:22Z"
+ },
+ {
+  "source_id": "hmt",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:06:01Z",
+  "seconds": 0.27,
+  "newest": "2026-11-02T16:09:05Z"
+ },
+ {
+  "source_id": "huffpost",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 50,
+  "fetched_at": "2026-11-03T05:05:56Z",
+  "seconds": 1.0,
+  "newest": "2026-11-02T17:37:23Z"
+ },
+ {
+  "source_id": "humanite",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:06:02Z",
+  "seconds": 1.1,
+  "newest": "2026-11-03T05:00:00Z"
+ },
+ {
+  "source_id": "independent_business",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 62,
+  "fetched_at": "2026-11-03T05:06:00Z",
+  "seconds": 1.09,
+  "newest": "2026-11-03T00:01:00Z"
+ },
+ {
+  "source_id": "independent_uk",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 55,
+  "fetched_at": "2026-11-03T05:06:00Z",
+  "seconds": 0.15,
+  "newest": "2026-11-03T00:01:59Z"
+ },
+ {
+  "source_id": "internazionale",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 7,
+  "fetched_at": "2026-11-03T05:05:53Z",
+  "seconds": 0.34,
+  "newest": "2026-11-03T04:56:01Z"
+ },
+ {
+  "source_id": "istat",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 10,
+  "fetched_at": "2026-11-03T05:05:53Z",
+  "seconds": 2.77,
+  "newest": "2026-11-02T11:32:02Z"
+ },
+ {
+  "source_id": "japantimes",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 30,
+  "fetched_at": "2026-11-03T05:06:05Z",
+  "seconds": 0.38,
+  "newest": "2026-11-03T04:34:00Z"
+ },
+ {
+  "source_id": "jeuneafrique",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 30,
+  "fetched_at": "2026-11-03T05:06:02Z",
+  "seconds": 0.34,
+  "newest": "2026-11-02T18:55:37Z"
+ },
+ {
+  "source_id": "land",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 10,
+  "fetched_at": "2026-11-03T05:06:03Z",
+  "seconds": 0.52,
+  "newest": "2026-10-29T17:36:26Z"
+ },
+ {
+  "source_id": "latimes_business",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 90,
+  "fetched_at": "2026-11-03T05:05:56Z",
+  "seconds": 0.63,
+  "newest": "2026-11-02T17:16:22Z"
+ },
+ {
+  "source_id": "latribune",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:06:02Z",
+  "seconds": 0.19,
+  "newest": "2026-11-03T05:00:03Z"
+ },
+ {
+  "source_id": "lavoce",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 10,
+  "fetched_at": "2026-11-03T05:05:52Z",
+  "seconds": 4.77,
+  "newest": "2026-11-02T10:40:12Z"
+ },
+ {
+  "source_id": "lemonde",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 16,
+  "fetched_at": "2026-11-03T05:06:01Z",
+  "seconds": 0.36,
+  "newest": "2026-11-03T04:00:19Z"
+ },
+ {
+  "source_id": "lemonde_economie",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:06:01Z",
+  "seconds": 0.79,
+  "newest": "2026-11-03T05:00:08Z"
+ },
+ {
+  "source_id": "lemonde_en",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 14,
+  "fetched_at": "2026-11-03T05:06:01Z",
+  "seconds": 0.53,
+  "newest": "2026-11-03T04:37:17Z"
+ },
+ {
+  "source_id": "lemonde_en_economy",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:06:01Z",
+  "seconds": 0.52,
+  "newest": "2026-11-02T23:00:07Z"
+ },
+ {
+  "source_id": "lemonde_en_france",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:06:01Z",
+  "seconds": 0.53,
+  "newest": "2026-11-03T01:09:42Z"
+ },
+ {
+  "source_id": "lemonde_paris",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:06:01Z",
+  "seconds": 0.79,
+  "newest": "2026-11-03T04:00:19Z"
+ },
+ {
+  "source_id": "lemonde_politique",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:06:01Z",
+  "seconds": 0.73,
+  "newest": "2026-11-03T04:30:07Z"
+ },
+ {
+  "source_id": "leparisien_paris",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 100,
+  "fetched_at": "2026-11-03T05:06:02Z",
+  "seconds": 0.77,
+  "newest": "2026-10-31T11:00:00Z"
+ },
+ {
+  "source_id": "lequotidien",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:06:03Z",
+  "seconds": 1.32,
+  "newest": "2026-11-03T04:00:40Z"
+ },
+ {
+  "source_id": "lexpress",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 100,
+  "fetched_at": "2026-11-03T05:06:02Z",
+  "seconds": 1.3,
+  "newest": "2026-11-03T05:00:00Z"
+ },
+ {
+  "source_id": "liberation",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:06:02Z",
+  "seconds": 1.12,
+  "newest": "2026-11-02T20:45:00Z"
+ },
+ {
+  "source_id": "libero",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 60,
+  "fetched_at": "2026-11-03T05:05:53Z",
+  "seconds": 0.47,
+  "newest": "2026-11-03T01:57:00Z"
+ },
+ {
+  "source_id": "luxtimes",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 50,
+  "fetched_at": "2026-11-03T05:06:03Z",
+  "seconds": 0.58,
+  "newest": "2026-11-03T05:00:00Z"
+ },
+ {
+  "source_id": "manifesto",
+  "ok": false,
+  "status": 520,
+  "error": "HTTP 520",
+  "n_items": 0,
+  "fetched_at": "2026-11-03T05:05:53Z",
+  "seconds": 56.87,
+  "newest": null
+ },
+ {
+  "source_id": "marketwatch",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 10,
+  "fetched_at": "2026-11-03T05:05:56Z",
+  "seconds": 0.49,
+  "newest": "2026-11-03T00:59:00Z"
+ },
+ {
+  "source_id": "mediapart",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 10,
+  "fetched_at": "2026-11-03T05:06:02Z",
+  "seconds": 0.43,
+  "newest": "2026-11-02T20:35:19Z"
+ },
+ {
+  "source_id": "mef",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 10,
+  "fetched_at": "2026-11-03T05:05:53Z",
+  "seconds": 0.73,
+  "newest": "2026-11-02T17:21:48Z"
+ },
+ {
+  "source_id": "messaggero",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:05:52Z",
+  "seconds": 0.86,
+  "newest": "2026-11-02T23:56:27Z"
+ },
+ {
+  "source_id": "messaggero_economia",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:05:52Z",
+  "seconds": 1.18,
+  "newest": "2026-11-03T03:20:03Z"
+ },
+ {
+  "source_id": "messaggero_roma",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:05:52Z",
+  "seconds": 0.94,
+  "newest": "2026-11-02T23:37:42Z"
+ },
+ {
+  "source_id": "milanotoday",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 25,
+  "fetched_at": "2026-11-03T05:05:53Z",
+  "seconds": 0.72,
+  "newest": "2026-11-03T00:56:00Z"
+ },
+ {
+  "source_id": "moneyit",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 55,
+  "fetched_at": "2026-11-03T05:05:52Z",
+  "seconds": 22.44,
+  "newest": "2026-11-02T18:39:27Z"
+ },
+ {
+  "source_id": "moneyweek",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 50,
+  "fetched_at": "2026-11-03T05:06:00Z",
+  "seconds": 1.55,
+  "newest": "2026-11-02T14:51:03Z"
+ },
+ {
+  "source_id": "mylondon",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 25,
+  "fetched_at": "2026-11-03T05:06:00Z",
+  "seconds": 0.28,
+  "newest": "2026-11-02T17:30:13Z"
+ },
+ {
+  "source_id": "nationalreview",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:05:56Z",
+  "seconds": 0.39,
+  "newest": "2026-11-02T20:02:33Z"
+ },
+ {
+  "source_id": "newrepublic",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 100,
+  "fetched_at": "2026-11-03T05:05:56Z",
+  "seconds": 2.78,
+  "newest": "2026-11-02T21:42:32Z"
+ },
+ {
+  "source_id": "newstatesman",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:06:00Z",
+  "seconds": 0.76,
+  "newest": "2026-11-02T19:34:34Z"
+ },
+ {
+  "source_id": "nouvelobs",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 150,
+  "fetched_at": "2026-11-03T05:06:01Z",
+  "seconds": 1.41,
+  "newest": "2026-11-02T19:53:10Z"
+ },
+ {
+  "source_id": "nypost_metro",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:05:56Z",
+  "seconds": 0.7,
+  "newest": "2026-11-03T04:59:58Z"
+ },
+ {
+  "source_id": "nyt_artdesign",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 46,
+  "fetched_at": "2026-11-03T05:05:55Z",
+  "seconds": 0.49,
+  "newest": "2026-11-02T19:10:00Z"
+ },
+ {
+  "source_id": "nyt_business",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 50,
+  "fetched_at": "2026-11-03T05:05:54Z",
+  "seconds": 0.61,
+  "newest": "2026-11-03T02:47:39Z"
+ },
+ {
+  "source_id": "nyt_economy",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:05:55Z",
+  "seconds": 0.47,
+  "newest": "2026-11-02T23:13:58Z"
+ },
+ {
+  "source_id": "nyt_europe",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:05:55Z",
+  "seconds": 0.33,
+  "newest": "2026-11-02T21:28:04Z"
+ },
+ {
+  "source_id": "nyt_nyregion",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:05:54Z",
+  "seconds": 0.13,
+  "newest": "2026-11-03T03:58:04Z"
+ },
+ {
+  "source_id": "nyt_politics",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 36,
+  "fetched_at": "2026-11-03T05:05:55Z",
+  "seconds": 0.17,
+  "newest": "2026-11-03T04:10:38Z"
+ },
+ {
+  "source_id": "nyt_realestate",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:05:55Z",
+  "seconds": 0.62,
+  "newest": "2026-11-02T20:01:06Z"
+ },
+ {
+  "source_id": "nyt_travel",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:05:55Z",
+  "seconds": 0.47,
+  "newest": "2026-11-02T21:26:15Z"
+ },
+ {
+  "source_id": "nyt_world",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 57,
+  "fetched_at": "2026-11-03T05:05:55Z",
+  "seconds": 0.76,
+  "newest": "2026-11-03T03:29:38Z"
+ },
+ {
+  "source_id": "nyt_yourmoney",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:05:55Z",
+  "seconds": 0.62,
+  "newest": "2026-10-30T20:36:05Z"
+ },
+ {
+  "source_id": "ons_calendar",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 10,
+  "fetched_at": "2026-11-03T05:06:01Z",
+  "seconds": 0.48,
+  "newest": "2026-11-02T09:30:00Z"
+ },
+ {
+  "source_id": "open",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 12,
+  "fetched_at": "2026-11-03T05:05:53Z",
+  "seconds": 0.34,
+  "newest": "2026-11-03T04:50:33Z"
+ },
+ {
+  "source_id": "politico_eu",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 10,
+  "fetched_at": "2026-11-03T05:06:04Z",
+  "seconds": 0.62,
+  "newest": "2026-11-03T05:05:00Z"
+ },
+ {
+  "source_id": "politico_us",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 30,
+  "fetched_at": "2026-11-03T05:05:56Z",
+  "seconds": 0.41,
+  "newest": "2026-11-02T10:45:00Z"
+ },
+ {
+  "source_id": "rainews",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 41,
+  "fetched_at": "2026-11-03T05:05:51Z",
+  "seconds": 0.83,
+  "newest": "2026-11-02T17:00:00Z"
+ },
+ {
+  "source_id": "rbi",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 10,
+  "fetched_at": "2026-11-03T05:06:05Z",
+  "seconds": 0.27,
+  "newest": "2026-11-03T03:30:00Z"
+ },
+ {
+  "source_id": "repubblica",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 30,
+  "fetched_at": "2026-11-03T05:05:52Z",
+  "seconds": 0.36,
+  "newest": "2026-11-03T05:00:00Z"
+ },
+ {
+  "source_id": "repubblica_economia",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 25,
+  "fetched_at": "2026-11-03T05:05:52Z",
+  "seconds": 0.92,
+  "newest": "2026-11-03T00:00:00Z"
+ },
+ {
+  "source_id": "repubblica_politica",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 25,
+  "fetched_at": "2026-11-03T05:05:52Z",
+  "seconds": 0.7,
+  "newest": "2026-11-03T00:00:00Z"
+ },
+ {
+  "source_id": "rfi_en",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 21,
+  "fetched_at": "2026-11-03T05:06:02Z",
+  "seconds": 0.58,
+  "newest": "2026-11-02T15:54:59Z"
+ },
+ {
+  "source_id": "rollcall",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 10,
+  "fetched_at": "2026-11-03T05:05:56Z",
+  "seconds": 0.49,
+  "newest": "2026-11-02T18:11:40Z"
+ },
+ {
+  "source_id": "romatoday",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 25,
+  "fetched_at": "2026-11-03T05:05:53Z",
+  "seconds": 0.75,
+  "newest": "2026-11-03T07:00:00Z"
+ },
+ {
+  "source_id": "rtl_lu",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 22,
+  "fetched_at": "2026-11-03T05:06:03Z",
+  "seconds": 0.28,
+  "newest": "2026-11-02T23:01:00Z"
+ },
+ {
+  "source_id": "rtl_today",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 18,
+  "fetched_at": "2026-11-03T05:06:03Z",
+  "seconds": 0.44,
+  "newest": "2026-11-03T04:00:00Z"
+ },
+ {
+  "source_id": "scmp_business",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 50,
+  "fetched_at": "2026-11-03T05:06:05Z",
+  "seconds": 1.14,
+  "newest": "2026-11-03T03:54:43Z"
+ },
+ {
+  "source_id": "scmp_news",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 50,
+  "fetched_at": "2026-11-03T05:06:04Z",
+  "seconds": 0.67,
+  "newest": "2026-11-03T04:40:21Z"
+ },
+ {
+  "source_id": "sec",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 25,
+  "fetched_at": "2026-11-03T05:05:57Z",
+  "seconds": 0.48,
+  "newest": "2026-10-30T19:30:00Z"
+ },
+ {
+  "source_id": "siliconlux",
+  "ok": false,
+  "status": 520,
+  "error": "HTTP 520",
+  "n_items": 0,
+  "fetched_at": "2026-11-03T05:06:03Z",
+  "seconds": 0.52,
+  "newest": null
+ },
+ {
+  "source_id": "skytg24",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 100,
+  "fetched_at": "2026-11-03T05:05:51Z",
+  "seconds": 0.52,
+  "newest": "2026-11-02T11:00:00Z"
+ },
+ {
+  "source_id": "sole24_casa",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 9,
+  "fetched_at": "2026-11-03T05:05:51Z",
+  "seconds": 0.67,
+  "newest": "2026-11-02T11:12:00Z"
+ },
+ {
+  "source_id": "sole24_cultura",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 9,
+  "fetched_at": "2026-11-03T05:05:51Z",
+  "seconds": 0.83,
+  "newest": "2026-11-02T20:31:00Z"
+ },
+ {
+  "source_id": "sole24_economia",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 12,
+  "fetched_at": "2026-11-03T05:05:51Z",
+  "seconds": 0.37,
+  "newest": "2026-11-03T05:04:02Z"
+ },
+ {
+  "source_id": "sole24_finanza",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 9,
+  "fetched_at": "2026-11-03T05:05:51Z",
+  "seconds": 0.8,
+  "newest": "2026-11-02T06:52:00Z"
+ },
+ {
+  "source_id": "sole24_italia",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 12,
+  "fetched_at": "2026-11-03T05:05:51Z",
+  "seconds": 0.94,
+  "newest": "2026-11-02T19:07:28Z"
+ },
+ {
+  "source_id": "sole24_moda",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 9,
+  "fetched_at": "2026-11-03T05:05:51Z",
+  "seconds": 0.77,
+  "newest": "2026-11-02T10:50:14Z"
+ },
+ {
+  "source_id": "sole24_mondo",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 10,
+  "fetched_at": "2026-11-03T05:05:51Z",
+  "seconds": 0.92,
+  "newest": "2026-11-02T17:34:00Z"
+ },
+ {
+  "source_id": "sole24_norme",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 5,
+  "fetched_at": "2026-11-03T05:05:51Z",
+  "seconds": 0.89,
+  "newest": "2026-11-03T04:08:44Z"
+ },
+ {
+  "source_id": "sole24_viaggi",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 9,
+  "fetched_at": "2026-11-03T05:05:51Z",
+  "seconds": 0.6,
+  "newest": "2026-11-02T09:46:27Z"
+ },
+ {
+  "source_id": "standard_london",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 19,
+  "fetched_at": "2026-11-03T05:06:00Z",
+  "seconds": 0.32,
+  "newest": "2026-11-03T00:05:26Z"
+ },
+ {
+  "source_id": "statec",
+  "ok": false,
+  "status": 200,
+  "error": "feed parsed but contained no usable entries",
+  "n_items": 0,
+  "fetched_at": "2026-11-03T05:06:03Z",
+  "seconds": 1.69,
+  "newest": null
+ },
+ {
+  "source_id": "tgcom24",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 30,
+  "fetched_at": "2026-11-03T05:05:51Z",
+  "seconds": 0.39,
+  "newest": "2026-11-03T05:00:00Z"
+ },
+ {
+  "source_id": "thecity",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 10,
+  "fetched_at": "2026-11-03T05:05:56Z",
+  "seconds": 1.8,
+  "newest": "2026-11-02T21:45:58Z"
+ },
+ {
+  "source_id": "thehill",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 15,
+  "fetched_at": "2026-11-03T05:05:56Z",
+  "seconds": 0.23,
+  "newest": "2026-11-03T03:53:10Z"
+ },
+ {
+  "source_id": "thelocal_de",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:06:04Z",
+  "seconds": 0.98,
+  "newest": "2026-11-02T15:02:32Z"
+ },
+ {
+  "source_id": "thelocal_fr",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:06:02Z",
+  "seconds": 1.15,
+  "newest": "2026-11-02T16:51:26Z"
+ },
+ {
+  "source_id": "thelocal_it",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:05:53Z",
+  "seconds": 1.41,
+  "newest": "2026-11-02T14:29:47Z"
+ },
+ {
+  "source_id": "venetoeconomia",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 5,
+  "fetched_at": "2026-11-03T05:05:54Z",
+  "seconds": 1.27,
+  "newest": "2026-11-02T14:31:49Z"
+ },
+ {
+  "source_id": "veneziatoday",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 25,
+  "fetched_at": "2026-11-03T05:05:53Z",
+  "seconds": 0.72,
+  "newest": "2026-11-03T08:30:00Z"
+ },
+ {
+  "source_id": "vox",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 10,
+  "fetched_at": "2026-11-03T05:05:56Z",
+  "seconds": 1.1,
+  "newest": "2026-11-02T23:00:00Z"
+ },
+ {
+  "source_id": "wort",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 50,
+  "fetched_at": "2026-11-03T05:06:03Z",
+  "seconds": 0.52,
+  "newest": "2026-11-03T04:00:00Z"
+ },
+ {
+  "source_id": "woxx",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 20,
+  "fetched_at": "2026-11-03T05:06:03Z",
+  "seconds": 0.57,
+  "newest": "2026-10-30T13:11:31Z"
+ },
+ {
+  "source_id": "wsj_markets",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 61,
+  "fetched_at": "2026-11-03T05:05:55Z",
+  "seconds": 0.2,
+  "newest": "2026-11-03T04:59:00Z"
+ },
+ {
+  "source_id": "wsj_world",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 71,
+  "fetched_at": "2026-11-03T05:05:55Z",
+  "seconds": 0.57,
+  "newest": "2026-11-03T03:00:00Z"
+ },
+ {
+  "source_id": "wto",
+  "ok": true,
+  "status": 200,
+  "error": "",
+  "n_items": 10,
+  "fetched_at": "2026-11-03T05:06:05Z",
+  "seconds": 0.24,
+  "newest": "2026-11-02T00:00:00Z"
+ },
+ {
+  "source_id": "ytali",
+  "ok": false,
+  "status": "ERR",
+  "error": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+  "n_items": 0,
+  "fetched_at": "2026-11-03T05:05:54Z",
+  "seconds": 6.98,
+  "newest": null
+ }
+]
