@@ -55,7 +55,7 @@
      ]
     }
    ],
-   "checked": "2026-11-03"
+   "checked": "2026-11-04"
   },
   "fed-rates": {
    "label": {
@@ -63,7 +63,7 @@
     "it": "Federal Reserve"
    },
    "entries": [],
-   "checked": "2026-11-03"
+   "checked": "2026-11-04"
   },
   "boe-rates": {
    "label": {
@@ -71,7 +71,7 @@
     "it": "Bank of England"
    },
    "entries": [],
-   "checked": "2026-11-03"
+   "checked": "2026-11-04"
   },
   "italy-budget": {
    "label": {
@@ -186,9 +186,47 @@
        "url": "https://www.editorialedomani.it/politica/italia/manovra-pochi-fondi-tagli-sanita-meloni-medici-infermieri-baxkbwpo"
       }
      ]
+    },
+    {
+     "date": "2026-11-04",
+     "story_id": "s968c47237e",
+     "headline": {
+      "en": "Budget debate pits Lega against allies on pensions, schools and tax amnesty",
+      "it": "Manovra: la Lega contrapposta agli alleati su pensioni, scuole e condono edilizio"
+     },
+     "subheadline": {
+      "en": "Lega urges respect for its pension line while allies question school cuts and a building‑tax amnesty.",
+      "it": "La Lega chiede rispetto per il suo piano pensionistico mentre gli alleati contestano i tagli alle scuole e il condono edilizio."
+     },
+     "next": {
+      "en": [],
+      "it": []
+     },
+     "sources": [
+      {
+       "name": "la Repubblica Economia",
+       "url": "https://www.repubblica.it/economia/2026/11/03/news/salvini_manovra_lega_pensioni_tagli_scuola_richieste-425695976/"
+      },
+      {
+       "name": "Il Sole 24 Ore Italia",
+       "url": "https://www.ilsole24ore.com/art/manovra-fdi-lavoro-emendamento-riaprire-condono-edilizio-campania-AJIC5e3B"
+      },
+      {
+       "name": "ANSA Politica",
+       "url": "https://www.ansa.it/sito/notizie/politica/2026/11/03/salvini-dei-tagli-alla-scuola-non-sapevo-niente-ora-faremo_2efb7e04-432c-4fc0-9e02-df66ae981476.html"
+      },
+      {
+       "name": "Domani",
+       "url": "https://www.editorialedomani.it/politica/italia/legge-bilancio-2027-manovra-ripudiata-destra-cambiare-tutto-uuo5upjw"
+      },
+      {
+       "name": "ANSA Politica",
+       "url": "https://www.ansa.it/sito/notizie/politica/2026/11/03/osnato-fdi-salvini-i-patti-da-rispettare-sono-quelli-scritti-in-manovra_2a25e942-b438-48e8-9d33-5d01c4e6bc49.html"
+      }
+     ]
     }
    ],
-   "checked": "2026-11-03"
+   "checked": "2026-11-04"
   },
   "uk-budget": {
    "label": {
@@ -196,7 +234,7 @@
     "it": "Bilancio UK e fisco"
    },
    "entries": [],
-   "checked": "2026-11-03"
+   "checked": "2026-11-04"
   },
   "us-tariffs": {
    "label": {
@@ -204,7 +242,7 @@
     "it": "Dazi USA e commercio"
    },
    "entries": [],
-   "checked": "2026-11-03"
+   "checked": "2026-11-04"
   },
   "italy-inflation": {
    "label": {
@@ -269,7 +307,7 @@
      ]
     }
    ],
-   "checked": "2026-11-03"
+   "checked": "2026-11-04"
   },
   "venice-access-fee": {
    "label": {
@@ -277,7 +315,7 @@
     "it": "Contributo di accesso a Venezia"
    },
    "entries": [],
-   "checked": "2026-11-03"
+   "checked": "2026-11-04"
   },
   "venice-mose": {
    "label": {
@@ -285,7 +323,7 @@
     "it": "MOSE e acqua alta"
    },
    "entries": [],
-   "checked": "2026-11-03"
+   "checked": "2026-11-04"
   },
   "lux-housing": {
    "label": {
@@ -316,7 +354,7 @@
      ]
     }
    ],
-   "checked": "2026-11-03"
+   "checked": "2026-11-04"
   },
   "nyc-housing": {
    "label": {
@@ -324,7 +362,7 @@
     "it": "Casa e affitti a New York"
    },
    "entries": [],
-   "checked": "2026-11-03"
+   "checked": "2026-11-04"
   },
   "london-transport": {
    "label": {
@@ -355,7 +393,7 @@
      ]
     }
    ],
-   "checked": "2026-11-03"
+   "checked": "2026-11-04"
   },
   "milan-cortina": {
    "label": {
@@ -363,7 +401,7 @@
     "it": "Eredità Milano-Cortina"
    },
    "entries": [],
-   "checked": "2026-11-03"
+   "checked": "2026-11-04"
   },
   "eu-ai-regulation": {
    "label": {
@@ -371,7 +409,7 @@
     "it": "Regole UE sul digitale"
    },
    "entries": [],
-   "checked": "2026-11-03"
+   "checked": "2026-11-04"
   }
  }
 }

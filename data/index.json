@@ -55,11 +55,13 @@
    "late": true
   },
   "2026-11-04": {
-   "status": "staged",
+   "status": "published",
    "started_at": "2026-11-04T05:09:41Z",
    "built_at": "2026-11-04T05:22:29Z",
    "articles": 13,
-   "briefs": 177
+   "briefs": 177,
+   "published_at": "2026-11-04T07:59:31Z",
+   "late": true
   }
  }
 }
