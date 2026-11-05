@@ -1,10 +1,10 @@
 {
- "date": "2026-11-04",
- "state": "published",
+ "date": "2026-11-05",
+ "state": "staged",
  "run": {
-  "started_at": "2026-11-04T05:09:41Z",
-  "finished_at": "2026-11-04T05:22:29Z",
-  "seconds": 768.6,
+  "started_at": "2026-11-05T05:11:04Z",
+  "finished_at": "2026-11-05T05:23:22Z",
+  "seconds": 737.0,
   "sources": {
    "checked": 209,
    "ok": 204,
@@ -18,51 +18,51 @@
    "failures": {
     "bis": "feed parsed but contained no usable entries",
     "europarl": "HTTP 202",
-    "siliconlux": "HTTP 202",
+    "siliconlux": "HTTP 520",
     "statec": "feed parsed but contained no usable entries",
-    "ytali": "HTTP 202"
+    "ytali": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
    }
   },
   "items": {
-   "retrieved": 6853,
-   "fresh": 2705,
+   "retrieved": 6919,
+   "fresh": 2812,
    "dropped": {
-    "low_value": 35,
-    "too_old": 4014,
-    "date_missing": 16,
-    "date_ambiguous": 44,
-    "opinion": 29
+    "low_value": 24,
+    "too_old": 3967,
+    "date_missing": 31,
+    "opinion": 16,
+    "date_ambiguous": 59
    },
    "calendar": 10
   },
   "lookback_hours": 30,
-  "clusters": 1946,
-  "candidates_planned": 190,
-  "candidates_with_evidence": 190,
+  "clusters": 2104,
+  "candidates_planned": 188,
+  "candidates_with_evidence": 188,
   "stories": {
-   "articles": 13,
-   "briefs": 177,
+   "articles": 6,
+   "briefs": 182,
    "analyses": 0
   },
   "verification": {
-   "drafts": 26,
-   "published_articles": 13,
-   "fallback_briefs": 177,
+   "drafts": 27,
+   "published_articles": 6,
+   "fallback_briefs": 182,
    "repairs": 25,
-   "language_regenerations": 3,
-   "unsupported_claims_detected": 102,
-   "unsupported_claims_blocked": 40,
-   "attribution_failures": 1,
-   "numerical_inconsistencies": 29,
-   "validation_failures": 39,
-   "llm_errors": 0
+   "language_regenerations": 2,
+   "unsupported_claims_detected": 96,
+   "unsupported_claims_blocked": 22,
+   "attribution_failures": 6,
+   "numerical_inconsistencies": 16,
+   "validation_failures": 34,
+   "llm_errors": 16
   },
   "llm": {
    "calls": 140,
-   "failures": 16,
+   "failures": 24,
    "by_model": {
-    "groq:openai/gpt-oss-120b": 40,
-    "gemini:gemini-flash-lite-latest": 12
+    "groq:openai/gpt-oss-120b": 38,
+    "gemini:gemini-flash-lite-latest": 2
    },
    "circuit_open": false,
    "providers": [
@@ -82,7 +82,7 @@
       "gemini-flash-lite-latest",
       "gemini-flash-latest"
      ],
-     "switched_off": false
+     "switched_off": true
     }
    ],
    "exhausted_models": [
@@ -93,16 +93,26 @@
    "errors": [
     "groq:moonshotai/kimi-k2-instruct: HTTP 404: model unavailable — {\"error\":{\"message\":\"The model `moonshotai/kimi-k2-instruct` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_f",
     "groq:meta-llama/llama-4-scout-17b-16e-instruct: HTTP 404: model unavailable — {\"error\":{\"message\":\"The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code",
-    "groq:llama-3.3-70b-versatile: HTTP 404: model unavailable — {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found"
+    "groq:llama-3.3-70b-versatile: HTTP 404: model unavailable — {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found",
+    "gemini:gemini-flash-lite-latest: LLMError: HTTP 503: [{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n]",
+    "gemini:gemini-flash-lite-latest: LLMError: HTTP 503: [{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n]",
+    "gemini:gemini-flash-lite-latest: LLMError: HTTP 503: [{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n]",
+    "gemini:gemini-flash-lite-latest: LLMError: HTTP 503: [{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n]",
+    "gemini:gemini-flash-lite-latest: LLMError: HTTP 503: [{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n]",
+    "gemini:gemini-flash-lite-latest: LLMError: HTTP 503: [{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n]",
+    "gemini:gemini-flash-latest: LLMError: HTTP 503: [{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n]",
+    "gemini: switched off for this run after 4 consecutive failures",
+    "gemini:gemini-flash-lite-latest: ReadTimeout: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=90.0)",
+    "gemini: switched off for this run after 5 consecutive failures"
    ],
    "budget": 140
   },
-  "llm_status": "ok",
+  "llm_status": "degraded",
   "market_status": "ok",
   "market_errors": [],
   "errors": []
  },
- "updated_at": "2026-11-04T07:59:31Z",
+ "updated_at": "2026-11-05T05:23:22Z",
  "last_published": "2026-11-04T07:59:31Z",
  "late": true,
  "email": {
