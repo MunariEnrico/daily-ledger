@@ -64,11 +64,13 @@
    "late": true
   },
   "2026-11-05": {
-   "status": "staged",
+   "status": "published",
    "started_at": "2026-11-05T05:11:04Z",
    "built_at": "2026-11-05T05:23:22Z",
    "articles": 6,
-   "briefs": 182
+   "briefs": 182,
+   "published_at": "2026-11-05T07:59:29Z",
+   "late": true
   }
  }
 }

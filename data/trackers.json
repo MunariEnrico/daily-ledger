@@ -55,7 +55,7 @@
      ]
     }
    ],
-   "checked": "2026-11-04"
+   "checked": "2026-11-05"
   },
   "fed-rates": {
    "label": {
@@ -63,7 +63,7 @@
     "it": "Federal Reserve"
    },
    "entries": [],
-   "checked": "2026-11-04"
+   "checked": "2026-11-05"
   },
   "boe-rates": {
    "label": {
@@ -71,7 +71,7 @@
     "it": "Bank of England"
    },
    "entries": [],
-   "checked": "2026-11-04"
+   "checked": "2026-11-05"
   },
   "italy-budget": {
    "label": {
@@ -224,9 +224,35 @@
        "url": "https://www.ansa.it/sito/notizie/politica/2026/11/03/osnato-fdi-salvini-i-patti-da-rispettare-sono-quelli-scritti-in-manovra_2a25e942-b438-48e8-9d33-5d01c4e6bc49.html"
       }
      ]
+    },
+    {
+     "date": "2026-11-05",
+     "story_id": "s425e414330",
+     "headline": {
+      "en": "Meloni meets Confindustria chief Orsini on housing, energy and business",
+      "it": "Meloni incontra il capo di Confindustria Orsini su casa, energia e imprese"
+     },
+     "subheadline": {
+      "en": "The meeting follows industrialists’ call for “courage” in policy.",
+      "it": "Il premier e il presidente industriale discutono la politica dopo gli auspici di «coraggio» dagli industriali."
+     },
+     "next": {
+      "en": [],
+      "it": []
+     },
+     "sources": [
+      {
+       "name": "Corriere della Sera Roma",
+       "url": "https://roma.corriere.it/notizie/politica/26_novembre_04/manovra-incontro-meloni-orsini-6245f420-3c33-43c4-8af2-6adede752xlk.shtml"
+      },
+      {
+       "name": "ANSA Economia",
+       "url": "https://www.ansa.it/sito/notizie/economia/2026/11/04/gli-industriali-elettrici-allattacco-il-governo-ci-usa-come-cassa_e7bceef6-31a1-478f-b3d7-abf5d3d0ac5e.html"
+      }
+     ]
     }
    ],
-   "checked": "2026-11-04"
+   "checked": "2026-11-05"
   },
   "uk-budget": {
    "label": {
@@ -234,7 +260,7 @@
     "it": "Bilancio UK e fisco"
    },
    "entries": [],
-   "checked": "2026-11-04"
+   "checked": "2026-11-05"
   },
   "us-tariffs": {
    "label": {
@@ -242,7 +268,7 @@
     "it": "Dazi USA e commercio"
    },
    "entries": [],
-   "checked": "2026-11-04"
+   "checked": "2026-11-05"
   },
   "italy-inflation": {
    "label": {
@@ -307,7 +333,7 @@
      ]
     }
    ],
-   "checked": "2026-11-04"
+   "checked": "2026-11-05"
   },
   "venice-access-fee": {
    "label": {
@@ -315,7 +341,7 @@
     "it": "Contributo di accesso a Venezia"
    },
    "entries": [],
-   "checked": "2026-11-04"
+   "checked": "2026-11-05"
   },
   "venice-mose": {
    "label": {
@@ -323,7 +349,7 @@
     "it": "MOSE e acqua alta"
    },
    "entries": [],
-   "checked": "2026-11-04"
+   "checked": "2026-11-05"
   },
   "lux-housing": {
    "label": {
@@ -354,7 +380,7 @@
      ]
     }
    ],
-   "checked": "2026-11-04"
+   "checked": "2026-11-05"
   },
   "nyc-housing": {
    "label": {
@@ -362,7 +388,7 @@
     "it": "Casa e affitti a New York"
    },
    "entries": [],
-   "checked": "2026-11-04"
+   "checked": "2026-11-05"
   },
   "london-transport": {
    "label": {
@@ -393,7 +419,7 @@
      ]
     }
    ],
-   "checked": "2026-11-04"
+   "checked": "2026-11-05"
   },
   "milan-cortina": {
    "label": {
@@ -401,7 +427,7 @@
     "it": "Eredità Milano-Cortina"
    },
    "entries": [],
-   "checked": "2026-11-04"
+   "checked": "2026-11-05"
   },
   "eu-ai-regulation": {
    "label": {
@@ -409,7 +435,7 @@
     "it": "Regole UE sul digitale"
    },
    "entries": [],
-   "checked": "2026-11-04"
+   "checked": "2026-11-05"
   }
  }
 }
