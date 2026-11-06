@@ -1,0 +1,103 @@
+{
+ "started_at": "2026-11-06T05:09:41Z",
+ "finished_at": "2026-11-06T05:21:49Z",
+ "seconds": 727.9,
+ "sources": {
+  "checked": 209,
+  "ok": 203,
+  "failed": [
+   "bis",
+   "euronews_business",
+   "europarl",
+   "siliconlux",
+   "statec",
+   "ytali"
+  ],
+  "failures": {
+   "bis": "feed parsed but contained no usable entries",
+   "euronews_business": "HTTP 406",
+   "europarl": "HTTP 202",
+   "siliconlux": "HTTP 520",
+   "statec": "feed parsed but contained no usable entries",
+   "ytali": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  }
+ },
+ "items": {
+  "retrieved": 6939,
+  "fresh": 2912,
+  "dropped": {
+   "too_old": 3870,
+   "low_value": 25,
+   "date_missing": 23,
+   "opinion": 24,
+   "date_ambiguous": 75
+  },
+  "calendar": 10
+ },
+ "lookback_hours": 30,
+ "clusters": 2175,
+ "candidates_planned": 187,
+ "candidates_with_evidence": 187,
+ "stories": {
+  "articles": 16,
+  "briefs": 171,
+  "analyses": 0
+ },
+ "verification": {
+  "drafts": 27,
+  "published_articles": 16,
+  "fallback_briefs": 171,
+  "repairs": 21,
+  "language_regenerations": 3,
+  "unsupported_claims_detected": 109,
+  "unsupported_claims_blocked": 53,
+  "attribution_failures": 3,
+  "numerical_inconsistencies": 24,
+  "validation_failures": 34,
+  "llm_errors": 0
+ },
+ "llm": {
+  "calls": 140,
+  "failures": 16,
+  "by_model": {
+   "groq:openai/gpt-oss-120b": 38,
+   "gemini:gemini-flash-lite-latest": 12
+  },
+  "circuit_open": false,
+  "providers": [
+   {
+    "name": "groq",
+    "models": [
+     "openai/gpt-oss-120b",
+     "moonshotai/kimi-k2-instruct",
+     "meta-llama/llama-4-scout-17b-16e-instruct",
+     "llama-3.3-70b-versatile"
+    ],
+    "switched_off": false
+   },
+   {
+    "name": "gemini",
+    "models": [
+     "gemini-flash-lite-latest",
+     "gemini-flash-latest"
+    ],
+    "switched_off": false
+   }
+  ],
+  "exhausted_models": [
+   "groq:llama-3.3-70b-versatile",
+   "groq:meta-llama/llama-4-scout-17b-16e-instruct",
+   "groq:moonshotai/kimi-k2-instruct"
+  ],
+  "errors": [
+   "groq:moonshotai/kimi-k2-instruct: HTTP 404: model unavailable — {\"error\":{\"message\":\"The model `moonshotai/kimi-k2-instruct` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_f",
+   "groq:meta-llama/llama-4-scout-17b-16e-instruct: HTTP 404: model unavailable — {\"error\":{\"message\":\"The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code",
+   "groq:llama-3.3-70b-versatile: HTTP 404: model unavailable — {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found"
+  ],
+  "budget": 140
+ },
+ "llm_status": "ok",
+ "market_status": "ok",
+ "market_errors": [],
+ "errors": []
+}
