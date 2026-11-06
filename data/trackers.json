@@ -55,7 +55,7 @@
      ]
     }
    ],
-   "checked": "2026-11-05"
+   "checked": "2026-11-06"
   },
   "fed-rates": {
    "label": {
@@ -63,15 +63,38 @@
     "it": "Federal Reserve"
    },
    "entries": [],
-   "checked": "2026-11-05"
+   "checked": "2026-11-06"
   },
   "boe-rates": {
    "label": {
     "en": "Bank of England",
     "it": "Bank of England"
    },
-   "entries": [],
-   "checked": "2026-11-05"
+   "entries": [
+    {
+     "date": "2026-11-06",
+     "story_id": "sd1a0651b66",
+     "headline": {
+      "en": "Bank of England lifts Bank Rate to 4% after 8‑1 MPC vote",
+      "it": "La Banca d'Inghilterra alza il tasso al 4% dopo voto 8‑1 del MPC"
+     },
+     "subheadline": {
+      "en": "The decision follows rising inflation and higher energy prices.",
+      "it": "La decisione arriva in un contesto di inflazione in crescita e prezzi dell'energia più alti."
+     },
+     "next": {
+      "en": [],
+      "it": []
+     },
+     "sources": [
+      {
+       "name": "Bank of England · Publications",
+       "url": "https://www.bankofengland.co.uk/monetary-policy-report/2026/november-2026"
+      }
+     ]
+    }
+   ],
+   "checked": "2026-11-06"
   },
   "italy-budget": {
    "label": {
@@ -252,7 +275,7 @@
      ]
     }
    ],
-   "checked": "2026-11-05"
+   "checked": "2026-11-06"
   },
   "uk-budget": {
    "label": {
@@ -260,7 +283,7 @@
     "it": "Bilancio UK e fisco"
    },
    "entries": [],
-   "checked": "2026-11-05"
+   "checked": "2026-11-06"
   },
   "us-tariffs": {
    "label": {
@@ -268,7 +291,7 @@
     "it": "Dazi USA e commercio"
    },
    "entries": [],
-   "checked": "2026-11-05"
+   "checked": "2026-11-06"
   },
   "italy-inflation": {
    "label": {
@@ -333,7 +356,7 @@
      ]
     }
    ],
-   "checked": "2026-11-05"
+   "checked": "2026-11-06"
   },
   "venice-access-fee": {
    "label": {
@@ -341,7 +364,7 @@
     "it": "Contributo di accesso a Venezia"
    },
    "entries": [],
-   "checked": "2026-11-05"
+   "checked": "2026-11-06"
   },
   "venice-mose": {
    "label": {
@@ -349,7 +372,7 @@
     "it": "MOSE e acqua alta"
    },
    "entries": [],
-   "checked": "2026-11-05"
+   "checked": "2026-11-06"
   },
   "lux-housing": {
    "label": {
@@ -380,7 +403,7 @@
      ]
     }
    ],
-   "checked": "2026-11-05"
+   "checked": "2026-11-06"
   },
   "nyc-housing": {
    "label": {
@@ -388,7 +411,7 @@
     "it": "Casa e affitti a New York"
    },
    "entries": [],
-   "checked": "2026-11-05"
+   "checked": "2026-11-06"
   },
   "london-transport": {
    "label": {
@@ -419,7 +442,7 @@
      ]
     }
    ],
-   "checked": "2026-11-05"
+   "checked": "2026-11-06"
   },
   "milan-cortina": {
    "label": {
@@ -427,7 +450,7 @@
     "it": "Eredità Milano-Cortina"
    },
    "entries": [],
-   "checked": "2026-11-05"
+   "checked": "2026-11-06"
   },
   "eu-ai-regulation": {
    "label": {
@@ -435,7 +458,7 @@
     "it": "Regole UE sul digitale"
    },
    "entries": [],
-   "checked": "2026-11-05"
+   "checked": "2026-11-06"
   }
  }
 }
