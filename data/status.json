@@ -1,15 +1,16 @@
 {
- "date": "2026-11-06",
- "state": "published",
+ "date": "2026-11-07",
+ "state": "staged",
  "run": {
-  "started_at": "2026-11-06T05:09:41Z",
-  "finished_at": "2026-11-06T05:21:49Z",
-  "seconds": 727.9,
+  "started_at": "2026-11-07T05:00:24Z",
+  "finished_at": "2026-11-07T05:13:40Z",
+  "seconds": 796.3,
   "sources": {
    "checked": 209,
-   "ok": 203,
+   "ok": 202,
    "failed": [
     "bis",
+    "ec_press",
     "euronews_business",
     "europarl",
     "siliconlux",
@@ -18,6 +19,7 @@
    ],
    "failures": {
     "bis": "feed parsed but contained no usable entries",
+    "ec_press": "ReadTimeout: HTTPSConnectionPool(host='ec.europa.eu', port=443): Read timed out. (read timeout=20)",
     "euronews_business": "HTTP 406",
     "europarl": "HTTP 202",
     "siliconlux": "HTTP 520",
@@ -26,45 +28,45 @@
    }
   },
   "items": {
-   "retrieved": 6939,
-   "fresh": 2912,
+   "retrieved": 6887,
+   "fresh": 2552,
    "dropped": {
-    "too_old": 3870,
-    "low_value": 25,
-    "date_missing": 23,
+    "too_old": 4150,
+    "low_value": 30,
+    "date_missing": 22,
     "opinion": 24,
-    "date_ambiguous": 75
+    "date_ambiguous": 99
    },
    "calendar": 10
   },
   "lookback_hours": 30,
-  "clusters": 2175,
-  "candidates_planned": 187,
-  "candidates_with_evidence": 187,
+  "clusters": 1886,
+  "candidates_planned": 184,
+  "candidates_with_evidence": 184,
   "stories": {
-   "articles": 16,
-   "briefs": 171,
+   "articles": 7,
+   "briefs": 177,
    "analyses": 0
   },
   "verification": {
-   "drafts": 27,
-   "published_articles": 16,
-   "fallback_briefs": 171,
-   "repairs": 21,
-   "language_regenerations": 3,
-   "unsupported_claims_detected": 109,
-   "unsupported_claims_blocked": 53,
+   "drafts": 26,
+   "published_articles": 7,
+   "fallback_briefs": 177,
+   "repairs": 24,
+   "language_regenerations": 5,
+   "unsupported_claims_detected": 108,
+   "unsupported_claims_blocked": 51,
    "attribution_failures": 3,
-   "numerical_inconsistencies": 24,
-   "validation_failures": 34,
+   "numerical_inconsistencies": 29,
+   "validation_failures": 46,
    "llm_errors": 0
   },
   "llm": {
    "calls": 140,
-   "failures": 16,
+   "failures": 17,
    "by_model": {
-    "groq:openai/gpt-oss-120b": 38,
-    "gemini:gemini-flash-lite-latest": 12
+    "groq:openai/gpt-oss-120b": 39,
+    "gemini:gemini-flash-lite-latest": 14
    },
    "circuit_open": false,
    "providers": [
@@ -95,7 +97,8 @@
    "errors": [
     "groq:moonshotai/kimi-k2-instruct: HTTP 404: model unavailable — {\"error\":{\"message\":\"The model `moonshotai/kimi-k2-instruct` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_f",
     "groq:meta-llama/llama-4-scout-17b-16e-instruct: HTTP 404: model unavailable — {\"error\":{\"message\":\"The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code",
-    "groq:llama-3.3-70b-versatile: HTTP 404: model unavailable — {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found"
+    "groq:llama-3.3-70b-versatile: HTTP 404: model unavailable — {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found",
+    "gemini:gemini-flash-lite-latest: LLMError: HTTP 503: [{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n]"
    ],
    "budget": 140
   },
@@ -104,7 +107,7 @@
   "market_errors": [],
   "errors": []
  },
- "updated_at": "2026-11-06T07:57:42Z",
+ "updated_at": "2026-11-07T05:13:40Z",
  "last_published": "2026-11-06T07:57:42Z",
  "late": true,
  "email": {
