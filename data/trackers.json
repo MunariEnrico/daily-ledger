@@ -55,7 +55,7 @@
      ]
     }
    ],
-   "checked": "2026-11-06"
+   "checked": "2026-11-07"
   },
   "fed-rates": {
    "label": {
@@ -63,7 +63,7 @@
     "it": "Federal Reserve"
    },
    "entries": [],
-   "checked": "2026-11-06"
+   "checked": "2026-11-07"
   },
   "boe-rates": {
    "label": {
@@ -94,7 +94,7 @@
      ]
     }
    ],
-   "checked": "2026-11-06"
+   "checked": "2026-11-07"
   },
   "italy-budget": {
    "label": {
@@ -275,7 +275,7 @@
      ]
     }
    ],
-   "checked": "2026-11-06"
+   "checked": "2026-11-07"
   },
   "uk-budget": {
    "label": {
@@ -283,7 +283,7 @@
     "it": "Bilancio UK e fisco"
    },
    "entries": [],
-   "checked": "2026-11-06"
+   "checked": "2026-11-07"
   },
   "us-tariffs": {
    "label": {
@@ -291,7 +291,7 @@
     "it": "Dazi USA e commercio"
    },
    "entries": [],
-   "checked": "2026-11-06"
+   "checked": "2026-11-07"
   },
   "italy-inflation": {
    "label": {
@@ -356,7 +356,7 @@
      ]
     }
    ],
-   "checked": "2026-11-06"
+   "checked": "2026-11-07"
   },
   "venice-access-fee": {
    "label": {
@@ -364,7 +364,7 @@
     "it": "Contributo di accesso a Venezia"
    },
    "entries": [],
-   "checked": "2026-11-06"
+   "checked": "2026-11-07"
   },
   "venice-mose": {
    "label": {
@@ -372,7 +372,7 @@
     "it": "MOSE e acqua alta"
    },
    "entries": [],
-   "checked": "2026-11-06"
+   "checked": "2026-11-07"
   },
   "lux-housing": {
    "label": {
@@ -403,7 +403,7 @@
      ]
     }
    ],
-   "checked": "2026-11-06"
+   "checked": "2026-11-07"
   },
   "nyc-housing": {
    "label": {
@@ -411,7 +411,7 @@
     "it": "Casa e affitti a New York"
    },
    "entries": [],
-   "checked": "2026-11-06"
+   "checked": "2026-11-07"
   },
   "london-transport": {
    "label": {
@@ -442,7 +442,7 @@
      ]
     }
    ],
-   "checked": "2026-11-06"
+   "checked": "2026-11-07"
   },
   "milan-cortina": {
    "label": {
@@ -450,7 +450,7 @@
     "it": "Eredità Milano-Cortina"
    },
    "entries": [],
-   "checked": "2026-11-06"
+   "checked": "2026-11-07"
   },
   "eu-ai-regulation": {
    "label": {
@@ -458,7 +458,7 @@
     "it": "Regole UE sul digitale"
    },
    "entries": [],
-   "checked": "2026-11-06"
+   "checked": "2026-11-07"
   }
  }
 }
