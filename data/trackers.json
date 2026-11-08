@@ -53,9 +53,35 @@
        "url": "https://www.france24.com/en/europe/20261029-ecb-president-christine-lagarde-to-step-down-in-february-2027-nine-months-before-term-ends"
       }
      ]
+    },
+    {
+     "date": "2026-11-08",
+     "story_id": "s9f303f9678",
+     "headline": {
+      "en": "Lagarde warns inflation will stay high, condemns French debt rhetoric",
+      "it": "Lagarde avverte inflazione alta, critica propaganda francese sul debito"
+     },
+     "subheadline": {
+      "en": "ECB chief says she cannot stay silent on election propaganda in France.",
+      "it": "La presidente della BCE dice di non poter tacere di fronte alle affermazioni elettorali in Francia."
+     },
+     "next": {
+      "en": [],
+      "it": []
+     },
+     "sources": [
+      {
+       "name": "Corriere della Sera Economia",
+       "url": "https://www.corriere.it/economia/finanza/26_novembre_07/lagarde-l-inflazione-restera-alta-nei-prossimi-mesi-a-rischio-gli-obiettivi-della-bce-2b698c64-d869-4dd5-b2d7-d33445672xlk.shtml"
+      },
+      {
+       "name": "Il Messaggero Economia",
+       "url": "https://www.ilmessaggero.it/economia/news/lagarde_inflazione_alta_rialzo_tassi_bce-9875806.html"
+      }
+     ]
     }
    ],
-   "checked": "2026-11-07"
+   "checked": "2026-11-08"
   },
   "fed-rates": {
    "label": {
@@ -63,7 +89,7 @@
     "it": "Federal Reserve"
    },
    "entries": [],
-   "checked": "2026-11-07"
+   "checked": "2026-11-08"
   },
   "boe-rates": {
    "label": {
@@ -94,7 +120,7 @@
      ]
     }
    ],
-   "checked": "2026-11-07"
+   "checked": "2026-11-08"
   },
   "italy-budget": {
    "label": {
@@ -275,7 +301,7 @@
      ]
     }
    ],
-   "checked": "2026-11-07"
+   "checked": "2026-11-08"
   },
   "uk-budget": {
    "label": {
@@ -283,7 +309,7 @@
     "it": "Bilancio UK e fisco"
    },
    "entries": [],
-   "checked": "2026-11-07"
+   "checked": "2026-11-08"
   },
   "us-tariffs": {
    "label": {
@@ -291,7 +317,7 @@
     "it": "Dazi USA e commercio"
    },
    "entries": [],
-   "checked": "2026-11-07"
+   "checked": "2026-11-08"
   },
   "italy-inflation": {
    "label": {
@@ -356,7 +382,7 @@
      ]
     }
    ],
-   "checked": "2026-11-07"
+   "checked": "2026-11-08"
   },
   "venice-access-fee": {
    "label": {
@@ -364,7 +390,7 @@
     "it": "Contributo di accesso a Venezia"
    },
    "entries": [],
-   "checked": "2026-11-07"
+   "checked": "2026-11-08"
   },
   "venice-mose": {
    "label": {
@@ -372,7 +398,7 @@
     "it": "MOSE e acqua alta"
    },
    "entries": [],
-   "checked": "2026-11-07"
+   "checked": "2026-11-08"
   },
   "lux-housing": {
    "label": {
@@ -403,7 +429,7 @@
      ]
     }
    ],
-   "checked": "2026-11-07"
+   "checked": "2026-11-08"
   },
   "nyc-housing": {
    "label": {
@@ -411,7 +437,7 @@
     "it": "Casa e affitti a New York"
    },
    "entries": [],
-   "checked": "2026-11-07"
+   "checked": "2026-11-08"
   },
   "london-transport": {
    "label": {
@@ -440,9 +466,31 @@
        "url": "https://www.standard.co.uk/news/london/london-underground-tube-passengers-ticket-machine-skimming-scam-b1303170.html"
       }
      ]
+    },
+    {
+     "date": "2026-11-08",
+     "story_id": "s6550fab747",
+     "headline": {
+      "en": "London tube strikes threaten festive season for businesses",
+      "it": "Gli scioperi della metropolitana di Londra minacciano la stagione festiva per le imprese"
+     },
+     "subheadline": {
+      "en": "Three strike dates are set before Christmas Day, business leaders warn of damage.",
+      "it": "Tre date di sciopero sono fissate prima di Christmas Day, i dirigenti avvertono danni."
+     },
+     "next": {
+      "en": [],
+      "it": []
+     },
+     "sources": [
+      {
+       "name": "The Standard · London",
+       "url": "https://www.standard.co.uk/news/london/tube-strikes-london-businesses-hospitality-rmt-union-transport-for-london-b1303987.html"
+      }
+     ]
     }
    ],
-   "checked": "2026-11-07"
+   "checked": "2026-11-08"
   },
   "milan-cortina": {
    "label": {
@@ -450,7 +498,7 @@
     "it": "Eredità Milano-Cortina"
    },
    "entries": [],
-   "checked": "2026-11-07"
+   "checked": "2026-11-08"
   },
   "eu-ai-regulation": {
    "label": {
@@ -458,7 +506,7 @@
     "it": "Regole UE sul digitale"
    },
    "entries": [],
-   "checked": "2026-11-07"
+   "checked": "2026-11-08"
   }
  }
 }
