@@ -98,6 +98,13 @@
    "briefs": 137,
    "published_at": "2026-11-08T07:44:35Z",
    "late": true
+  },
+  "2026-11-09": {
+   "status": "staged",
+   "started_at": "2026-11-09T05:18:37Z",
+   "built_at": "2026-11-09T05:30:07Z",
+   "articles": 21,
+   "briefs": 145
   }
  }
 }
