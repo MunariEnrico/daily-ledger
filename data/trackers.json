@@ -81,7 +81,7 @@
      ]
     }
    ],
-   "checked": "2026-11-08"
+   "checked": "2026-11-09"
   },
   "fed-rates": {
    "label": {
@@ -89,7 +89,7 @@
     "it": "Federal Reserve"
    },
    "entries": [],
-   "checked": "2026-11-08"
+   "checked": "2026-11-09"
   },
   "boe-rates": {
    "label": {
@@ -120,7 +120,7 @@
      ]
     }
    ],
-   "checked": "2026-11-08"
+   "checked": "2026-11-09"
   },
   "italy-budget": {
    "label": {
@@ -299,9 +299,35 @@
        "url": "https://www.ansa.it/sito/notizie/economia/2026/11/04/gli-industriali-elettrici-allattacco-il-governo-ci-usa-come-cassa_e7bceef6-31a1-478f-b3d7-abf5d3d0ac5e.html"
       }
      ]
+    },
+    {
+     "date": "2026-11-09",
+     "story_id": "s9c253cc4c9",
+     "headline": {
+      "en": "Budget bill meets opposition from unions and regional authorities",
+      "it": "La manovra incontra l'opposizione di sindacati e regioni"
+     },
+     "subheadline": {
+      "en": "The government seeks minor modifications while unions and regions demand changes.",
+      "it": "Il governo punta a piccole modifiche mentre categorie e sindacati chiedono cambiamenti."
+     },
+     "next": {
+      "en": [],
+      "it": []
+     },
+     "sources": [
+      {
+       "name": "ANSA Economia",
+       "url": "https://www.ansa.it/sito/notizie/economia/2026/11/08/manovra-alla-camera-il-governo-vuole-solo-piccole-modifiche_7d9c1a4f-8dc8-4127-9d48-8261a159eb29.html"
+      },
+      {
+       "name": "Sky TG24",
+       "url": "https://tg24.sky.it/politica/video/2026/11/08/manovra-sotto-assedio-regioni-anci-e-assicurazioni-contro-1138505"
+      }
+     ]
     }
    ],
-   "checked": "2026-11-08"
+   "checked": "2026-11-09"
   },
   "uk-budget": {
    "label": {
@@ -309,7 +335,7 @@
     "it": "Bilancio UK e fisco"
    },
    "entries": [],
-   "checked": "2026-11-08"
+   "checked": "2026-11-09"
   },
   "us-tariffs": {
    "label": {
@@ -317,7 +343,7 @@
     "it": "Dazi USA e commercio"
    },
    "entries": [],
-   "checked": "2026-11-08"
+   "checked": "2026-11-09"
   },
   "italy-inflation": {
    "label": {
@@ -382,7 +408,7 @@
      ]
     }
    ],
-   "checked": "2026-11-08"
+   "checked": "2026-11-09"
   },
   "venice-access-fee": {
    "label": {
@@ -390,7 +416,7 @@
     "it": "Contributo di accesso a Venezia"
    },
    "entries": [],
-   "checked": "2026-11-08"
+   "checked": "2026-11-09"
   },
   "venice-mose": {
    "label": {
@@ -398,7 +424,7 @@
     "it": "MOSE e acqua alta"
    },
    "entries": [],
-   "checked": "2026-11-08"
+   "checked": "2026-11-09"
   },
   "lux-housing": {
    "label": {
@@ -429,7 +455,7 @@
      ]
     }
    ],
-   "checked": "2026-11-08"
+   "checked": "2026-11-09"
   },
   "nyc-housing": {
    "label": {
@@ -437,7 +463,7 @@
     "it": "Casa e affitti a New York"
    },
    "entries": [],
-   "checked": "2026-11-08"
+   "checked": "2026-11-09"
   },
   "london-transport": {
    "label": {
@@ -488,9 +514,31 @@
        "url": "https://www.standard.co.uk/news/london/tube-strikes-london-businesses-hospitality-rmt-union-transport-for-london-b1303987.html"
       }
      ]
+    },
+    {
+     "date": "2026-11-09",
+     "story_id": "s1c9dd122d1",
+     "headline": {
+      "en": "Great Ormond Street Hospital teachers end strike after headteacher quits",
+      "it": "Gli insegnanti del Great Ormond Street Hospital terminano lo sciopero dopo le dimissioni del dirigente"
+     },
+     "subheadline": {
+      "en": "Teachers end 61‑day strike and dismissed staff are reinstated after headteacher resignation",
+      "it": "Gli insegnanti chiudono lo sciopero di 61 giorni e i colleghi licenziati sono reintegrati dopo le dimissioni del dirigente"
+     },
+     "next": {
+      "en": [],
+      "it": []
+     },
+     "sources": [
+      {
+       "name": "MyLondon",
+       "url": "https://www.mylondon.news/news/north-london-news/great-ormond-street-hospital-school-34872848"
+      }
+     ]
     }
    ],
-   "checked": "2026-11-08"
+   "checked": "2026-11-09"
   },
   "milan-cortina": {
    "label": {
@@ -498,7 +546,7 @@
     "it": "Eredità Milano-Cortina"
    },
    "entries": [],
-   "checked": "2026-11-08"
+   "checked": "2026-11-09"
   },
   "eu-ai-regulation": {
    "label": {
@@ -506,7 +554,7 @@
     "it": "Regole UE sul digitale"
    },
    "entries": [],
-   "checked": "2026-11-08"
+   "checked": "2026-11-09"
   }
  }
 }

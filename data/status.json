@@ -1,6 +1,6 @@
 {
  "date": "2026-11-09",
- "state": "staged",
+ "state": "published",
  "run": {
   "started_at": "2026-11-09T05:18:37Z",
   "finished_at": "2026-11-09T05:30:07Z",
@@ -104,8 +104,8 @@
   "market_errors": [],
   "errors": []
  },
- "updated_at": "2026-11-09T05:30:07Z",
- "last_published": "2026-11-08T07:44:35Z",
+ "updated_at": "2026-11-09T08:04:49Z",
+ "last_published": "2026-11-09T08:04:49Z",
  "late": true,
  "email": {
   "state": "disabled",
