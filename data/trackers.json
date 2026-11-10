@@ -81,7 +81,7 @@
      ]
     }
    ],
-   "checked": "2026-11-09"
+   "checked": "2026-11-10"
   },
   "fed-rates": {
    "label": {
@@ -89,7 +89,7 @@
     "it": "Federal Reserve"
    },
    "entries": [],
-   "checked": "2026-11-09"
+   "checked": "2026-11-10"
   },
   "boe-rates": {
    "label": {
@@ -120,7 +120,7 @@
      ]
     }
    ],
-   "checked": "2026-11-09"
+   "checked": "2026-11-10"
   },
   "italy-budget": {
    "label": {
@@ -327,7 +327,7 @@
      ]
     }
    ],
-   "checked": "2026-11-09"
+   "checked": "2026-11-10"
   },
   "uk-budget": {
    "label": {
@@ -335,7 +335,7 @@
     "it": "Bilancio UK e fisco"
    },
    "entries": [],
-   "checked": "2026-11-09"
+   "checked": "2026-11-10"
   },
   "us-tariffs": {
    "label": {
@@ -343,7 +343,7 @@
     "it": "Dazi USA e commercio"
    },
    "entries": [],
-   "checked": "2026-11-09"
+   "checked": "2026-11-10"
   },
   "italy-inflation": {
    "label": {
@@ -408,7 +408,7 @@
      ]
     }
    ],
-   "checked": "2026-11-09"
+   "checked": "2026-11-10"
   },
   "venice-access-fee": {
    "label": {
@@ -416,7 +416,7 @@
     "it": "Contributo di accesso a Venezia"
    },
    "entries": [],
-   "checked": "2026-11-09"
+   "checked": "2026-11-10"
   },
   "venice-mose": {
    "label": {
@@ -424,7 +424,7 @@
     "it": "MOSE e acqua alta"
    },
    "entries": [],
-   "checked": "2026-11-09"
+   "checked": "2026-11-10"
   },
   "lux-housing": {
    "label": {
@@ -453,9 +453,31 @@
        "url": "https://www.wort.lu/politik/verwaltungsgerichtshof-weist-steuerbehoerde-in-die-schranken/163755290.html"
       }
      ]
+    },
+    {
+     "date": "2026-11-10",
+     "story_id": "s89b72760cf",
+     "headline": {
+      "en": "Klima-Agence shares cheap winter‑heating tips",
+      "it": "Klima-Agence fornisce consigli per riscaldare a basso costo"
+     },
+     "subheadline": {
+      "en": "The agency urges simple habits to curb rising energy bills.",
+      "it": "L'agenzia invita a semplici abitudini per contenere le bollette energetiche."
+     },
+     "next": {
+      "en": [],
+      "it": []
+     },
+     "sources": [
+      {
+       "name": "Contacto",
+       "url": "https://www.contacto.lu/luxemburgo/como-aquecer-a-casa-de-forma-economica-neste-inverno/164287409.html"
+      }
+     ]
     }
    ],
-   "checked": "2026-11-09"
+   "checked": "2026-11-10"
   },
   "nyc-housing": {
    "label": {
@@ -463,7 +485,7 @@
     "it": "Casa e affitti a New York"
    },
    "entries": [],
-   "checked": "2026-11-09"
+   "checked": "2026-11-10"
   },
   "london-transport": {
    "label": {
@@ -538,7 +560,7 @@
      ]
     }
    ],
-   "checked": "2026-11-09"
+   "checked": "2026-11-10"
   },
   "milan-cortina": {
    "label": {
@@ -546,7 +568,7 @@
     "it": "Eredità Milano-Cortina"
    },
    "entries": [],
-   "checked": "2026-11-09"
+   "checked": "2026-11-10"
   },
   "eu-ai-regulation": {
    "label": {
@@ -554,7 +576,7 @@
     "it": "Regole UE sul digitale"
    },
    "entries": [],
-   "checked": "2026-11-09"
+   "checked": "2026-11-10"
   }
  }
 }
