@@ -1,10 +1,10 @@
 {
- "date": "2026-11-09",
- "state": "published",
+ "date": "2026-11-10",
+ "state": "staged",
  "run": {
-  "started_at": "2026-11-09T05:18:37Z",
-  "finished_at": "2026-11-09T05:30:07Z",
-  "seconds": 690.3,
+  "started_at": "2026-11-10T05:04:27Z",
+  "finished_at": "2026-11-10T05:16:58Z",
+  "seconds": 751.2,
   "sources": {
    "checked": 209,
    "ok": 203,
@@ -26,45 +26,45 @@
    }
   },
   "items": {
-   "retrieved": 6564,
-   "fresh": 1712,
+   "retrieved": 6662,
+   "fresh": 2637,
    "dropped": {
-    "low_value": 44,
-    "too_old": 4670,
-    "date_missing": 15,
-    "opinion": 13,
+    "low_value": 27,
+    "too_old": 3842,
+    "date_missing": 23,
+    "opinion": 23,
     "date_ambiguous": 100
    },
    "calendar": 10
   },
   "lookback_hours": 30,
-  "clusters": 1181,
-  "candidates_planned": 166,
-  "candidates_with_evidence": 166,
+  "clusters": 1848,
+  "candidates_planned": 191,
+  "candidates_with_evidence": 191,
   "stories": {
-   "articles": 21,
-   "briefs": 145,
+   "articles": 14,
+   "briefs": 177,
    "analyses": 0
   },
   "verification": {
-   "drafts": 30,
-   "published_articles": 21,
-   "fallback_briefs": 145,
-   "repairs": 23,
-   "language_regenerations": 1,
-   "unsupported_claims_detected": 97,
-   "unsupported_claims_blocked": 29,
-   "attribution_failures": 4,
-   "numerical_inconsistencies": 17,
-   "validation_failures": 32,
+   "drafts": 27,
+   "published_articles": 14,
+   "fallback_briefs": 177,
+   "repairs": 22,
+   "language_regenerations": 2,
+   "unsupported_claims_detected": 132,
+   "unsupported_claims_blocked": 51,
+   "attribution_failures": 3,
+   "numerical_inconsistencies": 25,
+   "validation_failures": 36,
    "llm_errors": 0
   },
   "llm": {
    "calls": 140,
-   "failures": 17,
+   "failures": 16,
    "by_model": {
-    "groq:openai/gpt-oss-120b": 39,
-    "gemini:gemini-flash-lite-latest": 14
+    "groq:openai/gpt-oss-120b": 37,
+    "gemini:gemini-flash-lite-latest": 13
    },
    "circuit_open": false,
    "providers": [
@@ -95,7 +95,8 @@
    "errors": [
     "groq:moonshotai/kimi-k2-instruct: HTTP 404: model unavailable — {\"error\":{\"message\":\"The model `moonshotai/kimi-k2-instruct` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_f",
     "groq:meta-llama/llama-4-scout-17b-16e-instruct: HTTP 404: model unavailable — {\"error\":{\"message\":\"The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code",
-    "groq:llama-3.3-70b-versatile: HTTP 404: model unavailable — {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found"
+    "groq:llama-3.3-70b-versatile: HTTP 404: model unavailable — {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found",
+    "gemini:gemini-flash-lite-latest: LLMError: HTTP 503: [{\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n]"
    ],
    "budget": 140
   },
@@ -104,7 +105,7 @@
   "market_errors": [],
   "errors": []
  },
- "updated_at": "2026-11-09T08:04:49Z",
+ "updated_at": "2026-11-10T05:16:58Z",
  "last_published": "2026-11-09T08:04:49Z",
  "late": true,
  "email": {
