@@ -81,7 +81,7 @@
      ]
     }
    ],
-   "checked": "2026-11-10"
+   "checked": "2026-11-11"
   },
   "fed-rates": {
    "label": {
@@ -89,7 +89,7 @@
     "it": "Federal Reserve"
    },
    "entries": [],
-   "checked": "2026-11-10"
+   "checked": "2026-11-11"
   },
   "boe-rates": {
    "label": {
@@ -120,7 +120,7 @@
      ]
     }
    ],
-   "checked": "2026-11-10"
+   "checked": "2026-11-11"
   },
   "italy-budget": {
    "label": {
@@ -325,9 +325,35 @@
        "url": "https://tg24.sky.it/politica/video/2026/11/08/manovra-sotto-assedio-regioni-anci-e-assicurazioni-contro-1138505"
       }
      ]
+    },
+    {
+     "date": "2026-11-11",
+     "story_id": "s560eb7821f",
+     "headline": {
+      "en": "Lazio scraps extra regional Irpef for earners under €35,000",
+      "it": "La Lazio elimina l'addizionale Irpef per redditi fino a 35 mila euro"
+     },
+     "subheadline": {
+      "en": "The cut removes a 1.6% surcharge, saving up to €320 per taxpayer.",
+      "it": "La misura toglie la maggiorazione dell'1,6 % e fa risparmiare fino a 320 euro per contribuente."
+     },
+     "next": {
+      "en": [],
+      "it": []
+     },
+     "sources": [
+      {
+       "name": "ANSA Lazio",
+       "url": "https://www.ansa.it/lazio/notizie/2026/11/10/regione-lazio-tagli-alladdizionale-irpef-e-sullirap_4b5c9574-4d08-4dd5-981d-62cbc91cc2e1.html"
+      },
+      {
+       "name": "Il Messaggero Roma",
+       "url": "https://www.ilmessaggero.it/roma/politica/irpef_lazio_taglio_redditi_manovra_addizionale_cosa_cambia-9881288.html"
+      }
+     ]
     }
    ],
-   "checked": "2026-11-10"
+   "checked": "2026-11-11"
   },
   "uk-budget": {
    "label": {
@@ -335,7 +361,7 @@
     "it": "Bilancio UK e fisco"
    },
    "entries": [],
-   "checked": "2026-11-10"
+   "checked": "2026-11-11"
   },
   "us-tariffs": {
    "label": {
@@ -343,7 +369,7 @@
     "it": "Dazi USA e commercio"
    },
    "entries": [],
-   "checked": "2026-11-10"
+   "checked": "2026-11-11"
   },
   "italy-inflation": {
    "label": {
@@ -408,7 +434,7 @@
      ]
     }
    ],
-   "checked": "2026-11-10"
+   "checked": "2026-11-11"
   },
   "venice-access-fee": {
    "label": {
@@ -416,7 +442,7 @@
     "it": "Contributo di accesso a Venezia"
    },
    "entries": [],
-   "checked": "2026-11-10"
+   "checked": "2026-11-11"
   },
   "venice-mose": {
    "label": {
@@ -424,7 +450,7 @@
     "it": "MOSE e acqua alta"
    },
    "entries": [],
-   "checked": "2026-11-10"
+   "checked": "2026-11-11"
   },
   "lux-housing": {
    "label": {
@@ -477,7 +503,7 @@
      ]
     }
    ],
-   "checked": "2026-11-10"
+   "checked": "2026-11-11"
   },
   "nyc-housing": {
    "label": {
@@ -485,7 +511,7 @@
     "it": "Casa e affitti a New York"
    },
    "entries": [],
-   "checked": "2026-11-10"
+   "checked": "2026-11-11"
   },
   "london-transport": {
    "label": {
@@ -560,7 +586,7 @@
      ]
     }
    ],
-   "checked": "2026-11-10"
+   "checked": "2026-11-11"
   },
   "milan-cortina": {
    "label": {
@@ -568,7 +594,7 @@
     "it": "Eredità Milano-Cortina"
    },
    "entries": [],
-   "checked": "2026-11-10"
+   "checked": "2026-11-11"
   },
   "eu-ai-regulation": {
    "label": {
@@ -576,7 +602,7 @@
     "it": "Regole UE sul digitale"
    },
    "entries": [],
-   "checked": "2026-11-10"
+   "checked": "2026-11-11"
   }
  }
 }
