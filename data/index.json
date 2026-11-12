@@ -125,6 +125,13 @@
    "briefs": 170,
    "published_at": "2026-11-11T07:58:50Z",
    "late": true
+  },
+  "2026-11-12": {
+   "status": "staged",
+   "started_at": "2026-11-12T05:13:21Z",
+   "built_at": "2026-11-12T05:26:40Z",
+   "articles": 12,
+   "briefs": 182
   }
  }
 }

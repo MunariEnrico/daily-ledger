@@ -1,10 +1,10 @@
 {
- "date": "2026-11-11",
- "state": "published",
+ "date": "2026-11-12",
+ "state": "staged",
  "run": {
-  "started_at": "2026-11-11T05:12:21Z",
-  "finished_at": "2026-11-11T05:25:22Z",
-  "seconds": 780.8,
+  "started_at": "2026-11-12T05:13:21Z",
+  "finished_at": "2026-11-12T05:26:40Z",
+  "seconds": 798.2,
   "sources": {
    "checked": 209,
    "ok": 203,
@@ -26,45 +26,45 @@
    }
   },
   "items": {
-   "retrieved": 6748,
-   "fresh": 2656,
+   "retrieved": 6824,
+   "fresh": 2652,
    "dropped": {
-    "too_old": 3900,
-    "low_value": 34,
-    "date_missing": 26,
-    "date_ambiguous": 98,
-    "opinion": 24
+    "too_old": 4010,
+    "date_missing": 31,
+    "low_value": 23,
+    "opinion": 17,
+    "date_ambiguous": 81
    },
    "calendar": 10
   },
   "lookback_hours": 30,
-  "clusters": 1870,
-  "candidates_planned": 184,
-  "candidates_with_evidence": 184,
+  "clusters": 1900,
+  "candidates_planned": 194,
+  "candidates_with_evidence": 194,
   "stories": {
-   "articles": 14,
-   "briefs": 170,
+   "articles": 12,
+   "briefs": 182,
    "analyses": 0
   },
   "verification": {
-   "drafts": 27,
-   "published_articles": 14,
-   "fallback_briefs": 170,
-   "repairs": 24,
+   "drafts": 25,
+   "published_articles": 12,
+   "fallback_briefs": 182,
+   "repairs": 23,
    "language_regenerations": 3,
-   "unsupported_claims_detected": 124,
-   "unsupported_claims_blocked": 60,
-   "attribution_failures": 8,
-   "numerical_inconsistencies": 25,
-   "validation_failures": 39,
+   "unsupported_claims_detected": 109,
+   "unsupported_claims_blocked": 50,
+   "attribution_failures": 2,
+   "numerical_inconsistencies": 31,
+   "validation_failures": 37,
    "llm_errors": 0
   },
   "llm": {
    "calls": 140,
-   "failures": 16,
+   "failures": 14,
    "by_model": {
-    "groq:openai/gpt-oss-120b": 40,
-    "gemini:gemini-flash-lite-latest": 13
+    "groq:openai/gpt-oss-120b": 38,
+    "gemini:gemini-flash-lite-latest": 11
    },
    "circuit_open": false,
    "providers": [
@@ -104,7 +104,7 @@
   "market_errors": [],
   "errors": []
  },
- "updated_at": "2026-11-11T07:58:50Z",
+ "updated_at": "2026-11-12T05:26:40Z",
  "last_published": "2026-11-11T07:58:50Z",
  "late": true,
  "email": {
