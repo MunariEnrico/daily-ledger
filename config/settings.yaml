@@ -14,8 +14,10 @@ site:
 publication:
   timezone: Europe/Luxembourg
   publish_time: "08:00"
-  build_start: "05:20"    # scheduled build; the GitHub workflow uses the same times
-  late_grace_minutes: 20  # a build that finishes up to this long before 08:00 waits; later ones publish immediately as "late"
+  build_window_start: "05:00"     # earliest local time a scheduled run may start building
+  publish_wait_max_minutes: 180   # after building, the same job waits up to this long for publish_time
+  deploy_lead_minutes: 3          # publish this many minutes early so the site is live at publish_time
+  late_grace_minutes: 20          # (kept for manual runs)
 
 editorial:
   lookback_hours: 30            # items older than this are ignored (except official calendars)
@@ -50,7 +52,8 @@ llm:
     - name: groq            # free, no card: console.groq.com → API Keys
       endpoint: "https://api.groq.com/openai/v1/chat/completions"
       key_env: GROQ_API_KEY
-      models: ["openai/gpt-oss-120b", "moonshotai/kimi-k2-instruct", "meta-llama/llama-4-scout-17b-16e-instruct", "llama-3.3-70b-versatile"]
+      # checked 12 Nov 2026: kimi-k2, llama-4-scout and llama-3.3-70b now return 404 on Groq
+      models: ["openai/gpt-oss-120b", "openai/gpt-oss-20b", "qwen/qwen3.8-27b"]
     - name: gemini          # free with a Google account: aistudio.google.com → Get API key
       endpoint: "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions"
       key_env: GEMINI_API_KEY

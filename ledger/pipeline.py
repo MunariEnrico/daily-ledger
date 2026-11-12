@@ -553,7 +553,7 @@ def publish(date_str: str | None = None, late: bool = False) -> dict:
     now = timeutil.now_utc()
     ed["status"] = "published"
     ed["published_at"] = timeutil.iso(now)
-    ed["late"] = late or now > timeutil.parse_iso(ed["publish_at"]) + timedelta(minutes=15)
+    ed["late"] = late or now > timeutil.parse_iso(ed["publish_at"]) + timedelta(minutes=10)
     for s in ed["stories"].values():
         s.setdefault("published_at", ed["published_at"])
     store.save_edition(date_str, ed)
@@ -564,14 +564,26 @@ def publish(date_str: str | None = None, late: bool = False) -> dict:
 
 
 def decide(now_local, state: str | None, grace_min: int) -> str:
-    """Scheduler decision table (pure, unit-tested):
-    returns one of build, build+publish, publish, wait+publish, nothing."""
-    pub = now_local.replace(hour=int(config.settings()["publication"]["publish_time"][:2]),
-                            minute=int(config.settings()["publication"]["publish_time"][3:]), second=0, microsecond=0)
+    """Scheduler decision table (pure, unit-tested). The scheduler wakes the
+    job several times a morning (GitHub cron runs in UTC, so the same triggers
+    must work in both CET and CEST); this decides from the LOCAL clock:
+      build            not built yet and inside the build window: build, then
+                       wait in the same job until publication time
+      build+publish    not built and already past publication time
+      wait+publish     staged and publication time is within grace_min
+      publish          staged and publication time has passed
+      nothing          too early, or already published"""
+    pubcfg = config.settings()["publication"]
+    hh, mm = (int(x) for x in pubcfg["publish_time"].split(":"))
+    pub = now_local.replace(hour=hh, minute=mm, second=0, microsecond=0)
+    bh, bm = (int(x) for x in pubcfg.get("build_window_start", "05:00").split(":"))
+    window = now_local.replace(hour=bh, minute=bm, second=0, microsecond=0)
     if state == "published":
         return "nothing"
     if state in (None, "", "building", "failed"):
-        return "build+publish" if now_local >= pub else "build"
+        if now_local >= pub:
+            return "build+publish"
+        return "build" if now_local >= window else "nothing"
     if state == "staged":
         if now_local >= pub:
             return "publish"

@@ -19,6 +19,7 @@ import logging
 import os
 import sys
 import time
+from datetime import timedelta
 
 from . import config, corrections, ingest, mailer, pipeline, site, store, timeutil
 
@@ -55,7 +56,10 @@ def cmd_auto(args):
     now = timeutil.now_local()
     date_str = now.date().isoformat()
     state = store.index()["editions"].get(date_str, {}).get("status")
-    action = pipeline.decide(now, state, st["publication"].get("late_grace_minutes", 20))
+    pubcfg = st["publication"]
+    wait_max = int(pubcfg.get("publish_wait_max_minutes", 180))
+    lead = int(pubcfg.get("deploy_lead_minutes", 3))
+    action = pipeline.decide(now, state, wait_max)
     print(f"[auto] {now.isoformat()} state={state} → {action}")
     if action in ("build", "build+publish"):
         try:
@@ -65,17 +69,20 @@ def cmd_auto(args):
             raise
         print(json.dumps({k: v for k, v in res.get("run", {}).items() if k in ("sources", "stories", "seconds")}, default=str))
         now = timeutil.now_local()
-        action = pipeline.decide(now, "staged", st["publication"].get("late_grace_minutes", 20))
+        action = pipeline.decide(now, "staged", wait_max)
         print(f"[auto] after build {now.isoformat()} → {action}")
     if action == "wait+publish":
-        target = timeutil.publish_at(now.date())
+        # wait in this same job, so publication does not depend on GitHub
+        # starting another scheduled run on time (they are often 10–30 min late);
+        # publish a few minutes early so the site deploy is live by 08:00
+        target = timeutil.publish_at(now.date()) - timedelta(minutes=lead)
         wait = (target - timeutil.now_local()).total_seconds()
-        if 0 < wait <= st["publication"].get("late_grace_minutes", 20) * 60:
-            print(f"[auto] waiting {int(wait)} s for {target.isoformat()}")
+        if 0 < wait <= wait_max * 60:
+            print(f"[auto] waiting {int(wait)} s until {target.isoformat()}")
             time.sleep(wait)
         action = "publish"
     if action == "publish":
-        late = timeutil.now_local() > timeutil.publish_at(now.date()).replace(minute=15)
+        late = timeutil.now_local() > timeutil.publish_at(now.date()) + timedelta(minutes=10)
         return cmd_publish(date_str, late=late)
     # still (re)render so the status page reflects the latest run
     site.Site().build()

@@ -9,7 +9,7 @@ Accuracy is mandatory. Completeness is optional. Fabrication is forbidden.
 ## How it works
 
 ```
- 05:20  GitHub Actions ─► fetch 209 verified RSS/Atom feeds + official market data
+ 05:30  GitHub Actions ─► fetch 209 verified RSS/Atom feeds + official market data
         │                  (timeouts, retries, Retry-After, one failure never stops the run)
         ├─► normalise: canonical URLs, multilingual date parsing, ambiguous dates rejected,
         │              wire-agency credits detected, opinion pieces and low-value items dropped
@@ -95,12 +95,14 @@ On real drafts written from live evidence on 2026-10-28, the gate passed honest 
 
 ### Activating the 08:00 publication
 
-Nothing else is needed. Once the repository is on GitHub, the three triggers in `.github/workflows/daily.yml` run at 05:20, 07:50 and 08:25 Europe/Luxembourg. They use GitHub's IANA `timezone` field, so DST is automatic. `python -m ledger auto` decides from the clock and the stored state:
+Nothing else is needed. GitHub runs cron schedules in **UTC**, so `.github/workflows/daily.yml` has four UTC triggers (03:30, 04:30, 05:40, 06:40) that together cover winter (CET) and summer (CEST) time. `python -m ledger auto` reads the Europe/Luxembourg clock and decides:
 
-- before 08:00 it builds and stages;
-- at 07:50 it waits until 08:00 and publishes;
-- if everything ran late, it publishes immediately and flags the edition as late;
+- before 05:00 local it does nothing;
+- from 05:00 it builds the edition, then **waits in the same job** until 07:57 and publishes, so the site is live at 08:00 without depending on GitHub starting another run on time;
+- if every earlier trigger was dropped and it is already past 08:00, it builds and publishes at once and flags the edition as late;
 - a published edition is never rebuilt or re-sent.
+
+(Until 12 November 2026 the workflow used a `timezone:` key on the schedule. GitHub ignored it and ran the triggers in UTC, so every edition went out around 09:00 and was flagged late.)
 
 GitHub does not guarantee start times; delays of a few minutes are normal. Scheduled workflows are paused after 60 days without repository activity, but the daily data commit counts as activity.
 
@@ -113,7 +115,7 @@ python -m ledger build && python -m ledger publish          # site in _site/
 python -m pytest -q                                          # 29 tests
 ```
 
-For a local schedule, use cron with `CRON_TZ=Europe/Luxembourg` and `20 5,7 * * * … python -m ledger auto`. A laptop that is asleep at 05:20 will publish late, so Actions is the reliable option.
+For a local schedule, use cron with `CRON_TZ=Europe/Luxembourg` and `30 5 * * * … python -m ledger auto`. A laptop that is asleep at 05:20 will publish late, so Actions is the reliable option.
 
 ### Everyday commands
 

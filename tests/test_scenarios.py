@@ -443,6 +443,8 @@ def test_19_scheduled_job_does_not_finish_before_0800():
     tz = ZoneInfo("Europe/Luxembourg")
     at = lambda h, m, d=30, mo=9: datetime(2026, mo, d, h, m, tzinfo=tz)  # noqa: E731
     assert pipeline.decide(at(5, 20), None, 20) == "build"
+    assert pipeline.decide(at(4, 30), None, 20) == "nothing"          # before the build window
+    assert pipeline.decide(at(6, 10), "staged", 180) == "wait+publish"  # build job waits in-job
     assert pipeline.decide(at(8, 40), None, 20) == "build+publish"
     assert pipeline.decide(at(8, 40), "staged", 20) == "publish"
     assert pipeline.decide(at(7, 50), "staged", 20) == "wait+publish"
@@ -482,3 +484,30 @@ def test_20_attempt_to_publish_without_sufficient_evidence():
          "verification": "single_source", "n_independent": 1, "origins": ["gmg"], "official": False, "theme": set(),
          "scores": {"international": {"total": 50}}}
     assert pipeline.prepare_story_inputs(c, [], DeadHttp(), config.settings()) is None
+
+
+def test_19b_utc_triggers_publish_at_0800_in_winter_and_summer():
+    """The workflow's UTC cron triggers, replayed against the Luxembourg clock:
+    in both CET and CEST exactly one trigger builds, waits and publishes by
+    08:00, and the later backup triggers do nothing."""
+    import re as _re
+    from datetime import timezone
+    wf = open("/".join(__file__.split("/")[:-2]) + "/.github/workflows/daily.yml").read()
+    crons = [(int(h), int(m)) for m, h in _re.findall(r"cron: '(\d+) (\d+) \* \* \*'", wf)]
+    assert "timezone:" not in wf and len(crons) >= 3
+    tz = ZoneInfo("Europe/Luxembourg")
+    for day in (date(2026, 1, 15), date(2026, 7, 15)):          # CET and CEST
+        state, published_at = None, None
+        for h, m in sorted(crons):
+            now = datetime(day.year, day.month, day.day, h, m, tzinfo=timezone.utc).astimezone(tz)
+            act = pipeline.decide(now, state, 180)
+            if act == "build":
+                state = "staged"
+                built = now.replace(minute=0) + __import__("datetime").timedelta(hours=1)  # a slow 1-hour build
+                act = pipeline.decide(built, state, 180)
+                assert act == "wait+publish", (day, now, act)
+                published_at = timeutil.publish_at(day) - __import__("datetime").timedelta(minutes=3)
+                state = "published"
+            elif act != "nothing":
+                pytest.fail(f"unexpected {act} at {now}")
+        assert published_at is not None and published_at.hour == 7 and published_at.minute == 57, day

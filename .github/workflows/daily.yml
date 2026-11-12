@@ -1,21 +1,22 @@
 name: Daily edition
 
-# Three daily triggers in Europe/Luxembourg time (GitHub applies DST through the
-# IANA `timezone` field, supported since March 2026). `python -m ledger auto`
-# decides what to do from the clock and the stored state, so every trigger is
-# safe to repeat and a published edition is never rebuilt or re-sent:
-#   05:20  build and stage the edition (≈5–15 min with AI drafting)
-#   07:50  publish at 08:00 (waits up to 20 min); builds first if 05:20 never ran
-#   08:25  safety net: publishes (flagged late) if both earlier runs were delayed or dropped
-# GitHub does not guarantee start times; delays of a few minutes are normal.
+# GitHub runs cron schedules in UTC (the `timezone` key used before was ignored:
+# every edition went out around 09:00 instead of 08:00). The triggers below are
+# in UTC and cover both CET (winter) and CEST (summer); `python -m ledger auto`
+# reads the Europe/Luxembourg clock and decides what to do, so extra triggers
+# are harmless and a published edition is never rebuilt or re-sent.
+#   03:30 UTC  = 04:30 CET / 05:30 CEST   (summer: build now, wait in-job, publish 08:00)
+#   04:30 UTC  = 05:30 CET / 06:30 CEST   (winter: build now, wait in-job, publish 08:00)
+#   05:40 UTC  = 06:40 CET / 07:40 CEST   backup if an earlier trigger was dropped
+#   06:40 UTC  = 07:40 CET / 08:40 CEST   backup
+# The build job waits until 07:57 local and publishes itself, so publication no
+# longer depends on GitHub starting a second run on time.
 on:
   schedule:
-    - cron: '20 5 * * *'
-      timezone: 'Europe/Luxembourg'
-    - cron: '50 7 * * *'
-      timezone: 'Europe/Luxembourg'
-    - cron: '25 8 * * *'
-      timezone: 'Europe/Luxembourg'
+    - cron: '30 3 * * *'
+    - cron: '30 4 * * *'
+    - cron: '40 5 * * *'
+    - cron: '40 6 * * *'
   workflow_dispatch:
     inputs:
       command:
@@ -35,7 +36,7 @@ concurrency:
 jobs:
   edition:
     runs-on: ubuntu-latest
-    timeout-minutes: 150
+    timeout-minutes: 300
     outputs:
       deploy: ${{ steps.run.outputs.deploy }}
     steps:
