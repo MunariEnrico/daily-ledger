@@ -81,7 +81,7 @@
      ]
     }
    ],
-   "checked": "2026-11-11"
+   "checked": "2026-11-12"
   },
   "fed-rates": {
    "label": {
@@ -89,7 +89,7 @@
     "it": "Federal Reserve"
    },
    "entries": [],
-   "checked": "2026-11-11"
+   "checked": "2026-11-12"
   },
   "boe-rates": {
    "label": {
@@ -120,7 +120,7 @@
      ]
     }
    ],
-   "checked": "2026-11-11"
+   "checked": "2026-11-12"
   },
   "italy-budget": {
    "label": {
@@ -353,7 +353,7 @@
      ]
     }
    ],
-   "checked": "2026-11-11"
+   "checked": "2026-11-12"
   },
   "uk-budget": {
    "label": {
@@ -361,7 +361,7 @@
     "it": "Bilancio UK e fisco"
    },
    "entries": [],
-   "checked": "2026-11-11"
+   "checked": "2026-11-12"
   },
   "us-tariffs": {
    "label": {
@@ -369,7 +369,7 @@
     "it": "Dazi USA e commercio"
    },
    "entries": [],
-   "checked": "2026-11-11"
+   "checked": "2026-11-12"
   },
   "italy-inflation": {
    "label": {
@@ -434,7 +434,7 @@
      ]
     }
    ],
-   "checked": "2026-11-11"
+   "checked": "2026-11-12"
   },
   "venice-access-fee": {
    "label": {
@@ -442,7 +442,7 @@
     "it": "Contributo di accesso a Venezia"
    },
    "entries": [],
-   "checked": "2026-11-11"
+   "checked": "2026-11-12"
   },
   "venice-mose": {
    "label": {
@@ -450,7 +450,7 @@
     "it": "MOSE e acqua alta"
    },
    "entries": [],
-   "checked": "2026-11-11"
+   "checked": "2026-11-12"
   },
   "lux-housing": {
    "label": {
@@ -501,9 +501,31 @@
        "url": "https://www.contacto.lu/luxemburgo/como-aquecer-a-casa-de-forma-economica-neste-inverno/164287409.html"
       }
      ]
+    },
+    {
+     "date": "2026-11-12",
+     "story_id": "sffd4a1679e",
+     "headline": {
+      "en": "Activists push for cross‑ministerial housing commission",
+      "it": "Gli attivisti chiedono una commissione abitativa interministeriale"
+     },
+     "subheadline": {
+      "en": "Logementskris says talks with the housing minister were disappointing.",
+      "it": "Logementskris definisce deludenti gli incontri con il ministro dell’edilizia abitativa."
+     },
+     "next": {
+      "en": [],
+      "it": []
+     },
+     "sources": [
+      {
+       "name": "Luxembourg Times",
+       "url": "https://www.luxtimes.lu/luxembourg/well-keep-fighting-say-activists-after-disappointing-talks-with-housing-minister/164395519.html"
+      }
+     ]
     }
    ],
-   "checked": "2026-11-11"
+   "checked": "2026-11-12"
   },
   "nyc-housing": {
    "label": {
@@ -511,7 +533,7 @@
     "it": "Casa e affitti a New York"
    },
    "entries": [],
-   "checked": "2026-11-11"
+   "checked": "2026-11-12"
   },
   "london-transport": {
    "label": {
@@ -586,7 +608,7 @@
      ]
     }
    ],
-   "checked": "2026-11-11"
+   "checked": "2026-11-12"
   },
   "milan-cortina": {
    "label": {
@@ -594,7 +616,7 @@
     "it": "Eredità Milano-Cortina"
    },
    "entries": [],
-   "checked": "2026-11-11"
+   "checked": "2026-11-12"
   },
   "eu-ai-regulation": {
    "label": {
@@ -602,7 +624,7 @@
     "it": "Regole UE sul digitale"
    },
    "entries": [],
-   "checked": "2026-11-11"
+   "checked": "2026-11-12"
   }
  }
 }
