@@ -81,7 +81,7 @@
      ]
     }
    ],
-   "checked": "2026-11-12"
+   "checked": "2026-11-13"
   },
   "fed-rates": {
    "label": {
@@ -89,7 +89,7 @@
     "it": "Federal Reserve"
    },
    "entries": [],
-   "checked": "2026-11-12"
+   "checked": "2026-11-13"
   },
   "boe-rates": {
    "label": {
@@ -120,7 +120,7 @@
      ]
     }
    ],
-   "checked": "2026-11-12"
+   "checked": "2026-11-13"
   },
   "italy-budget": {
    "label": {
@@ -353,7 +353,7 @@
      ]
     }
    ],
-   "checked": "2026-11-12"
+   "checked": "2026-11-13"
   },
   "uk-budget": {
    "label": {
@@ -361,15 +361,38 @@
     "it": "Bilancio UK e fisco"
    },
    "entries": [],
-   "checked": "2026-11-12"
+   "checked": "2026-11-13"
   },
   "us-tariffs": {
    "label": {
     "en": "US tariffs & trade",
     "it": "Dazi USA e commercio"
    },
-   "entries": [],
-   "checked": "2026-11-12"
+   "entries": [
+    {
+     "date": "2026-11-13",
+     "story_id": "s306452ecca",
+     "headline": {
+      "en": "Luxembourg gas tariffs may jump 30% in 2027",
+      "it": "Le tariffe del gas in Lussemburgo potrebbero aumentare del 30% nel 2027"
+     },
+     "subheadline": {
+      "en": "Electricity prices forecast to remain flat next year, minister says.",
+      "it": "Le tariffe elettriche dovrebbero rimanere stabili il prossimo anno, secondo il ministro."
+     },
+     "next": {
+      "en": [],
+      "it": []
+     },
+     "sources": [
+      {
+       "name": "Luxembourg Times",
+       "url": "https://www.luxtimes.lu/luxembourg/conflict-in-the-middle-east-and-low-eu-storage-levels-fuel-gas-price-fears/164467326.html"
+      }
+     ]
+    }
+   ],
+   "checked": "2026-11-13"
   },
   "italy-inflation": {
    "label": {
@@ -434,7 +457,7 @@
      ]
     }
    ],
-   "checked": "2026-11-12"
+   "checked": "2026-11-13"
   },
   "venice-access-fee": {
    "label": {
@@ -442,7 +465,7 @@
     "it": "Contributo di accesso a Venezia"
    },
    "entries": [],
-   "checked": "2026-11-12"
+   "checked": "2026-11-13"
   },
   "venice-mose": {
    "label": {
@@ -450,7 +473,7 @@
     "it": "MOSE e acqua alta"
    },
    "entries": [],
-   "checked": "2026-11-12"
+   "checked": "2026-11-13"
   },
   "lux-housing": {
    "label": {
@@ -525,7 +548,7 @@
      ]
     }
    ],
-   "checked": "2026-11-12"
+   "checked": "2026-11-13"
   },
   "nyc-housing": {
    "label": {
@@ -533,7 +556,7 @@
     "it": "Casa e affitti a New York"
    },
    "entries": [],
-   "checked": "2026-11-12"
+   "checked": "2026-11-13"
   },
   "london-transport": {
    "label": {
@@ -608,7 +631,7 @@
      ]
     }
    ],
-   "checked": "2026-11-12"
+   "checked": "2026-11-13"
   },
   "milan-cortina": {
    "label": {
@@ -616,7 +639,7 @@
     "it": "Eredità Milano-Cortina"
    },
    "entries": [],
-   "checked": "2026-11-12"
+   "checked": "2026-11-13"
   },
   "eu-ai-regulation": {
    "label": {
@@ -624,7 +647,7 @@
     "it": "Regole UE sul digitale"
    },
    "entries": [],
-   "checked": "2026-11-12"
+   "checked": "2026-11-13"
   }
  }
 }

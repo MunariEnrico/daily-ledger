@@ -1,17 +1,21 @@
 {
- "date": "2026-11-12",
+ "date": "2026-11-13",
  "state": "published",
  "run": {
-  "started_at": "2026-11-12T05:13:21Z",
-  "finished_at": "2026-11-12T05:26:40Z",
-  "seconds": 798.2,
+  "started_at": "2026-11-13T04:30:11Z",
+  "finished_at": "2026-11-13T04:41:09Z",
+  "seconds": 657.8,
   "sources": {
    "checked": 209,
-   "ok": 203,
+   "ok": 199,
    "failed": [
     "euronews_business",
     "europarl",
     "lequotidien",
+    "libero",
+    "repubblica",
+    "repubblica_economia",
+    "repubblica_politica",
     "siliconlux",
     "statec",
     "ytali"
@@ -20,51 +24,55 @@
     "euronews_business": "HTTP 406",
     "europarl": "HTTP 202",
     "lequotidien": "HTTP 404",
+    "libero": "HTTP 404",
+    "repubblica": "HTTP 403",
+    "repubblica_economia": "HTTP 403",
+    "repubblica_politica": "HTTP 403",
     "siliconlux": "HTTP 520",
     "statec": "feed parsed but contained no usable entries",
     "ytali": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
    }
   },
   "items": {
-   "retrieved": 6824,
-   "fresh": 2652,
+   "retrieved": 6850,
+   "fresh": 2801,
    "dropped": {
-    "too_old": 4010,
-    "date_missing": 31,
-    "low_value": 23,
-    "opinion": 17,
-    "date_ambiguous": 81
+    "too_old": 3924,
+    "opinion": 24,
+    "low_value": 25,
+    "date_missing": 12,
+    "date_ambiguous": 54
    },
    "calendar": 10
   },
   "lookback_hours": 30,
-  "clusters": 1900,
-  "candidates_planned": 194,
-  "candidates_with_evidence": 194,
+  "clusters": 1999,
+  "candidates_planned": 196,
+  "candidates_with_evidence": 196,
   "stories": {
-   "articles": 12,
-   "briefs": 182,
+   "articles": 17,
+   "briefs": 179,
    "analyses": 0
   },
   "verification": {
-   "drafts": 25,
-   "published_articles": 12,
-   "fallback_briefs": 182,
-   "repairs": 23,
+   "drafts": 29,
+   "published_articles": 17,
+   "fallback_briefs": 179,
+   "repairs": 21,
    "language_regenerations": 3,
-   "unsupported_claims_detected": 109,
-   "unsupported_claims_blocked": 50,
-   "attribution_failures": 2,
-   "numerical_inconsistencies": 31,
-   "validation_failures": 37,
+   "unsupported_claims_detected": 82,
+   "unsupported_claims_blocked": 27,
+   "attribution_failures": 11,
+   "numerical_inconsistencies": 23,
+   "validation_failures": 34,
    "llm_errors": 0
   },
   "llm": {
    "calls": 140,
-   "failures": 14,
+   "failures": 15,
    "by_model": {
-    "groq:openai/gpt-oss-120b": 38,
-    "gemini:gemini-flash-lite-latest": 11
+    "groq:openai/gpt-oss-120b": 37,
+    "groq:openai/gpt-oss-20b": 14
    },
    "circuit_open": false,
    "providers": [
@@ -72,9 +80,8 @@
      "name": "groq",
      "models": [
       "openai/gpt-oss-120b",
-      "moonshotai/kimi-k2-instruct",
-      "meta-llama/llama-4-scout-17b-16e-instruct",
-      "llama-3.3-70b-versatile"
+      "openai/gpt-oss-20b",
+      "qwen/qwen3.8-27b"
      ],
      "switched_off": false
     },
@@ -87,16 +94,8 @@
      "switched_off": false
     }
    ],
-   "exhausted_models": [
-    "groq:llama-3.3-70b-versatile",
-    "groq:meta-llama/llama-4-scout-17b-16e-instruct",
-    "groq:moonshotai/kimi-k2-instruct"
-   ],
-   "errors": [
-    "groq:moonshotai/kimi-k2-instruct: HTTP 404: model unavailable — {\"error\":{\"message\":\"The model `moonshotai/kimi-k2-instruct` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_f",
-    "groq:meta-llama/llama-4-scout-17b-16e-instruct: HTTP 404: model unavailable — {\"error\":{\"message\":\"The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code",
-    "groq:llama-3.3-70b-versatile: HTTP 404: model unavailable — {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found"
-   ],
+   "exhausted_models": [],
+   "errors": [],
    "budget": 140
   },
   "llm_status": "ok",
@@ -104,9 +103,9 @@
   "market_errors": [],
   "errors": []
  },
- "updated_at": "2026-11-12T08:00:10Z",
- "last_published": "2026-11-12T08:00:10Z",
- "late": true,
+ "updated_at": "2026-11-13T06:57:00Z",
+ "last_published": "2026-11-13T06:57:00Z",
+ "late": false,
  "email": {
   "state": "disabled",
   "detail": "email.enabled is false in settings"
