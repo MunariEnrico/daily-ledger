@@ -81,7 +81,7 @@
      ]
     }
    ],
-   "checked": "2026-11-13"
+   "checked": "2026-11-14"
   },
   "fed-rates": {
    "label": {
@@ -89,7 +89,7 @@
     "it": "Federal Reserve"
    },
    "entries": [],
-   "checked": "2026-11-13"
+   "checked": "2026-11-14"
   },
   "boe-rates": {
    "label": {
@@ -120,7 +120,7 @@
      ]
     }
    ],
-   "checked": "2026-11-13"
+   "checked": "2026-11-14"
   },
   "italy-budget": {
    "label": {
@@ -351,9 +351,31 @@
        "url": "https://www.ilmessaggero.it/roma/politica/irpef_lazio_taglio_redditi_manovra_addizionale_cosa_cambia-9881288.html"
       }
      ]
+    },
+    {
+     "date": "2026-11-14",
+     "story_id": "s822ffb159e",
+     "headline": {
+      "en": "Lega and Valditara praise government budget move",
+      "it": "Lega e Valditara elogiano la manovra di bilancio"
+     },
+     "subheadline": {
+      "en": "Corriere della Sera reports satisfaction from Lega and Minister Valditara",
+      "it": "Corriere della Sera riporta la soddisfazione di Lega e del ministro Valditara"
+     },
+     "next": {
+      "en": [],
+      "it": []
+     },
+     "sources": [
+      {
+       "name": "Corriere della Sera Roma",
+       "url": "https://roma.corriere.it/notizie/politica/26_novembre_13/manovra-mossa-governo-evitare-conflitti-interni-2e85660a-2ae0-4cb8-949e-c3d437cf5xlk.shtml"
+      }
+     ]
     }
    ],
-   "checked": "2026-11-13"
+   "checked": "2026-11-14"
   },
   "uk-budget": {
    "label": {
@@ -361,7 +383,7 @@
     "it": "Bilancio UK e fisco"
    },
    "entries": [],
-   "checked": "2026-11-13"
+   "checked": "2026-11-14"
   },
   "us-tariffs": {
    "label": {
@@ -392,7 +414,7 @@
      ]
     }
    ],
-   "checked": "2026-11-13"
+   "checked": "2026-11-14"
   },
   "italy-inflation": {
    "label": {
@@ -457,7 +479,7 @@
      ]
     }
    ],
-   "checked": "2026-11-13"
+   "checked": "2026-11-14"
   },
   "venice-access-fee": {
    "label": {
@@ -465,7 +487,7 @@
     "it": "Contributo di accesso a Venezia"
    },
    "entries": [],
-   "checked": "2026-11-13"
+   "checked": "2026-11-14"
   },
   "venice-mose": {
    "label": {
@@ -473,7 +495,7 @@
     "it": "MOSE e acqua alta"
    },
    "entries": [],
-   "checked": "2026-11-13"
+   "checked": "2026-11-14"
   },
   "lux-housing": {
    "label": {
@@ -548,7 +570,7 @@
      ]
     }
    ],
-   "checked": "2026-11-13"
+   "checked": "2026-11-14"
   },
   "nyc-housing": {
    "label": {
@@ -556,7 +578,7 @@
     "it": "Casa e affitti a New York"
    },
    "entries": [],
-   "checked": "2026-11-13"
+   "checked": "2026-11-14"
   },
   "london-transport": {
    "label": {
@@ -629,9 +651,35 @@
        "url": "https://www.mylondon.news/news/north-london-news/great-ormond-street-hospital-school-34872848"
       }
      ]
+    },
+    {
+     "date": "2026-11-14",
+     "story_id": "s4b42fb078f",
+     "headline": {
+      "en": "TfL says floating bus stops pose very low risk",
+      "it": "TfL afferma che le fermate galleggianti hanno rischio molto basso"
+     },
+     "subheadline": {
+      "en": "Safety review finds incidents at floating stops are rare, campaigners dispute the findings.",
+      "it": "Una revisione di sicurezza rileva pochi incidenti, ma i gruppi di pressione contestano i risultati."
+     },
+     "next": {
+      "en": [],
+      "it": []
+     },
+     "sources": [
+      {
+       "name": "BBC News · London",
+       "url": "https://www.bbc.co.uk/news/articles/cqy7r8vgp2d6o"
+      },
+      {
+       "name": "The Standard · London",
+       "url": "https://www.standard.co.uk/news/transport/floating-bus-stops-transport-for-london-b1304801.html"
+      }
+     ]
     }
    ],
-   "checked": "2026-11-13"
+   "checked": "2026-11-14"
   },
   "milan-cortina": {
    "label": {
@@ -639,7 +687,7 @@
     "it": "Eredità Milano-Cortina"
    },
    "entries": [],
-   "checked": "2026-11-13"
+   "checked": "2026-11-14"
   },
   "eu-ai-regulation": {
    "label": {
@@ -647,7 +695,7 @@
     "it": "Regole UE sul digitale"
    },
    "entries": [],
-   "checked": "2026-11-13"
+   "checked": "2026-11-14"
   }
  }
 }

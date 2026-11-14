@@ -143,6 +143,15 @@
    "briefs": 179,
    "published_at": "2026-11-13T06:57:00Z",
    "late": false
+  },
+  "2026-11-14": {
+   "status": "published",
+   "started_at": "2026-11-14T04:26:48Z",
+   "built_at": "2026-11-14T04:38:12Z",
+   "articles": 17,
+   "briefs": 178,
+   "published_at": "2026-11-14T06:57:00Z",
+   "late": false
   }
  }
 }
