@@ -81,7 +81,7 @@
      ]
     }
    ],
-   "checked": "2026-11-14"
+   "checked": "2026-11-15"
   },
   "fed-rates": {
    "label": {
@@ -89,7 +89,7 @@
     "it": "Federal Reserve"
    },
    "entries": [],
-   "checked": "2026-11-14"
+   "checked": "2026-11-15"
   },
   "boe-rates": {
    "label": {
@@ -120,7 +120,7 @@
      ]
     }
    ],
-   "checked": "2026-11-14"
+   "checked": "2026-11-15"
   },
   "italy-budget": {
    "label": {
@@ -373,9 +373,35 @@
        "url": "https://roma.corriere.it/notizie/politica/26_novembre_13/manovra-mossa-governo-evitare-conflitti-interni-2e85660a-2ae0-4cb8-949e-c3d437cf5xlk.shtml"
       }
      ]
+    },
+    {
+     "date": "2026-11-15",
+     "story_id": "s57c3bfc091",
+     "headline": {
+      "en": "58.1% say politics ignores enterprise needs",
+      "it": "Il 58,1% ritiene la politica distante dalle imprese"
+     },
+     "subheadline": {
+      "en": "Survey by Alessandra Ghisleri finds a large gap between policy and business priorities.",
+      "it": "Un sondaggio di Alessandra Ghisleri evidenzia un ampio divario tra politica e priorità aziendali."
+     },
+     "next": {
+      "en": [],
+      "it": []
+     },
+     "sources": [
+      {
+       "name": "Il Sole 24 Ore Italia",
+       "url": "https://www.ilsole24ore.com/art/fisco-ed-energia-priorita-le-imprese-manovra-ancora-insufficiente-AJaXzXGC"
+      },
+      {
+       "name": "Sky TG24",
+       "url": "https://tg24.sky.it/politica/video/2026/11/14/treviso-dautore-politica-a-confronto-su-sicurezza-giustizia-ed-economia-1140016"
+      }
+     ]
     }
    ],
-   "checked": "2026-11-14"
+   "checked": "2026-11-15"
   },
   "uk-budget": {
    "label": {
@@ -383,7 +409,7 @@
     "it": "Bilancio UK e fisco"
    },
    "entries": [],
-   "checked": "2026-11-14"
+   "checked": "2026-11-15"
   },
   "us-tariffs": {
    "label": {
@@ -414,7 +440,7 @@
      ]
     }
    ],
-   "checked": "2026-11-14"
+   "checked": "2026-11-15"
   },
   "italy-inflation": {
    "label": {
@@ -479,7 +505,7 @@
      ]
     }
    ],
-   "checked": "2026-11-14"
+   "checked": "2026-11-15"
   },
   "venice-access-fee": {
    "label": {
@@ -487,7 +513,7 @@
     "it": "Contributo di accesso a Venezia"
    },
    "entries": [],
-   "checked": "2026-11-14"
+   "checked": "2026-11-15"
   },
   "venice-mose": {
    "label": {
@@ -495,7 +521,7 @@
     "it": "MOSE e acqua alta"
    },
    "entries": [],
-   "checked": "2026-11-14"
+   "checked": "2026-11-15"
   },
   "lux-housing": {
    "label": {
@@ -570,7 +596,7 @@
      ]
     }
    ],
-   "checked": "2026-11-14"
+   "checked": "2026-11-15"
   },
   "nyc-housing": {
    "label": {
@@ -578,7 +604,7 @@
     "it": "Casa e affitti a New York"
    },
    "entries": [],
-   "checked": "2026-11-14"
+   "checked": "2026-11-15"
   },
   "london-transport": {
    "label": {
@@ -679,7 +705,7 @@
      ]
     }
    ],
-   "checked": "2026-11-14"
+   "checked": "2026-11-15"
   },
   "milan-cortina": {
    "label": {
@@ -687,7 +713,7 @@
     "it": "Eredità Milano-Cortina"
    },
    "entries": [],
-   "checked": "2026-11-14"
+   "checked": "2026-11-15"
   },
   "eu-ai-regulation": {
    "label": {
@@ -695,7 +721,7 @@
     "it": "Regole UE sul digitale"
    },
    "entries": [],
-   "checked": "2026-11-14"
+   "checked": "2026-11-15"
   }
  }
 }
