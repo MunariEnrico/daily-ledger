@@ -81,7 +81,7 @@
      ]
     }
    ],
-   "checked": "2026-11-15"
+   "checked": "2026-11-16"
   },
   "fed-rates": {
    "label": {
@@ -89,7 +89,7 @@
     "it": "Federal Reserve"
    },
    "entries": [],
-   "checked": "2026-11-15"
+   "checked": "2026-11-16"
   },
   "boe-rates": {
    "label": {
@@ -120,7 +120,7 @@
      ]
     }
    ],
-   "checked": "2026-11-15"
+   "checked": "2026-11-16"
   },
   "italy-budget": {
    "label": {
@@ -399,9 +399,35 @@
        "url": "https://tg24.sky.it/politica/video/2026/11/14/treviso-dautore-politica-a-confronto-su-sicurezza-giustizia-ed-economia-1140016"
       }
      ]
+    },
+    {
+     "date": "2026-11-16",
+     "story_id": "sdfabc8656e",
+     "headline": {
+      "en": "2027 Budget Law Under Review, Health and Tax Changes Planned",
+      "it": "Manovra 2027 in revisione, previsti cambi su sanità e exit tax"
+     },
+     "subheadline": {
+      "en": "Government opens the 2027 budget to amendments on health spending, pensions and the exit tax.",
+      "it": "Il governo apre la legge di Bilancio 2027 a emendamenti su sanità, pensioni e tassa di uscita."
+     },
+     "next": {
+      "en": [],
+      "it": []
+     },
+     "sources": [
+      {
+       "name": "Corriere della Sera Economia",
+       "url": "https://www.corriere.it/economia/finanza/26_novembre_15/cosi-cambia-la-manovra-sanita-scuola-e-imprese-la-partita-su-exit-tax-e-pensioni-09a01479-5dfb-4fd0-ad58-5ff0af16exlk.shtml"
+      },
+      {
+       "name": "Sky TG24",
+       "url": "https://tg24.sky.it/economia/2026/11/15/manovra-2027-emendamenti-legge-bilancio-modifiche"
+      }
+     ]
     }
    ],
-   "checked": "2026-11-15"
+   "checked": "2026-11-16"
   },
   "uk-budget": {
    "label": {
@@ -409,7 +435,7 @@
     "it": "Bilancio UK e fisco"
    },
    "entries": [],
-   "checked": "2026-11-15"
+   "checked": "2026-11-16"
   },
   "us-tariffs": {
    "label": {
@@ -440,7 +466,7 @@
      ]
     }
    ],
-   "checked": "2026-11-15"
+   "checked": "2026-11-16"
   },
   "italy-inflation": {
    "label": {
@@ -505,7 +531,7 @@
      ]
     }
    ],
-   "checked": "2026-11-15"
+   "checked": "2026-11-16"
   },
   "venice-access-fee": {
    "label": {
@@ -513,7 +539,7 @@
     "it": "Contributo di accesso a Venezia"
    },
    "entries": [],
-   "checked": "2026-11-15"
+   "checked": "2026-11-16"
   },
   "venice-mose": {
    "label": {
@@ -521,7 +547,7 @@
     "it": "MOSE e acqua alta"
    },
    "entries": [],
-   "checked": "2026-11-15"
+   "checked": "2026-11-16"
   },
   "lux-housing": {
    "label": {
@@ -596,7 +622,7 @@
      ]
     }
    ],
-   "checked": "2026-11-15"
+   "checked": "2026-11-16"
   },
   "nyc-housing": {
    "label": {
@@ -604,7 +630,7 @@
     "it": "Casa e affitti a New York"
    },
    "entries": [],
-   "checked": "2026-11-15"
+   "checked": "2026-11-16"
   },
   "london-transport": {
    "label": {
@@ -705,7 +731,7 @@
      ]
     }
    ],
-   "checked": "2026-11-15"
+   "checked": "2026-11-16"
   },
   "milan-cortina": {
    "label": {
@@ -713,7 +739,7 @@
     "it": "Eredità Milano-Cortina"
    },
    "entries": [],
-   "checked": "2026-11-15"
+   "checked": "2026-11-16"
   },
   "eu-ai-regulation": {
    "label": {
@@ -721,7 +747,7 @@
     "it": "Regole UE sul digitale"
    },
    "entries": [],
-   "checked": "2026-11-15"
+   "checked": "2026-11-16"
   }
  }
 }
