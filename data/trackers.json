@@ -81,7 +81,7 @@
      ]
     }
    ],
-   "checked": "2026-11-17"
+   "checked": "2026-11-18"
   },
   "fed-rates": {
    "label": {
@@ -89,7 +89,7 @@
     "it": "Federal Reserve"
    },
    "entries": [],
-   "checked": "2026-11-17"
+   "checked": "2026-11-18"
   },
   "boe-rates": {
    "label": {
@@ -120,7 +120,7 @@
      ]
     }
    ],
-   "checked": "2026-11-17"
+   "checked": "2026-11-18"
   },
   "italy-budget": {
    "label": {
@@ -425,9 +425,31 @@
        "url": "https://tg24.sky.it/economia/2026/11/15/manovra-2027-emendamenti-legge-bilancio-modifiche"
       }
      ]
+    },
+    {
+     "date": "2026-11-18",
+     "story_id": "sf86752c82d",
+     "headline": {
+      "en": "Senate to vote on school bill as health funding debate continues",
+      "it": "Il Senato vota la riforma scolastica mentre si discute dei fondi sanitari"
+     },
+     "subheadline": {
+      "en": "The government faces tension over digital textbook policy and health budget.",
+      "it": "Il governo è al centro di una disputa su libri di testo digitali e bilancio della sanità."
+     },
+     "next": {
+      "en": [],
+      "it": []
+     },
+     "sources": [
+      {
+       "name": "Corriere della Sera Roma",
+       "url": "https://roma.corriere.it/notizie/politica/26_novembre_17/manovra-fondi-sanita-lite-fdi-forza-italia-libri-testo-digitali-987e2ae1-70e2-4fc5-a24d-c3479dc2axlk.shtml"
+      }
+     ]
     }
    ],
-   "checked": "2026-11-17"
+   "checked": "2026-11-18"
   },
   "uk-budget": {
    "label": {
@@ -435,7 +457,7 @@
     "it": "Bilancio UK e fisco"
    },
    "entries": [],
-   "checked": "2026-11-17"
+   "checked": "2026-11-18"
   },
   "us-tariffs": {
    "label": {
@@ -466,7 +488,7 @@
      ]
     }
    ],
-   "checked": "2026-11-17"
+   "checked": "2026-11-18"
   },
   "italy-inflation": {
    "label": {
@@ -531,7 +553,7 @@
      ]
     }
    ],
-   "checked": "2026-11-17"
+   "checked": "2026-11-18"
   },
   "venice-access-fee": {
    "label": {
@@ -539,7 +561,7 @@
     "it": "Contributo di accesso a Venezia"
    },
    "entries": [],
-   "checked": "2026-11-17"
+   "checked": "2026-11-18"
   },
   "venice-mose": {
    "label": {
@@ -547,7 +569,7 @@
     "it": "MOSE e acqua alta"
    },
    "entries": [],
-   "checked": "2026-11-17"
+   "checked": "2026-11-18"
   },
   "lux-housing": {
    "label": {
@@ -620,9 +642,31 @@
        "url": "https://www.luxtimes.lu/luxembourg/well-keep-fighting-say-activists-after-disappointing-talks-with-housing-minister/164395519.html"
       }
      ]
+    },
+    {
+     "date": "2026-11-18",
+     "story_id": "se7361a4764",
+     "headline": {
+      "en": "Opposition parties call for tax on empty homes in Luxembourg City",
+      "it": "Partiti d'opposizione chiedono tassa su case vuote a Lussemburgo"
+     },
+     "subheadline": {
+      "en": "LSAP, the Greens and the Left urge a progressive levy to tackle the housing crunch.",
+      "it": "LSAP, i Greens e la Left propongono una tassa progressiva per la crisi abitativa"
+     },
+     "next": {
+      "en": [],
+      "it": []
+     },
+     "sources": [
+      {
+       "name": "RTL Today",
+       "url": "https://today.rtl.lu/news/luxembourg/opposition-parties-propose-tax-on-vacant-homes-and-undeveloped-land-530961775"
+      }
+     ]
     }
    ],
-   "checked": "2026-11-17"
+   "checked": "2026-11-18"
   },
   "nyc-housing": {
    "label": {
@@ -630,7 +674,7 @@
     "it": "Casa e affitti a New York"
    },
    "entries": [],
-   "checked": "2026-11-17"
+   "checked": "2026-11-18"
   },
   "london-transport": {
    "label": {
@@ -731,7 +775,7 @@
      ]
     }
    ],
-   "checked": "2026-11-17"
+   "checked": "2026-11-18"
   },
   "milan-cortina": {
    "label": {
@@ -739,7 +783,7 @@
     "it": "Eredità Milano-Cortina"
    },
    "entries": [],
-   "checked": "2026-11-17"
+   "checked": "2026-11-18"
   },
   "eu-ai-regulation": {
    "label": {
@@ -747,7 +791,7 @@
     "it": "Regole UE sul digitale"
    },
    "entries": [],
-   "checked": "2026-11-17"
+   "checked": "2026-11-18"
   }
  }
 }

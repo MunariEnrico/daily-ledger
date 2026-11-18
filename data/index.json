@@ -179,6 +179,15 @@
    "briefs": 191,
    "published_at": "2026-11-17T06:57:00Z",
    "late": false
+  },
+  "2026-11-18": {
+   "status": "published",
+   "started_at": "2026-11-18T04:32:25Z",
+   "built_at": "2026-11-18T04:43:50Z",
+   "articles": 14,
+   "briefs": 184,
+   "published_at": "2026-11-18T06:57:00Z",
+   "late": false
   }
  }
 }
