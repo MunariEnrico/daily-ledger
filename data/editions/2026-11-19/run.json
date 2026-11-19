@@ -1,0 +1,95 @@
+{
+ "started_at": "2026-11-19T04:33:49Z",
+ "finished_at": "2026-11-19T04:43:57Z",
+ "seconds": 608.5,
+ "sources": {
+  "checked": 209,
+  "ok": 202,
+  "failed": [
+   "euronews_business",
+   "europarl",
+   "lequotidien",
+   "libero",
+   "siliconlux",
+   "statec",
+   "ytali"
+  ],
+  "failures": {
+   "euronews_business": "HTTP 406",
+   "europarl": "HTTP 202",
+   "lequotidien": "HTTP 404",
+   "libero": "HTTP 404",
+   "siliconlux": "HTTP 202",
+   "statec": "feed parsed but contained no usable entries",
+   "ytali": "HTTP 202"
+  }
+ },
+ "items": {
+  "retrieved": 6946,
+  "fresh": 2786,
+  "dropped": {
+   "too_old": 4096,
+   "date_missing": 12,
+   "low_value": 21,
+   "opinion": 21
+  },
+  "calendar": 10
+ },
+ "lookback_hours": 30,
+ "clusters": 2027,
+ "candidates_planned": 199,
+ "candidates_with_evidence": 199,
+ "stories": {
+  "articles": 17,
+  "briefs": 182,
+  "analyses": 0
+ },
+ "verification": {
+  "drafts": 27,
+  "published_articles": 17,
+  "fallback_briefs": 182,
+  "repairs": 24,
+  "language_regenerations": 1,
+  "unsupported_claims_detected": 69,
+  "unsupported_claims_blocked": 26,
+  "attribution_failures": 4,
+  "numerical_inconsistencies": 12,
+  "validation_failures": 33,
+  "llm_errors": 0
+ },
+ "llm": {
+  "calls": 140,
+  "failures": 15,
+  "by_model": {
+   "groq:openai/gpt-oss-120b": 35,
+   "groq:openai/gpt-oss-20b": 15
+  },
+  "circuit_open": false,
+  "providers": [
+   {
+    "name": "groq",
+    "models": [
+     "openai/gpt-oss-120b",
+     "openai/gpt-oss-20b",
+     "qwen/qwen3.8-27b"
+    ],
+    "switched_off": false
+   },
+   {
+    "name": "gemini",
+    "models": [
+     "gemini-flash-lite-latest",
+     "gemini-flash-latest"
+    ],
+    "switched_off": false
+   }
+  ],
+  "exhausted_models": [],
+  "errors": [],
+  "budget": 140
+ },
+ "llm_status": "ok",
+ "market_status": "ok",
+ "market_errors": [],
+ "errors": []
+}

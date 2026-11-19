@@ -81,7 +81,7 @@
      ]
     }
    ],
-   "checked": "2026-11-18"
+   "checked": "2026-11-19"
   },
   "fed-rates": {
    "label": {
@@ -89,7 +89,7 @@
     "it": "Federal Reserve"
    },
    "entries": [],
-   "checked": "2026-11-18"
+   "checked": "2026-11-19"
   },
   "boe-rates": {
    "label": {
@@ -120,7 +120,7 @@
      ]
     }
    ],
-   "checked": "2026-11-18"
+   "checked": "2026-11-19"
   },
   "italy-budget": {
    "label": {
@@ -447,9 +447,35 @@
        "url": "https://roma.corriere.it/notizie/politica/26_novembre_17/manovra-fondi-sanita-lite-fdi-forza-italia-libri-testo-digitali-987e2ae1-70e2-4fc5-a24d-c3479dc2axlk.shtml"
       }
      ]
+    },
+    {
+     "date": "2026-11-19",
+     "story_id": "sc176caa68a",
+     "headline": {
+      "en": "Draft amendment to extend police and military pension calculations",
+      "it": "Bozza di emendamento per estendere il calcolo pensionistico delle forze dell'ordine e armate"
+     },
+     "subheadline": {
+      "en": "Proposal adds up to four years to pension credit and raises the conversion coefficient by two years.",
+      "it": "La proposta aggiunge fino a quattro anni al calcolo e aumenta il coefficiente di trasformazione di due anni."
+     },
+     "next": {
+      "en": [],
+      "it": []
+     },
+     "sources": [
+      {
+       "name": "ANSA Politica",
+       "url": "https://www.ansa.it/sito/notizie/politica/2026/11/18/arriva-la-pensione-dedicata-per-le-forze-dellordine-calcolo-con-fino-a-4-anni_04c9d0a1-c7bc-4d02-831f-24ffa707b69a.html"
+      },
+      {
+       "name": "Il Messaggero Economia",
+       "url": "https://www.ilmessaggero.it/economia/news/pensioni_militari_forze_armate_cosa_cambia_manovra-9897856.html"
+      }
+     ]
     }
    ],
-   "checked": "2026-11-18"
+   "checked": "2026-11-19"
   },
   "uk-budget": {
    "label": {
@@ -457,7 +483,7 @@
     "it": "Bilancio UK e fisco"
    },
    "entries": [],
-   "checked": "2026-11-18"
+   "checked": "2026-11-19"
   },
   "us-tariffs": {
    "label": {
@@ -488,7 +514,7 @@
      ]
     }
    ],
-   "checked": "2026-11-18"
+   "checked": "2026-11-19"
   },
   "italy-inflation": {
    "label": {
@@ -553,7 +579,7 @@
      ]
     }
    ],
-   "checked": "2026-11-18"
+   "checked": "2026-11-19"
   },
   "venice-access-fee": {
    "label": {
@@ -561,7 +587,7 @@
     "it": "Contributo di accesso a Venezia"
    },
    "entries": [],
-   "checked": "2026-11-18"
+   "checked": "2026-11-19"
   },
   "venice-mose": {
    "label": {
@@ -569,7 +595,7 @@
     "it": "MOSE e acqua alta"
    },
    "entries": [],
-   "checked": "2026-11-18"
+   "checked": "2026-11-19"
   },
   "lux-housing": {
    "label": {
@@ -664,9 +690,35 @@
        "url": "https://today.rtl.lu/news/luxembourg/opposition-parties-propose-tax-on-vacant-homes-and-undeveloped-land-530961775"
       }
      ]
+    },
+    {
+     "date": "2026-11-19",
+     "story_id": "s26d4b1d826",
+     "headline": {
+      "en": "Luxembourg to unveil off‑plan property guarantee reform",
+      "it": "Il Lussemburgo presenterà la riforma della garanzia per le case in costruzione"
+     },
+     "subheadline": {
+      "en": "Housing minister says the plan will be presented around the new year.",
+      "it": "Il ministro dell’edilizia afferma che il provvedimento sarà presentato verso l’inizio del nuovo anno."
+     },
+     "next": {
+      "en": [],
+      "it": []
+     },
+     "sources": [
+      {
+       "name": "RTL Today",
+       "url": "https://today.rtl.lu/news/luxembourg/government-announces-reform-of-completion-guarantee-1698832575"
+      },
+      {
+       "name": "Luxembourg Times",
+       "url": "https://www.luxtimes.lu/luxembourg/government-already-addressing-most-youth-demands-housing-minister-says/164729043.html"
+      }
+     ]
     }
    ],
-   "checked": "2026-11-18"
+   "checked": "2026-11-19"
   },
   "nyc-housing": {
    "label": {
@@ -674,7 +726,7 @@
     "it": "Casa e affitti a New York"
    },
    "entries": [],
-   "checked": "2026-11-18"
+   "checked": "2026-11-19"
   },
   "london-transport": {
    "label": {
@@ -775,7 +827,7 @@
      ]
     }
    ],
-   "checked": "2026-11-18"
+   "checked": "2026-11-19"
   },
   "milan-cortina": {
    "label": {
@@ -783,7 +835,7 @@
     "it": "Eredità Milano-Cortina"
    },
    "entries": [],
-   "checked": "2026-11-18"
+   "checked": "2026-11-19"
   },
   "eu-ai-regulation": {
    "label": {
@@ -791,7 +843,7 @@
     "it": "Regole UE sul digitale"
    },
    "entries": [],
-   "checked": "2026-11-18"
+   "checked": "2026-11-19"
   }
  }
 }

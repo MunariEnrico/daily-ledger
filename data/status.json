@@ -1,10 +1,10 @@
 {
- "date": "2026-11-18",
+ "date": "2026-11-19",
  "state": "published",
  "run": {
-  "started_at": "2026-11-18T04:32:25Z",
-  "finished_at": "2026-11-18T04:43:50Z",
-  "seconds": 685.1,
+  "started_at": "2026-11-19T04:33:49Z",
+  "finished_at": "2026-11-19T04:43:57Z",
+  "seconds": 608.5,
   "sources": {
    "checked": 209,
    "ok": 202,
@@ -22,50 +22,50 @@
     "europarl": "HTTP 202",
     "lequotidien": "HTTP 404",
     "libero": "HTTP 404",
-    "siliconlux": "HTTP 520",
+    "siliconlux": "HTTP 202",
     "statec": "feed parsed but contained no usable entries",
-    "ytali": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    "ytali": "HTTP 202"
    }
   },
   "items": {
-   "retrieved": 6821,
-   "fresh": 2777,
+   "retrieved": 6946,
+   "fresh": 2786,
    "dropped": {
-    "too_old": 3984,
-    "low_value": 18,
+    "too_old": 4096,
     "date_missing": 12,
-    "opinion": 20
+    "low_value": 21,
+    "opinion": 21
    },
    "calendar": 10
   },
   "lookback_hours": 30,
-  "clusters": 2019,
-  "candidates_planned": 198,
-  "candidates_with_evidence": 198,
+  "clusters": 2027,
+  "candidates_planned": 199,
+  "candidates_with_evidence": 199,
   "stories": {
-   "articles": 14,
-   "briefs": 184,
+   "articles": 17,
+   "briefs": 182,
    "analyses": 0
   },
   "verification": {
    "drafts": 27,
-   "published_articles": 14,
-   "fallback_briefs": 184,
-   "repairs": 23,
-   "language_regenerations": 3,
-   "unsupported_claims_detected": 121,
-   "unsupported_claims_blocked": 50,
+   "published_articles": 17,
+   "fallback_briefs": 182,
+   "repairs": 24,
+   "language_regenerations": 1,
+   "unsupported_claims_detected": 69,
+   "unsupported_claims_blocked": 26,
    "attribution_failures": 4,
-   "numerical_inconsistencies": 45,
-   "validation_failures": 37,
+   "numerical_inconsistencies": 12,
+   "validation_failures": 33,
    "llm_errors": 0
   },
   "llm": {
    "calls": 140,
-   "failures": 13,
+   "failures": 15,
    "by_model": {
-    "groq:openai/gpt-oss-120b": 39,
-    "groq:openai/gpt-oss-20b": 12
+    "groq:openai/gpt-oss-120b": 35,
+    "groq:openai/gpt-oss-20b": 15
    },
    "circuit_open": false,
    "providers": [
@@ -96,8 +96,8 @@
   "market_errors": [],
   "errors": []
  },
- "updated_at": "2026-11-18T06:57:00Z",
- "last_published": "2026-11-18T06:57:00Z",
+ "updated_at": "2026-11-19T06:57:00Z",
+ "last_published": "2026-11-19T06:57:00Z",
  "late": false,
  "email": {
   "state": "disabled",
