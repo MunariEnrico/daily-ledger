@@ -197,6 +197,15 @@
    "briefs": 182,
    "published_at": "2026-11-19T06:57:00Z",
    "late": false
+  },
+  "2026-11-20": {
+   "status": "published",
+   "started_at": "2026-11-20T04:31:57Z",
+   "built_at": "2026-11-20T04:44:09Z",
+   "articles": 10,
+   "briefs": 190,
+   "published_at": "2026-11-20T06:57:00Z",
+   "late": false
   }
  }
 }

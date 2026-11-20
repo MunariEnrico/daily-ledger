@@ -1,18 +1,21 @@
 {
- "date": "2026-11-19",
+ "date": "2026-11-20",
  "state": "published",
  "run": {
-  "started_at": "2026-11-19T04:33:49Z",
-  "finished_at": "2026-11-19T04:43:57Z",
-  "seconds": 608.5,
+  "started_at": "2026-11-20T04:31:57Z",
+  "finished_at": "2026-11-20T04:44:09Z",
+  "seconds": 731.1,
   "sources": {
    "checked": 209,
-   "ok": 202,
+   "ok": 199,
    "failed": [
     "euronews_business",
     "europarl",
     "lequotidien",
     "libero",
+    "repubblica",
+    "repubblica_economia",
+    "repubblica_politica",
     "siliconlux",
     "statec",
     "ytali"
@@ -22,50 +25,53 @@
     "europarl": "HTTP 202",
     "lequotidien": "HTTP 404",
     "libero": "HTTP 404",
-    "siliconlux": "HTTP 202",
+    "repubblica": "HTTP 403",
+    "repubblica_economia": "HTTP 403",
+    "repubblica_politica": "HTTP 403",
+    "siliconlux": "HTTP 520",
     "statec": "feed parsed but contained no usable entries",
-    "ytali": "HTTP 202"
+    "ytali": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
    }
   },
   "items": {
-   "retrieved": 6946,
-   "fresh": 2786,
+   "retrieved": 6906,
+   "fresh": 2819,
    "dropped": {
-    "too_old": 4096,
-    "date_missing": 12,
-    "low_value": 21,
-    "opinion": 21
+    "low_value": 37,
+    "too_old": 4007,
+    "date_missing": 11,
+    "opinion": 22
    },
    "calendar": 10
   },
   "lookback_hours": 30,
-  "clusters": 2027,
-  "candidates_planned": 199,
-  "candidates_with_evidence": 199,
+  "clusters": 2059,
+  "candidates_planned": 200,
+  "candidates_with_evidence": 200,
   "stories": {
-   "articles": 17,
-   "briefs": 182,
+   "articles": 10,
+   "briefs": 190,
    "analyses": 0
   },
   "verification": {
-   "drafts": 27,
-   "published_articles": 17,
-   "fallback_briefs": 182,
-   "repairs": 24,
-   "language_regenerations": 1,
-   "unsupported_claims_detected": 69,
-   "unsupported_claims_blocked": 26,
-   "attribution_failures": 4,
-   "numerical_inconsistencies": 12,
-   "validation_failures": 33,
+   "drafts": 26,
+   "published_articles": 10,
+   "fallback_briefs": 190,
+   "repairs": 22,
+   "language_regenerations": 5,
+   "unsupported_claims_detected": 185,
+   "unsupported_claims_blocked": 93,
+   "attribution_failures": 6,
+   "numerical_inconsistencies": 58,
+   "validation_failures": 42,
    "llm_errors": 0
   },
   "llm": {
    "calls": 140,
-   "failures": 15,
+   "failures": 14,
    "by_model": {
-    "groq:openai/gpt-oss-120b": 35,
-    "groq:openai/gpt-oss-20b": 15
+    "groq:openai/gpt-oss-120b": 38,
+    "groq:openai/gpt-oss-20b": 14
    },
    "circuit_open": false,
    "providers": [
@@ -96,8 +102,8 @@
   "market_errors": [],
   "errors": []
  },
- "updated_at": "2026-11-19T06:57:00Z",
- "last_published": "2026-11-19T06:57:00Z",
+ "updated_at": "2026-11-20T06:57:00Z",
+ "last_published": "2026-11-20T06:57:00Z",
  "late": false,
  "email": {
   "state": "disabled",

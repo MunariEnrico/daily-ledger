@@ -1,0 +1,101 @@
+{
+ "started_at": "2026-11-20T04:31:57Z",
+ "finished_at": "2026-11-20T04:44:09Z",
+ "seconds": 731.1,
+ "sources": {
+  "checked": 209,
+  "ok": 199,
+  "failed": [
+   "euronews_business",
+   "europarl",
+   "lequotidien",
+   "libero",
+   "repubblica",
+   "repubblica_economia",
+   "repubblica_politica",
+   "siliconlux",
+   "statec",
+   "ytali"
+  ],
+  "failures": {
+   "euronews_business": "HTTP 406",
+   "europarl": "HTTP 202",
+   "lequotidien": "HTTP 404",
+   "libero": "HTTP 404",
+   "repubblica": "HTTP 403",
+   "repubblica_economia": "HTTP 403",
+   "repubblica_politica": "HTTP 403",
+   "siliconlux": "HTTP 520",
+   "statec": "feed parsed but contained no usable entries",
+   "ytali": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  }
+ },
+ "items": {
+  "retrieved": 6906,
+  "fresh": 2819,
+  "dropped": {
+   "low_value": 37,
+   "too_old": 4007,
+   "date_missing": 11,
+   "opinion": 22
+  },
+  "calendar": 10
+ },
+ "lookback_hours": 30,
+ "clusters": 2059,
+ "candidates_planned": 200,
+ "candidates_with_evidence": 200,
+ "stories": {
+  "articles": 10,
+  "briefs": 190,
+  "analyses": 0
+ },
+ "verification": {
+  "drafts": 26,
+  "published_articles": 10,
+  "fallback_briefs": 190,
+  "repairs": 22,
+  "language_regenerations": 5,
+  "unsupported_claims_detected": 185,
+  "unsupported_claims_blocked": 93,
+  "attribution_failures": 6,
+  "numerical_inconsistencies": 58,
+  "validation_failures": 42,
+  "llm_errors": 0
+ },
+ "llm": {
+  "calls": 140,
+  "failures": 14,
+  "by_model": {
+   "groq:openai/gpt-oss-120b": 38,
+   "groq:openai/gpt-oss-20b": 14
+  },
+  "circuit_open": false,
+  "providers": [
+   {
+    "name": "groq",
+    "models": [
+     "openai/gpt-oss-120b",
+     "openai/gpt-oss-20b",
+     "qwen/qwen3.8-27b"
+    ],
+    "switched_off": false
+   },
+   {
+    "name": "gemini",
+    "models": [
+     "gemini-flash-lite-latest",
+     "gemini-flash-latest"
+    ],
+    "switched_off": false
+   }
+  ],
+  "exhausted_models": [],
+  "errors": [],
+  "budget": 140
+ },
+ "llm_status": "ok",
+ "market_status": "ok",
+ "market_errors": [],
+ "errors": []
+}
