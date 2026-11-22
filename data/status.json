@@ -1,10 +1,10 @@
 {
- "date": "2026-11-21",
+ "date": "2026-11-22",
  "state": "published",
  "run": {
-  "started_at": "2026-11-21T04:29:18Z",
-  "finished_at": "2026-11-21T04:41:47Z",
-  "seconds": 749.1,
+  "started_at": "2026-11-22T04:30:35Z",
+  "finished_at": "2026-11-22T04:42:29Z",
+  "seconds": 714.2,
   "sources": {
    "checked": 209,
    "ok": 202,
@@ -28,44 +28,44 @@
    }
   },
   "items": {
-   "retrieved": 6926,
-   "fresh": 2715,
+   "retrieved": 6708,
+   "fresh": 1757,
    "dropped": {
-    "low_value": 22,
-    "too_old": 4141,
-    "date_missing": 13,
-    "opinion": 25
+    "low_value": 27,
+    "too_old": 4888,
+    "date_missing": 12,
+    "opinion": 14
    },
    "calendar": 10
   },
   "lookback_hours": 30,
-  "clusters": 1948,
-  "candidates_planned": 186,
-  "candidates_with_evidence": 186,
+  "clusters": 1202,
+  "candidates_planned": 172,
+  "candidates_with_evidence": 172,
   "stories": {
    "articles": 10,
-   "briefs": 176,
+   "briefs": 162,
    "analyses": 0
   },
   "verification": {
-   "drafts": 26,
+   "drafts": 24,
    "published_articles": 10,
-   "fallback_briefs": 176,
-   "repairs": 23,
-   "language_regenerations": 4,
-   "unsupported_claims_detected": 120,
-   "unsupported_claims_blocked": 56,
-   "attribution_failures": 1,
-   "numerical_inconsistencies": 67,
+   "fallback_briefs": 162,
+   "repairs": 22,
+   "language_regenerations": 6,
+   "unsupported_claims_detected": 107,
+   "unsupported_claims_blocked": 52,
+   "attribution_failures": 11,
+   "numerical_inconsistencies": 37,
    "validation_failures": 41,
    "llm_errors": 0
   },
   "llm": {
    "calls": 140,
-   "failures": 13,
+   "failures": 11,
    "by_model": {
-    "groq:openai/gpt-oss-120b": 39,
-    "groq:openai/gpt-oss-20b": 12
+    "groq:openai/gpt-oss-120b": 40,
+    "groq:openai/gpt-oss-20b": 11
    },
    "circuit_open": false,
    "providers": [
@@ -96,8 +96,8 @@
   "market_errors": [],
   "errors": []
  },
- "updated_at": "2026-11-21T06:57:00Z",
- "last_published": "2026-11-21T06:57:00Z",
+ "updated_at": "2026-11-22T06:57:00Z",
+ "last_published": "2026-11-22T06:57:00Z",
  "late": false,
  "email": {
   "state": "disabled",
