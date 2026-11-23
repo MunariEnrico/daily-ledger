@@ -224,6 +224,15 @@
    "briefs": 162,
    "published_at": "2026-11-22T06:57:00Z",
    "late": false
+  },
+  "2026-11-23": {
+   "status": "published",
+   "started_at": "2026-11-23T04:44:25Z",
+   "built_at": "2026-11-23T04:55:04Z",
+   "articles": 13,
+   "briefs": 149,
+   "published_at": "2026-11-23T06:57:00Z",
+   "late": false
   }
  }
 }

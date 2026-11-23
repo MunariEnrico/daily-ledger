@@ -1,14 +1,15 @@
 {
- "date": "2026-11-22",
+ "date": "2026-11-23",
  "state": "published",
  "run": {
-  "started_at": "2026-11-22T04:30:35Z",
-  "finished_at": "2026-11-22T04:42:29Z",
-  "seconds": 714.2,
+  "started_at": "2026-11-23T04:44:25Z",
+  "finished_at": "2026-11-23T04:55:04Z",
+  "seconds": 638.5,
   "sources": {
    "checked": 209,
-   "ok": 202,
+   "ok": 201,
    "failed": [
+    "euronews",
     "euronews_business",
     "europarl",
     "lequotidien",
@@ -18,6 +19,7 @@
     "ytali"
    ],
    "failures": {
+    "euronews": "HTTP 406",
     "euronews_business": "HTTP 406",
     "europarl": "HTTP 202",
     "lequotidien": "HTTP 404",
@@ -28,44 +30,44 @@
    }
   },
   "items": {
-   "retrieved": 6708,
-   "fresh": 1757,
+   "retrieved": 6535,
+   "fresh": 1593,
    "dropped": {
-    "low_value": 27,
-    "too_old": 4888,
-    "date_missing": 12,
-    "opinion": 14
+    "low_value": 25,
+    "too_old": 4872,
+    "date_missing": 11,
+    "opinion": 24
    },
    "calendar": 10
   },
   "lookback_hours": 30,
-  "clusters": 1202,
-  "candidates_planned": 172,
-  "candidates_with_evidence": 172,
+  "clusters": 1062,
+  "candidates_planned": 162,
+  "candidates_with_evidence": 162,
   "stories": {
-   "articles": 10,
-   "briefs": 162,
+   "articles": 13,
+   "briefs": 149,
    "analyses": 0
   },
   "verification": {
-   "drafts": 24,
-   "published_articles": 10,
-   "fallback_briefs": 162,
-   "repairs": 22,
-   "language_regenerations": 6,
-   "unsupported_claims_detected": 107,
-   "unsupported_claims_blocked": 52,
-   "attribution_failures": 11,
-   "numerical_inconsistencies": 37,
-   "validation_failures": 41,
+   "drafts": 25,
+   "published_articles": 13,
+   "fallback_briefs": 149,
+   "repairs": 24,
+   "language_regenerations": 4,
+   "unsupported_claims_detected": 115,
+   "unsupported_claims_blocked": 50,
+   "attribution_failures": 6,
+   "numerical_inconsistencies": 28,
+   "validation_failures": 40,
    "llm_errors": 0
   },
   "llm": {
    "calls": 140,
-   "failures": 11,
+   "failures": 15,
    "by_model": {
-    "groq:openai/gpt-oss-120b": 40,
-    "groq:openai/gpt-oss-20b": 11
+    "groq:openai/gpt-oss-120b": 38,
+    "groq:openai/gpt-oss-20b": 15
    },
    "circuit_open": false,
    "providers": [
@@ -96,8 +98,8 @@
   "market_errors": [],
   "errors": []
  },
- "updated_at": "2026-11-22T06:57:00Z",
- "last_published": "2026-11-22T06:57:00Z",
+ "updated_at": "2026-11-23T06:57:00Z",
+ "last_published": "2026-11-23T06:57:00Z",
  "late": false,
  "email": {
   "state": "disabled",

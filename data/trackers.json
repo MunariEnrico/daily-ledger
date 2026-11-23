@@ -81,7 +81,7 @@
      ]
     }
    ],
-   "checked": "2026-11-22"
+   "checked": "2026-11-23"
   },
   "fed-rates": {
    "label": {
@@ -89,7 +89,7 @@
     "it": "Federal Reserve"
    },
    "entries": [],
-   "checked": "2026-11-22"
+   "checked": "2026-11-23"
   },
   "boe-rates": {
    "label": {
@@ -120,7 +120,7 @@
      ]
     }
    ],
-   "checked": "2026-11-22"
+   "checked": "2026-11-23"
   },
   "italy-budget": {
    "label": {
@@ -475,7 +475,7 @@
      ]
     }
    ],
-   "checked": "2026-11-22"
+   "checked": "2026-11-23"
   },
   "uk-budget": {
    "label": {
@@ -483,7 +483,7 @@
     "it": "Bilancio UK e fisco"
    },
    "entries": [],
-   "checked": "2026-11-22"
+   "checked": "2026-11-23"
   },
   "us-tariffs": {
    "label": {
@@ -514,7 +514,7 @@
      ]
     }
    ],
-   "checked": "2026-11-22"
+   "checked": "2026-11-23"
   },
   "italy-inflation": {
    "label": {
@@ -579,7 +579,7 @@
      ]
     }
    ],
-   "checked": "2026-11-22"
+   "checked": "2026-11-23"
   },
   "venice-access-fee": {
    "label": {
@@ -587,7 +587,7 @@
     "it": "Contributo di accesso a Venezia"
    },
    "entries": [],
-   "checked": "2026-11-22"
+   "checked": "2026-11-23"
   },
   "venice-mose": {
    "label": {
@@ -595,7 +595,7 @@
     "it": "MOSE e acqua alta"
    },
    "entries": [],
-   "checked": "2026-11-22"
+   "checked": "2026-11-23"
   },
   "lux-housing": {
    "label": {
@@ -718,7 +718,7 @@
      ]
     }
    ],
-   "checked": "2026-11-22"
+   "checked": "2026-11-23"
   },
   "nyc-housing": {
    "label": {
@@ -726,7 +726,7 @@
     "it": "Casa e affitti a New York"
    },
    "entries": [],
-   "checked": "2026-11-22"
+   "checked": "2026-11-23"
   },
   "london-transport": {
    "label": {
@@ -825,9 +825,39 @@
        "url": "https://www.standard.co.uk/news/transport/floating-bus-stops-transport-for-london-b1304801.html"
       }
      ]
+    },
+    {
+     "date": "2026-11-23",
+     "story_id": "s08902da812",
+     "headline": {
+      "en": "London Underground drivers plan 24‑hour strike next week",
+      "it": "I conducenti della London Underground prevedono uno sciopero di 24 ore la prossima settimana"
+     },
+     "subheadline": {
+      "en": "TfL in last‑ditch talks to try to stop the walkout",
+      "it": "TfL in trattative urgenti per cercare di fermare lo sciopero"
+     },
+     "next": {
+      "en": [],
+      "it": []
+     },
+     "sources": [
+      {
+       "name": "The Standard · London",
+       "url": "https://www.standard.co.uk/news/transport/when-tube-strikes-2026-dates-london-underground-rmt-b1303830.html"
+      },
+      {
+       "name": "MyLondon",
+       "url": "https://www.mylondon.news/news/zone-1-news/tfl-last-ditch-talks-tube-34950307"
+      },
+      {
+       "name": "The Standard · London",
+       "url": "https://www.standard.co.uk/news/london/tube-strike-talks-rmt-union-london-underground-b1305420.html"
+      }
+     ]
     }
    ],
-   "checked": "2026-11-22"
+   "checked": "2026-11-23"
   },
   "milan-cortina": {
    "label": {
@@ -835,7 +865,7 @@
     "it": "Eredità Milano-Cortina"
    },
    "entries": [],
-   "checked": "2026-11-22"
+   "checked": "2026-11-23"
   },
   "eu-ai-regulation": {
    "label": {
@@ -843,7 +873,7 @@
     "it": "Regole UE sul digitale"
    },
    "entries": [],
-   "checked": "2026-11-22"
+   "checked": "2026-11-23"
   }
  }
 }
