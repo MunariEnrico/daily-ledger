@@ -81,7 +81,7 @@
      ]
     }
    ],
-   "checked": "2026-11-23"
+   "checked": "2026-11-24"
   },
   "fed-rates": {
    "label": {
@@ -89,7 +89,7 @@
     "it": "Federal Reserve"
    },
    "entries": [],
-   "checked": "2026-11-23"
+   "checked": "2026-11-24"
   },
   "boe-rates": {
    "label": {
@@ -120,7 +120,7 @@
      ]
     }
    ],
-   "checked": "2026-11-23"
+   "checked": "2026-11-24"
   },
   "italy-budget": {
    "label": {
@@ -473,9 +473,43 @@
        "url": "https://www.ilmessaggero.it/economia/news/pensioni_militari_forze_armate_cosa_cambia_manovra-9897856.html"
       }
      ]
+    },
+    {
+     "date": "2026-11-24",
+     "story_id": "s4fa69b17f6",
+     "headline": {
+      "en": "Around 1,700 budget amendments ruled inadmissible",
+      "it": "Circa 1.700 emendamenti alla manovra dichiarati inadmissibili"
+     },
+     "subheadline": {
+      "en": "The Chamber's Budget Committee rejected roughly a quarter of proposals, including measures on paint markers and the exit tax.",
+      "it": "La Commissione Bilancio ha scartato un quarto delle proposte, tra cui quelle sui marcatori di vernice e sulla exit tax."
+     },
+     "next": {
+      "en": [],
+      "it": []
+     },
+     "sources": [
+      {
+       "name": "AGI",
+       "url": "https://www.agi.it/economia/news/2026-11-23/emendamenti-bocciati-manovra-bilancio-40161770/"
+      },
+      {
+       "name": "RaiNews",
+       "url": "https://www.rainews.it/articoli/ultimora/manovra-inammissibili-1700-emendamenti-1f810081-2c48-412d-8805-fdd12178f2c1.html"
+      },
+      {
+       "name": "Sky TG24",
+       "url": "https://tg24.sky.it/politica/2026/11/23/manovra-2027-emendamenti-inammissibili"
+      },
+      {
+       "name": "Il Messaggero",
+       "url": "https://www.ilmessaggero.it/politica/manovra_emendamenti_bocciati_quali_sono_vernice_cortei_ultime_notizie-9908576.html"
+      }
+     ]
     }
    ],
-   "checked": "2026-11-23"
+   "checked": "2026-11-24"
   },
   "uk-budget": {
    "label": {
@@ -483,7 +517,7 @@
     "it": "Bilancio UK e fisco"
    },
    "entries": [],
-   "checked": "2026-11-23"
+   "checked": "2026-11-24"
   },
   "us-tariffs": {
    "label": {
@@ -514,7 +548,7 @@
      ]
     }
    ],
-   "checked": "2026-11-23"
+   "checked": "2026-11-24"
   },
   "italy-inflation": {
    "label": {
@@ -579,7 +613,7 @@
      ]
     }
    ],
-   "checked": "2026-11-23"
+   "checked": "2026-11-24"
   },
   "venice-access-fee": {
    "label": {
@@ -587,7 +621,7 @@
     "it": "Contributo di accesso a Venezia"
    },
    "entries": [],
-   "checked": "2026-11-23"
+   "checked": "2026-11-24"
   },
   "venice-mose": {
    "label": {
@@ -595,7 +629,7 @@
     "it": "MOSE e acqua alta"
    },
    "entries": [],
-   "checked": "2026-11-23"
+   "checked": "2026-11-24"
   },
   "lux-housing": {
    "label": {
@@ -718,7 +752,7 @@
      ]
     }
    ],
-   "checked": "2026-11-23"
+   "checked": "2026-11-24"
   },
   "nyc-housing": {
    "label": {
@@ -726,7 +760,7 @@
     "it": "Casa e affitti a New York"
    },
    "entries": [],
-   "checked": "2026-11-23"
+   "checked": "2026-11-24"
   },
   "london-transport": {
    "label": {
@@ -855,9 +889,43 @@
        "url": "https://www.standard.co.uk/news/london/tube-strike-talks-rmt-union-london-underground-b1305420.html"
       }
      ]
+    },
+    {
+     "date": "2026-11-24",
+     "story_id": "s9485a24800",
+     "headline": {
+      "en": "RMT schedules eight London Tube walkouts this week",
+      "it": "RMT programma otto scioperi della Tube questa settimana"
+     },
+     "subheadline": {
+      "en": "Drivers plan 24‑hour strikes as talks aim to avert disruption.",
+      "it": "I conducenti prevedono scioperi di 24 ore mentre i colloqui cercano di evitare disagi."
+     },
+     "next": {
+      "en": [],
+      "it": []
+     },
+     "sources": [
+      {
+       "name": "BBC News · London",
+       "url": "https://www.bbc.co.uk/news/articles/c0ljyd03n88o"
+      },
+      {
+       "name": "The Standard · London",
+       "url": "https://www.standard.co.uk/news/london/tube-strikes-rmt-tfl-london-underground-four-day-week-b1305960.html"
+      },
+      {
+       "name": "The Standard · London",
+       "url": "https://www.standard.co.uk/news/transport/when-tube-strikes-2026-dates-london-underground-rmt-b1303830.html"
+      },
+      {
+       "name": "The Standard · London",
+       "url": "https://www.standard.co.uk/news/london/tube-strike-talks-rmt-union-london-underground-b1305420.html"
+      }
+     ]
     }
    ],
-   "checked": "2026-11-23"
+   "checked": "2026-11-24"
   },
   "milan-cortina": {
    "label": {
@@ -865,7 +933,7 @@
     "it": "Eredità Milano-Cortina"
    },
    "entries": [],
-   "checked": "2026-11-23"
+   "checked": "2026-11-24"
   },
   "eu-ai-regulation": {
    "label": {
@@ -873,7 +941,7 @@
     "it": "Regole UE sul digitale"
    },
    "entries": [],
-   "checked": "2026-11-23"
+   "checked": "2026-11-24"
   }
  }
 }
