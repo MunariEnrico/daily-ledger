@@ -81,7 +81,7 @@
      ]
     }
    ],
-   "checked": "2026-11-24"
+   "checked": "2026-11-25"
   },
   "fed-rates": {
    "label": {
@@ -89,7 +89,7 @@
     "it": "Federal Reserve"
    },
    "entries": [],
-   "checked": "2026-11-24"
+   "checked": "2026-11-25"
   },
   "boe-rates": {
    "label": {
@@ -120,7 +120,7 @@
      ]
     }
    ],
-   "checked": "2026-11-24"
+   "checked": "2026-11-25"
   },
   "italy-budget": {
    "label": {
@@ -509,7 +509,7 @@
      ]
     }
    ],
-   "checked": "2026-11-24"
+   "checked": "2026-11-25"
   },
   "uk-budget": {
    "label": {
@@ -517,7 +517,7 @@
     "it": "Bilancio UK e fisco"
    },
    "entries": [],
-   "checked": "2026-11-24"
+   "checked": "2026-11-25"
   },
   "us-tariffs": {
    "label": {
@@ -548,7 +548,7 @@
      ]
     }
    ],
-   "checked": "2026-11-24"
+   "checked": "2026-11-25"
   },
   "italy-inflation": {
    "label": {
@@ -613,7 +613,7 @@
      ]
     }
    ],
-   "checked": "2026-11-24"
+   "checked": "2026-11-25"
   },
   "venice-access-fee": {
    "label": {
@@ -621,7 +621,7 @@
     "it": "Contributo di accesso a Venezia"
    },
    "entries": [],
-   "checked": "2026-11-24"
+   "checked": "2026-11-25"
   },
   "venice-mose": {
    "label": {
@@ -629,7 +629,7 @@
     "it": "MOSE e acqua alta"
    },
    "entries": [],
-   "checked": "2026-11-24"
+   "checked": "2026-11-25"
   },
   "lux-housing": {
    "label": {
@@ -752,7 +752,7 @@
      ]
     }
    ],
-   "checked": "2026-11-24"
+   "checked": "2026-11-25"
   },
   "nyc-housing": {
    "label": {
@@ -760,7 +760,7 @@
     "it": "Casa e affitti a New York"
    },
    "entries": [],
-   "checked": "2026-11-24"
+   "checked": "2026-11-25"
   },
   "london-transport": {
    "label": {
@@ -923,9 +923,39 @@
        "url": "https://www.standard.co.uk/news/london/tube-strike-talks-rmt-union-london-underground-b1305420.html"
       }
      ]
+    },
+    {
+     "date": "2026-11-25",
+     "story_id": "s3522e5455e",
+     "headline": {
+      "en": "London Tube strike proceeds after talks break down",
+      "it": "Lo sciopero della Tube procede dopo il fallimento dei colloqui"
+     },
+     "subheadline": {
+      "en": "RMT union plans a 24‑hour walkout on Thursday 26 November at midday.",
+      "it": "Il sindacato RMT prevede una manifestazione di 24 ore giovedì 26 novembre a mezzogiorno."
+     },
+     "next": {
+      "en": [],
+      "it": []
+     },
+     "sources": [
+      {
+       "name": "BBC News · London",
+       "url": "https://www.bbc.co.uk/news/articles/cv1j6539l6d7o"
+      },
+      {
+       "name": "City A.M.",
+       "url": "https://www.cityam.com/tube-strikes-confirmed-after-last-ditch-talks-fail/"
+      },
+      {
+       "name": "MyLondon",
+       "url": "https://www.mylondon.news/news/transport/london-underground-strikes-go-ahead-34960975"
+      }
+     ]
     }
    ],
-   "checked": "2026-11-24"
+   "checked": "2026-11-25"
   },
   "milan-cortina": {
    "label": {
@@ -933,7 +963,7 @@
     "it": "Eredità Milano-Cortina"
    },
    "entries": [],
-   "checked": "2026-11-24"
+   "checked": "2026-11-25"
   },
   "eu-ai-regulation": {
    "label": {
@@ -941,7 +971,7 @@
     "it": "Regole UE sul digitale"
    },
    "entries": [],
-   "checked": "2026-11-24"
+   "checked": "2026-11-25"
   }
  }
 }

@@ -1,0 +1,153 @@
+{
+ "started_at": "2026-11-25T04:40:20Z",
+ "finished_at": "2026-11-25T04:53:03Z",
+ "seconds": 762.2,
+ "sources": {
+  "checked": 209,
+  "ok": 173,
+  "failed": [
+   "euronews",
+   "euronews_business",
+   "europarl",
+   "guardian_business",
+   "guardian_china",
+   "guardian_culture",
+   "guardian_economics",
+   "guardian_europe",
+   "guardian_eurozone",
+   "guardian_france",
+   "guardian_germany",
+   "guardian_india",
+   "guardian_italy",
+   "guardian_japan",
+   "guardian_law",
+   "guardian_london",
+   "guardian_luxembourg",
+   "guardian_markets",
+   "guardian_middleeast",
+   "guardian_money",
+   "guardian_newyork",
+   "guardian_paris",
+   "guardian_politics",
+   "guardian_property",
+   "guardian_rates",
+   "guardian_society",
+   "guardian_tax",
+   "guardian_travel",
+   "guardian_uknews",
+   "guardian_us",
+   "guardian_venice",
+   "guardian_world",
+   "lequotidien",
+   "libero",
+   "siliconlux",
+   "ytali"
+  ],
+  "failures": {
+   "euronews": "HTTP 406",
+   "euronews_business": "HTTP 406",
+   "europarl": "HTTP 202",
+   "guardian_business": "HTTP 403",
+   "guardian_china": "HTTP 403",
+   "guardian_culture": "HTTP 403",
+   "guardian_economics": "HTTP 403",
+   "guardian_europe": "HTTP 403",
+   "guardian_eurozone": "HTTP 403",
+   "guardian_france": "HTTP 403",
+   "guardian_germany": "HTTP 403",
+   "guardian_india": "HTTP 403",
+   "guardian_italy": "HTTP 403",
+   "guardian_japan": "HTTP 403",
+   "guardian_law": "HTTP 403",
+   "guardian_london": "HTTP 403",
+   "guardian_luxembourg": "HTTP 403",
+   "guardian_markets": "HTTP 403",
+   "guardian_middleeast": "HTTP 403",
+   "guardian_money": "HTTP 403",
+   "guardian_newyork": "HTTP 403",
+   "guardian_paris": "HTTP 403",
+   "guardian_politics": "HTTP 403",
+   "guardian_property": "HTTP 403",
+   "guardian_rates": "HTTP 403",
+   "guardian_society": "HTTP 403",
+   "guardian_tax": "HTTP 403",
+   "guardian_travel": "HTTP 403",
+   "guardian_uknews": "HTTP 403",
+   "guardian_us": "HTTP 403",
+   "guardian_venice": "HTTP 403",
+   "guardian_world": "HTTP 403",
+   "lequotidien": "HTTP 404",
+   "libero": "HTTP 404",
+   "siliconlux": "HTTP 520",
+   "ytali": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  }
+ },
+ "items": {
+  "retrieved": 6232,
+  "fresh": 2480,
+  "dropped": {
+   "low_value": 28,
+   "too_old": 3690,
+   "opinion": 14,
+   "date_missing": 10
+  },
+  "calendar": 10
+ },
+ "lookback_hours": 30,
+ "clusters": 1801,
+ "candidates_planned": 202,
+ "candidates_with_evidence": 202,
+ "stories": {
+  "articles": 15,
+  "briefs": 187,
+  "analyses": 0
+ },
+ "verification": {
+  "drafts": 30,
+  "published_articles": 15,
+  "fallback_briefs": 187,
+  "repairs": 22,
+  "language_regenerations": 2,
+  "unsupported_claims_detected": 118,
+  "unsupported_claims_blocked": 64,
+  "attribution_failures": 4,
+  "numerical_inconsistencies": 40,
+  "validation_failures": 37,
+  "llm_errors": 0
+ },
+ "llm": {
+  "calls": 140,
+  "failures": 15,
+  "by_model": {
+   "groq:openai/gpt-oss-120b": 38,
+   "groq:openai/gpt-oss-20b": 14
+  },
+  "circuit_open": false,
+  "providers": [
+   {
+    "name": "groq",
+    "models": [
+     "openai/gpt-oss-120b",
+     "openai/gpt-oss-20b",
+     "qwen/qwen3.8-27b"
+    ],
+    "switched_off": false
+   },
+   {
+    "name": "gemini",
+    "models": [
+     "gemini-flash-lite-latest",
+     "gemini-flash-latest"
+    ],
+    "switched_off": false
+   }
+  ],
+  "exhausted_models": [],
+  "errors": [],
+  "budget": 140
+ },
+ "llm_status": "ok",
+ "market_status": "ok",
+ "market_errors": [],
+ "errors": []
+}
