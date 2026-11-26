@@ -81,7 +81,7 @@
      ]
     }
    ],
-   "checked": "2026-11-25"
+   "checked": "2026-11-26"
   },
   "fed-rates": {
    "label": {
@@ -89,7 +89,7 @@
     "it": "Federal Reserve"
    },
    "entries": [],
-   "checked": "2026-11-25"
+   "checked": "2026-11-26"
   },
   "boe-rates": {
    "label": {
@@ -120,7 +120,7 @@
      ]
     }
    ],
-   "checked": "2026-11-25"
+   "checked": "2026-11-26"
   },
   "italy-budget": {
    "label": {
@@ -509,7 +509,7 @@
      ]
     }
    ],
-   "checked": "2026-11-25"
+   "checked": "2026-11-26"
   },
   "uk-budget": {
    "label": {
@@ -517,7 +517,7 @@
     "it": "Bilancio UK e fisco"
    },
    "entries": [],
-   "checked": "2026-11-25"
+   "checked": "2026-11-26"
   },
   "us-tariffs": {
    "label": {
@@ -548,7 +548,7 @@
      ]
     }
    ],
-   "checked": "2026-11-25"
+   "checked": "2026-11-26"
   },
   "italy-inflation": {
    "label": {
@@ -613,7 +613,7 @@
      ]
     }
    ],
-   "checked": "2026-11-25"
+   "checked": "2026-11-26"
   },
   "venice-access-fee": {
    "label": {
@@ -621,7 +621,7 @@
     "it": "Contributo di accesso a Venezia"
    },
    "entries": [],
-   "checked": "2026-11-25"
+   "checked": "2026-11-26"
   },
   "venice-mose": {
    "label": {
@@ -629,7 +629,7 @@
     "it": "MOSE e acqua alta"
    },
    "entries": [],
-   "checked": "2026-11-25"
+   "checked": "2026-11-26"
   },
   "lux-housing": {
    "label": {
@@ -750,9 +750,31 @@
        "url": "https://www.luxtimes.lu/luxembourg/government-already-addressing-most-youth-demands-housing-minister-says/164729043.html"
       }
      ]
+    },
+    {
+     "date": "2026-11-26",
+     "story_id": "s8703b32f74",
+     "headline": {
+      "en": "Montenegro rejects zero‑IVA food basket and rent tax hike",
+      "it": "Il Montenegro rifiuta il cesto alimentare a IVA zero e l’aumento delle tasse sugli affitti"
+     },
+     "subheadline": {
+      "en": "Government declines both measures linked to the same budget proposal.",
+      "it": "Il governo respinge entrambe le misure collegate alla stessa proposta di bilancio."
+     },
+     "next": {
+      "en": [],
+      "it": []
+     },
+     "sources": [
+      {
+       "name": "Contacto",
+       "url": "https://www.contacto.lu/portugal/montenegro-recusa-criar-cabaz-alimentar-com-iva-zero-e-aumentar-impostos-sobre-rendas/165133761.html"
+      }
+     ]
     }
    ],
-   "checked": "2026-11-25"
+   "checked": "2026-11-26"
   },
   "nyc-housing": {
    "label": {
@@ -760,7 +782,7 @@
     "it": "Casa e affitti a New York"
    },
    "entries": [],
-   "checked": "2026-11-25"
+   "checked": "2026-11-26"
   },
   "london-transport": {
    "label": {
@@ -955,7 +977,7 @@
      ]
     }
    ],
-   "checked": "2026-11-25"
+   "checked": "2026-11-26"
   },
   "milan-cortina": {
    "label": {
@@ -963,7 +985,7 @@
     "it": "Eredità Milano-Cortina"
    },
    "entries": [],
-   "checked": "2026-11-25"
+   "checked": "2026-11-26"
   },
   "eu-ai-regulation": {
    "label": {
@@ -971,7 +993,7 @@
     "it": "Regole UE sul digitale"
    },
    "entries": [],
-   "checked": "2026-11-25"
+   "checked": "2026-11-26"
   }
  }
 }
