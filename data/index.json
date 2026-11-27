@@ -260,6 +260,15 @@
    "briefs": 198,
    "published_at": "2026-11-26T13:14:42Z",
    "late": true
+  },
+  "2026-11-27": {
+   "status": "published",
+   "started_at": "2026-11-27T13:00:20Z",
+   "built_at": "2026-11-27T13:13:39Z",
+   "articles": 9,
+   "briefs": 178,
+   "published_at": "2026-11-27T13:13:39Z",
+   "late": true
   }
  }
 }
