@@ -81,7 +81,7 @@
      ]
     }
    ],
-   "checked": "2026-11-27"
+   "checked": "2026-11-28"
   },
   "fed-rates": {
    "label": {
@@ -89,7 +89,7 @@
     "it": "Federal Reserve"
    },
    "entries": [],
-   "checked": "2026-11-27"
+   "checked": "2026-11-28"
   },
   "boe-rates": {
    "label": {
@@ -120,7 +120,7 @@
      ]
     }
    ],
-   "checked": "2026-11-27"
+   "checked": "2026-11-28"
   },
   "italy-budget": {
    "label": {
@@ -509,7 +509,7 @@
      ]
     }
    ],
-   "checked": "2026-11-27"
+   "checked": "2026-11-28"
   },
   "uk-budget": {
    "label": {
@@ -517,7 +517,7 @@
     "it": "Bilancio UK e fisco"
    },
    "entries": [],
-   "checked": "2026-11-27"
+   "checked": "2026-11-28"
   },
   "us-tariffs": {
    "label": {
@@ -548,7 +548,7 @@
      ]
     }
    ],
-   "checked": "2026-11-27"
+   "checked": "2026-11-28"
   },
   "italy-inflation": {
    "label": {
@@ -613,7 +613,7 @@
      ]
     }
    ],
-   "checked": "2026-11-27"
+   "checked": "2026-11-28"
   },
   "venice-access-fee": {
    "label": {
@@ -621,7 +621,7 @@
     "it": "Contributo di accesso a Venezia"
    },
    "entries": [],
-   "checked": "2026-11-27"
+   "checked": "2026-11-28"
   },
   "venice-mose": {
    "label": {
@@ -629,7 +629,7 @@
     "it": "MOSE e acqua alta"
    },
    "entries": [],
-   "checked": "2026-11-27"
+   "checked": "2026-11-28"
   },
   "lux-housing": {
    "label": {
@@ -772,9 +772,31 @@
        "url": "https://www.contacto.lu/portugal/montenegro-recusa-criar-cabaz-alimentar-com-iva-zero-e-aumentar-impostos-sobre-rendas/165133761.html"
       }
      ]
+    },
+    {
+     "date": "2026-11-28",
+     "story_id": "sec79394380",
+     "headline": {
+      "en": "Luxembourg banks urge looser mortgage rules",
+      "it": "Banche lussemburghesi chiedono regole ipotecarie più flessibili"
+     },
+     "subheadline": {
+      "en": "Raiffeisen Bank director calls for changes to support housing market",
+      "it": "Il direttore della Raiffeisen Bank chiede cambiamenti per sostenere il mercato immobiliare"
+     },
+     "next": {
+      "en": [],
+      "it": []
+     },
+     "sources": [
+      {
+       "name": "RTL Today",
+       "url": "https://today.rtl.lu/news/luxembourg/luxembourg-banks-call-for-more-flexible-mortgage-loan-rules-1613143141"
+      }
+     ]
     }
    ],
-   "checked": "2026-11-27"
+   "checked": "2026-11-28"
   },
   "nyc-housing": {
    "label": {
@@ -782,7 +804,7 @@
     "it": "Casa e affitti a New York"
    },
    "entries": [],
-   "checked": "2026-11-27"
+   "checked": "2026-11-28"
   },
   "london-transport": {
    "label": {
@@ -977,7 +999,7 @@
      ]
     }
    ],
-   "checked": "2026-11-27"
+   "checked": "2026-11-28"
   },
   "milan-cortina": {
    "label": {
@@ -985,7 +1007,7 @@
     "it": "Eredità Milano-Cortina"
    },
    "entries": [],
-   "checked": "2026-11-27"
+   "checked": "2026-11-28"
   },
   "eu-ai-regulation": {
    "label": {
@@ -993,7 +1015,7 @@
     "it": "Regole UE sul digitale"
    },
    "entries": [],
-   "checked": "2026-11-27"
+   "checked": "2026-11-28"
   }
  }
 }
